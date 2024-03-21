@@ -428,19 +428,16 @@ body:has(.advocacy:hover)
     cursor: pointer;
 }
 body:has(.callout:hover)
-.callout p {
+.callout p ul {
     display: block;
-    cursor: pointer;
 }
 body:has(.venues:hover)
-.venues p {
+.venues p ul {
     display: block;
-    cursor: pointer;
 }
 body:has(.apply:hover)
-.apply p {
+.apply p ul {
     display: block;
-    cursor: pointer;
 }
 
 /* *** *** partners section *** *** */
