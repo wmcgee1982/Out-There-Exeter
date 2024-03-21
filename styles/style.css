@@ -428,15 +428,27 @@ body:has(.advocacy:hover)
     cursor: pointer;
 }
 body:has(.callout:hover)
-.callout p ul {
+.callout p {
     display: block;
 }
 body:has(.venues:hover)
-.venues p ul {
+.venues p {
     display: block;
 }
 body:has(.apply:hover)
-.apply p ul {
+.apply p {
+    display: block;
+}
+body:has(.callout:hover)
+.callout ul {
+    display: block;
+}
+body:has(.venues:hover)
+.venues ul {
+    display: block;
+}
+body:has(.apply:hover)
+.apply ul {
     display: block;
 }
 
