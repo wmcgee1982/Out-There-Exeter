@@ -724,7 +724,7 @@ body:has(.apply:hover)
 }
 .tiktok {
     fill: var(--secondaryColor);
-    left: 67px;
+    left: 66px;
     top: 4px;
 }
 .tiktok:hover {
@@ -732,16 +732,16 @@ body:has(.apply:hover)
 }
 .threads {
     fill: var(--secondaryColor);
-    left: 100px;
-    top: 12px;
+    left: 123px;
+    top: 13px;
 }
 .threads:hover {
     fill: var(--lightGrey);
 }
 .facebook {
     fill: var(--secondaryColor);
-    left: 150px;
-    top: 12px;
+    left: 171px;
+    top: 10px;
 }
 .facebook:hover {
     fill: var(--lightGrey);
