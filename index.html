@@ -6,39 +6,33 @@
     <title>Out There Exeter</title>
 
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-    <link rel="stylesheet" href="./styles/style.css">
-
+    <script src="./js/toggle.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>       
     <!-- Header Section -->
-    <section include-html="sections/header.html"></section>
+    <nav include-html="sections/nav.html"></nav>
+    <header include-html="sections/header.html"></header>
     <main>
         <!-- Nav Menu and Clock Section -->
         <section class="background">
-            <section class="first-section-container">
-                <div class="countdown">
-                    <a href="https://logwork.com/countdown-49n4" class="countdown-timer" data-style="circles" data-timezone="Europe/London" data-textcolor="#f1f1f1" data-date="2024-09-27 19:00" data-background="#eb028a" data-digitscolor="#f1f1f1" data-unitscolor="#f1f1f1">27th Sept, 7pm</a>
-                </div>
-                <nav class="nav-container">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#information-section">INFO</a></li>
-                        <li><a href="#take-part-section">TAKE PART</a></li>
-                        <li><a href="#news-section">NEWS</a></li>
-                    </ul>
-                </nav>
-                <article class="header-subtitles-cards networks">
-                    <h1><span>Igniting Networks</span> for LGBTQI+ people to connect and build a powerful force for equality and social inclusion.</h1>
-                </article>
-                <article class="header-subtitles-cards communities">
-                    <h1><span>Strengthening Communities</span> means building safe spaces and fostering connections that uplift and empower each other.</h1>
-                </article>
-                <article class="header-subtitles-cards inclusivity">
-                    <h1><span>Celebrating Inclusivity</span> welcomes all to be their authentic selves, to belong, and to shine brightly.</h1>
-                </article>
-            </section>
         </section>
+        <section class="first-section-container">
+            <div class="countdown">
+                <a href="https://logwork.com/countdown-49n4" class="countdown-timer" data-style="circles" data-timezone="Europe/London" data-textcolor="#f1f1f1" data-date="2024-09-27 19:00" data-background="#eb028a" data-digitscolor="#f1f1f1" data-unitscolor="#f1f1f1">27th Sept, 7pm</a>
+            </div>
+            <article class="header-subtitles-cards networks">
+                <h1><span>Igniting Networks</span> for LGBTQI+ people to connect and build a powerful force for equality and social inclusion.</h1>
+            </article>
+            <article class="header-subtitles-cards communities">
+                <h1><span>Strengthening Communities</span> means building safe spaces and fostering connections that uplift and empower each other.</h1>
+            </article>
+            <article class="header-subtitles-cards inclusivity">
+                <h1><span>Celebrating Inclusivity</span> welcomes all to be their authentic selves, to belong, and to shine brightly.</h1>
+            </article>
+        </section>
+    
 
         <!-- **** LANDING PAGE - arrow **** -->
         <div class="arrow-bounce" onclick="scrollWin()">
