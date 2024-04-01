@@ -199,10 +199,10 @@ nav {
     filter: brightness(1);
 }
 .fa-main-bars:before {
-    content: url("/media/toggleIcon_white.svg");
+    content: url("../media/toggleIcon_white.svg");
 }
 .fa-main-bars:hover {
-    content: url("/media/toggleIcon_purple.svg");
+    content: url("../media/toggleIcon_purple.svg");
 }
 
 /* *** *** Header Section *** *** */
