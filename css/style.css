@@ -53,9 +53,9 @@ body {
     padding: 0.5em 1em;
     width: 100%;
     grid-auto-flow: column;
-    grid-template-columns: 3fr 2fr 2fr 0.5fr;
+    grid-template-columns: 4fr 2fr 2fr 0.5fr;
     grid-template-rows: auto-fit;
-    gap: 0.1em;
+    gap: 1em;
     align-items: center;
     overflow: hidden;
 }
@@ -77,7 +77,7 @@ body {
     border: solid 0.13em var(--lightGrey);
     border-radius: 2em; 
     box-shadow: 0px 0px 15px -5px var(--darkGrey);
-    justify-self: start;
+    justify-self: end;
     align-items: center;
     grid-auto-flow: column;
     grid-template-columns: auto;
@@ -245,11 +245,11 @@ body {
     100%  { opacity: 1; }
   }
 .ticket-icon a:hover {
-    -webkit-animation: icon-hover 1s infinite;
+    animation: icon-hover 1s infinite;
     cursor: pointer;
     color: var(--primaryColor);
 }
-@-webkit-keyframes icon-hover {
+@keyframes icon-hover {
     0%, 100%  { -webkit-filter: hue-rotate(300deg); }
     50% { -webkit-filter: hue-rotate(360deg); }
 }
@@ -276,10 +276,10 @@ text-shadow: 0.1em 0.1em var(--secondaryColor);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size: cover;
-    -webkit-animation: bg-img-hue 3s infinite;
+    animation: bg-img-hue 3s infinite;
     height: 500px;
 }
-@-webkit-keyframes bg-img-hue {
+@keyframes bg-img-hue {
     0%  { -webkit-filter: hue-rotate(0deg); }
     50% { -webkit-filter: hue-rotate(300deg); }
 }
