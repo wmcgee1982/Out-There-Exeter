@@ -3,41 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Out There Exeter</title>
 
-    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+    <!-- Scripts -->
+     <!--    <script src="https://cdn.logwork.com/widget/countdown.js"></script>-->
     <script src="./js/toggle.js"></script>
+
+    <!-- Links -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./media/logo.jpg">
+    
 </head>
 
 <body>       
-    <!-- Header Section -->
-    <nav include-html="sections/nav.html"></nav>
-    <header include-html="sections/header.html"></header>
-    <main>
-        <!-- Nav Menu and Clock Section -->
-        <section class="background">
-        </section>
-        <section class="first-section-container">
-            <div class="countdown">
-                <a href="https://logwork.com/countdown-49n4" class="countdown-timer" data-style="circles" data-timezone="Europe/London" data-textcolor="#f1f1f1" data-date="2024-09-27 19:00" data-background="#eb028a" data-digitscolor="#f1f1f1" data-unitscolor="#f1f1f1">27th Sept, 7pm</a>
-            </div>
-            <article class="header-subtitles-cards networks">
-                <h1><span>Igniting Networks</span> for LGBTQI+ people to connect and build a powerful force for equality and social inclusion.</h1>
-            </article>
-            <article class="header-subtitles-cards communities">
-                <h1><span>Strengthening Communities</span> means building safe spaces and fostering connections that uplift and empower each other.</h1>
-            </article>
-            <article class="header-subtitles-cards inclusivity">
-                <h1><span>Celebrating Inclusivity</span> welcomes all to be their authentic selves, to belong, and to shine brightly.</h1>
-            </article>
-        </section>
-    
+    <!-- Navbar Section -->
+    <nav id="nav-bar" include-html="sections/nav.html"></nav>
 
-        <!-- **** LANDING PAGE - arrow **** -->
-        <div class="arrow-bounce" onclick="scrollWin()">
-            <img src="./media/downArrow.svg">
-        </div>
+    <!-- Header Section -->
+    <header include-html="sections/header.html">
+    </header>
+
+    <main>
+        <!-- Hero-banner Section -->
+        <section include-html="sections/hero-banner.html"></section>
 
         <!-- Information Section -->
         <section include-html="sections/information.html"></section>
@@ -51,11 +40,14 @@
         <!-- News Section -->
         <section include-html="sections/news.html"></section>
     </main>
+
     <!-- Footer Section -->
     <section include-html="sections/footer.html"></section>
     
+    <!-- Scripts -->
     <script src="./js/sections.js"></script>
     <script src="./js/arrowbounce.js"></script>
+    <script src="./js/countdown.js"></script>
     <script>includeHTML();</script>
 
 </body>
