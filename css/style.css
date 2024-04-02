@@ -37,11 +37,13 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--backgroundColor);
     overscroll-behavior-y: none;
+    width: 100%;
 }
 
 /* *** *** NavBar Section *** *** */
 #nav-bar {
     position: fixed;
+    width: 100%;
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
@@ -49,11 +51,11 @@ body {
 .navbar-wrapper {
     display: grid;
     padding: 0.5em 1em;
-    width: 100vw;
+    width: 100%;
     grid-auto-flow: column;
-    grid-template-columns: 3fr 3fr 4fr 0.5fr;
+    grid-template-columns: 3fr 2fr 2fr 0.5fr;
     grid-template-rows: auto-fit;
-    gap: 1em;
+    gap: 0.1em;
     align-items: center;
     overflow: hidden;
 }
@@ -75,7 +77,7 @@ body {
     border: solid 0.13em var(--lightGrey);
     border-radius: 2em; 
     box-shadow: 0px 0px 15px -5px var(--darkGrey);
-    justify-self: end;
+    justify-self: start;
     align-items: center;
     grid-auto-flow: column;
     grid-template-columns: auto;
@@ -145,7 +147,7 @@ body {
     text-align: right;
     min-height: auto;
     min-width: 18vw;
-    margin: 3em 1em;
+    margin: 3em 1.5em;
     background: var(--primaryColor);
     border: var(--lightGrey) solid 0.15em;
     box-shadow: 5px 5px 20px 0px var(--darkGrey);
@@ -444,8 +446,8 @@ body:has(#inclusivity-title:hover)
 
 /* *** *** Information Section *** *** */
 #information-section {
-    padding: 3em 4em 4em 4em;
-    width: 100vw;
+    padding: 4em;
+    width: 100%;
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     border-top: solid 0.2em var(--primaryColor);
@@ -453,16 +455,16 @@ body:has(#inclusivity-title:hover)
 .information-container {
     width: auto;
 }
+.information-container h3 {
+    padding: 1em 0em 0em 0.4em;
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
 .information-container p {
     padding: 0.5em;
     text-align: justify;
 }
 .information-container span {
-    font-weight: 500;
-}
-.information-container h3 {
-    padding: 1em 0.5em 0em 0.5em;
-    color: var(--secondaryColor);
     font-weight: 500;
 }
 
@@ -578,8 +580,8 @@ body:has(.advocacy:hover)
 
 /* *** *** Take Part Section *** *** */
 #take-part-section {
-    padding: 2em 4em;
-    width: 100vw;
+    padding: 4em;
+    width: 100%;
     height: auto;
     background-image: url(../media/twoladysingers.gif);
     background-repeat:no-repeat;
@@ -590,7 +592,6 @@ body:has(.advocacy:hover)
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 150px;
-    grid-template-rows: auto-fit;
     gap: 4em;
 }
 #take-part-section h1 {  
@@ -639,8 +640,10 @@ body:has(.advocacy:hover)
 .take-part-card-container span {
     font-weight: 500;
 }
-.take-part-card-container ul {
+.take-part-card-container li {
     color: var(--secondaryColor);
+}
+.take-part-card-container ul {
     padding: 0em 4em;
     font-weight: 300;
     text-decoration: none;
@@ -655,6 +658,14 @@ body:has(.callout:hover)
 .callout p {
     display: block;
 }
+body:has(.why:hover)
+.why p {
+    display: block;
+}
+body:has(.who:hover)
+.who p {
+    display: block;
+}
 body:has(.venues:hover)
 .venues p {
     display: block;
@@ -665,6 +676,14 @@ body:has(.apply:hover)
 }
 body:has(.callout:hover)
 .callout ul {
+    display: block;
+}
+body:has(.why:hover)
+.why ul {
+    display: block;
+}
+body:has(.who:hover)
+.who ul {
     display: block;
 }
 body:has(.venues:hover)
@@ -679,7 +698,7 @@ body:has(.apply:hover)
 /* *** *** partners section *** *** */
 #partners-section {
     margin-top: -300px;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-image: linear-gradient(transparent 0%, #EB028A 50%, #692A92 100%);
     display: grid;
@@ -711,14 +730,12 @@ body:has(.apply:hover)
     justify-items: center;
     align-items: center;
     grid-auto-flow: column;
-    grid-template-columns: auto-fit;
-    grid-template-rows: auto-fit;
 }
 
 /* *** *** News Section *** *** */
 #news-section {
-    padding: 2em 0em 2em 1em;
-    width: 100vw;
+    padding: 4em;
+    width: 100%;
     height: auto;
     background: var(--lightGrey);
     border-top: solid 0.2em var(--primaryColor);
@@ -736,7 +753,6 @@ body:has(.apply:hover)
 /* *** *** News Scroll Panel *** *** */
 .panel-scroll {
     white-space: nowrap;
-    width: 80vw;
     margin: 2em 3.5em;
     padding: 0.5em;
     overflow: hidden;
@@ -895,6 +911,7 @@ body:has(.apply:hover)
 .footer-copyright {
     background-color: var(--primaryColor);
     position: fixed;
+    width: 100%;
     bottom: 0;
     right: 0;
     box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
@@ -904,7 +921,7 @@ body:has(.apply:hover)
     margin-right: auto;
     padding: 15px 30px;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 
 }
 .footer-copyright-text {
@@ -917,7 +934,7 @@ body:has(.apply:hover)
 /* *** *** Waves *** *** */
 .wave-svg-header {
     position:absolute;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     z-index: 1;
 }
@@ -925,8 +942,10 @@ body:has(.apply:hover)
     fill: var(--secondaryColor);
 }
 .wave-svg-footer {
-    width: 100vw;
+    width: 100%;
     height: auto;
+    height: 50px;
+    z-index: 1;
 }
 .wave-path-footer {
     fill: var(--lightGrey);
