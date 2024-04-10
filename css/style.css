@@ -195,7 +195,8 @@ body {
     grid-template-columns: 1fr 4fr 4fr 2fr;
     gap: 1.5em;
     background: var(--secondaryColor);
-    margin-top: -0.3em;
+    margin-top: -0.5em;
+    padding-top: 0.5em;
 }
 /* *** *** LOGO *** *** */
 .logo-header {
@@ -203,7 +204,7 @@ body {
     margin-top: -1em;
 }
 .logo-header img {
-    width: 155px;
+    width: 125px;
     height: auto;
 }
 /* *** *** DATES FESTIVAL *** *** */
@@ -211,32 +212,32 @@ body {
     justify-self: center;
     padding: 0.4em 0em 0em 0em;
 }
-.festival-date h1 {
+.festival-date h2 {
     color: var(--secondaryColor);
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
-.festival-date h3 {
-    padding: 0.5em 0em 0em 0.3em;
-}
 .festival-date h4 {
-    padding: 0.5em 0em 0em 0.3em;
+    padding: 0.2em 0em 0em 0.3em;
 }
 /* *** *** SUBTITLES *** *** */
 .header-subtitles {
     justify-self: center;
-}
-.header-subtitles span {
-   text-align: right;
+    width: 70%
 }
 .header-subtitles p {
-    margin: 0.3em 0em 0.3em 0em;
+    margin: 0.2em 0em 0.2em 0em;
     padding: 0.3em;
     background-color: var(--secondaryColor);
     text-decoration: none;
     filter: drop-shadow(0px 1px var(--primaryColor));
 }
+.header-subtitles span {
+    position: absolute;
+    padding: 0.15em 0em 0em 1em;
+
+} 
 .header-subtitles p:hover {
-    margin: 0.3em 0em 0.3em 0em;
+    margin: 0.2em 0em 0.2em 0em;
     padding: 0.3em;
     background: var(--primaryColor);
     color: var(--secondaryColor);
@@ -253,7 +254,7 @@ body {
     animation: name-of-animation 8s infinite;
 }
 .ticket-icon img {
-    width: 150px;
+    width: 125px;
     height: auto; 
     filter: hue-rotate(340 deg);
 }
@@ -287,9 +288,8 @@ body:has(.ticket-icon a:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 4.7em;
+    top: 4em;
     font-size: x-large;
-    margin-left: 0.3em;
     font-weight: 900;
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -298,9 +298,8 @@ body:has(.ticket-icon p:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 4.7em;
+    top: 4em;
     font-size: x-large;
-    margin-left: 0.3em;
     font-weight: 900;
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -367,6 +366,7 @@ body:has(.ticket-icon p:hover)
     justify-self: end;
     align-self: center;
     text-align: right;
+    margin-top: -5em;
 }
 .header-subtitles-cards h1 {
     font-size: x-large;
