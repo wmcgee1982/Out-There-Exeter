@@ -48,6 +48,7 @@ body {
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
 }
+
 .navbar-wrapper {
     display: grid;
     padding: 0.5em 1em;
@@ -55,42 +56,9 @@ body {
     gap: 1em;
     align-items: center;
     overflow: hidden;
-}
-
-@media only screen and (min-width:1200px) {
-    .navbar-wrapper {
-        grid-auto-flow: column;
-        grid-template-columns: 7fr 4fr 0.7fr;
-        grid-template-rows: auto-fit;
-    }
-}
-@media only screen and (min-width:992px) {
-    .navbar-wrapper {
-        grid-auto-flow: column;
-        grid-template-columns: 6.5fr 4fr 1fr;
-        grid-template-rows: auto-fit;
-    }
-}
-@media only screen and (min-width:768px) {
-    .navbar-wrapper {
-        grid-auto-flow: column;
-        grid-template-columns: 6.5fr 4fr 1fr;
-        grid-template-rows: auto-fit;
-    }
-}
-@media only screen and (min-width:601px) {
-    .navbar-wrapper {
-        grid-auto-flow: column;
-        grid-template-columns: 5fr 5fr 1fr;
-        grid-template-rows: auto-fit;
-    }
-}
-@media only screen and (max-width:601px) {
-    .navbar-wrapper {
-        grid-auto-flow: column;
-        grid-template-columns: 8fr 3fr;
-        grid-template-rows: auto-fit;
-    }
+    grid-auto-flow: column;
+    grid-template-columns: 7fr 4fr 0.7fr;
+    grid-template-rows: auto-fit;
 }
 
 #navbar-title {
@@ -141,11 +109,7 @@ body {
     align-self: center;
     justify-self: end;
 }
-@media only screen and (max-width:601px) {
-    .nav-menu-container {
-        display: none;
-    }
-}
+
 .nav-menu-container ul {
     border-top: double 0.2em var(--secondaryColor);
     border-bottom: double 0.2em var(--secondaryColor);
@@ -181,21 +145,17 @@ body {
     top: -0.4em;
     right: 0;
 }
-@media only screen and (max-width:601px) {
-    .toggle-menu {
-        display: none;
-    }
-}
+
 .toggle-menu #myLinks {
     display: none;
     text-align: right;
     min-height: auto;
     min-width: 18vw;
-    margin: 3em 1.5em;
+    margin: 4.5em 1.5em;
     background: var(--primaryColor);
     border: var(--lightGrey) solid 0.15em;
     box-shadow: 5px 5px 20px 0px var(--darkGrey);
-    border-radius: 2em;
+    border-radius: 1.5em;
 }
 .toggle-menu a {
     padding: 0.5em 1em;
@@ -218,61 +178,16 @@ body {
 }
 .fa-main-bars:before {
     content: url("../media/toggleIcon_white.svg");
+    cursor: pointer;
 }
 .fa-main-bars:hover {
     content: url("../media/toggleIcon_purple.svg");
-}
-
-/* *** ***  Toggle Menu - small screen *** *** */
-@media only screen and (min-width:601px) {
-    .toggle-menu1 {
-        display: none;
-    }
-}
-@media only screen and (max-width:601px) {
-.toggle-menu1 {
-    position: absolute;
-    z-index: 99;
-    top: -0.8em;
-    right: 0;
-    display: block;
-}
-.toggle-menu1 #myLinks1 {
-    display: none;
-    text-align: right;
-    min-height: auto;
-    min-width: 30vw;
-    margin: 3em 1.5em;
-    background: var(--primaryColor);
-    border: var(--lightGrey) solid 0.15em;
-    box-shadow: 5px 5px 20px 0px var(--darkGrey);
-    border-radius: 2em;
-}
-.toggle-menu1 a {
-    padding: 0.5em 1em;
-    display: block;
-    text-align: right;
-    font-size: 20px;
-    font-weight: 100;
-    text-decoration: none;
-    color: var(--lightGrey);
-}
-.toggle-menu1 a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.toggle-menu1 a:hover {
-    color: var(--secondaryColor);
     cursor: pointer;
-    font-weight: 500;
-}
 }
 
  /* *** *** Header Section *** *** */
  header {
     padding: 3.7em 0em 0em 0em;
-    background: var(--secondaryColor);
 }    
 .grid-container-header {
     display: grid;
@@ -280,21 +195,19 @@ body {
     grid-template-columns: 1fr 4fr 4fr 2fr;
     gap: 1.5em;
     background: var(--secondaryColor);
-    padding: 0em 0.5em;
+    margin-top: -0.3em;
 }
 /* *** *** LOGO *** *** */
 .logo-header {
-    align-self: top;
     justify-self: start;
     margin-top: -1em;
 }
 .logo-header img {
-    width: 175px;
+    width: 155px;
     height: auto;
 }
 /* *** *** DATES FESTIVAL *** *** */
 .festival-date {
-    align-self: top;
     justify-self: center;
     padding: 0.4em 0em 0em 0em;
 }
@@ -310,8 +223,10 @@ body {
 }
 /* *** *** SUBTITLES *** *** */
 .header-subtitles {
-    align-self: top;
     justify-self: center;
+}
+.header-subtitles span {
+   text-align: right;
 }
 .header-subtitles p {
     margin: 0.3em 0em 0.3em 0em;
@@ -319,7 +234,6 @@ body {
     background-color: var(--secondaryColor);
     text-decoration: none;
     filter: drop-shadow(0px 1px var(--primaryColor));
-    border-radius: 0.2em;
 }
 .header-subtitles p:hover {
     margin: 0.3em 0em 0.3em 0em;
@@ -334,13 +248,12 @@ body {
 /* *** ***  TICKET ICON *** *** */
 .ticket-icon {
     margin: -0.5em 0.5em 0em 0em;
-    align-self: top;
     justify-self: center;
     z-index: 99;
     animation: name-of-animation 8s infinite;
 }
 .ticket-icon img {
-    width: 170px;
+    width: 150px;
     height: auto; 
     filter: hue-rotate(340 deg);
 }
@@ -366,13 +279,17 @@ body {
 }
 .ticket-icon p:hover {
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 2em;
 }
 body:has(.ticket-icon a:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 3.5em;
-    font-size: xx-large;
+    top: 4.7em;
+    font-size: x-large;
+    margin-left: 0.3em;
     font-weight: 900;
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -381,8 +298,9 @@ body:has(.ticket-icon p:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 3.5em;
-    font-size: xx-large;
+    top: 4.7em;
+    font-size: x-large;
+    margin-left: 0.3em;
     font-weight: 900;
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -394,156 +312,7 @@ body:has(.ticket-icon p:hover)
     color: var(--primaryColor);
 }
 
-@media only screen and (min-width:992px) {
-     /* *** *** Header Section MIN WIDTH 992 *** *** */
-     header {
-        padding: 3.7em 0em 0em 0em;
-    }    
-    .grid-container-header {
-        grid-template-columns: 1fr 5fr 4fr 1fr;
-        gap: 1em;
-    }
-    /* *** *** LOGO *** *** */
-    .logo-header {
-        margin-top: -1em;
-    }
-    .logo-header img {
-        width: 175px;
-        height: auto;
-    }
-    /* *** *** DATES FESTIVAL *** *** */
-    .festival-date {
-        justify-self: center;
-        padding: 0.4em 0em 0em 0em;
-    }
-    /* *** *** SUBTITLES *** *** */
-    .header-subtitles {
-        justify-self: center;
-    }
-    /* *** ***  TICKET ICON *** *** */
-    .ticket-icon {
-        margin: -0.5em 0.5em 0em 0em;
-        align-self: top;
-        justify-self: center;
-    }
-    .ticket-icon img {
-        width: 150px;
-        height: auto; 
-        filter: hue-rotate(340 deg);
-    }
-    body:has(.ticket-icon a:hover)
-    .ticket-icon p {
-        top: 4.6em;
-        font-size: x-large;
-        font-weight: 900;
-    }
-    body:has(.ticket-icon p:hover)
-    .ticket-icon p {
-        top: 4.6em;
-        font-size: x-large;
-        font-weight: 900;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:992px) {
-    /* *** *** Header Section MIN WIDTH 768 *** *** */
-    header {
-       padding: 3.7em 0em 0em 0em;
-   }    
-   .grid-container-header {
-       grid-template-columns: 0.5fr 5fr 4fr;
-       gap: 1em;
-   }
-   /* *** *** LOGO *** *** */
-   .logo-header {
-       margin-top: -0.5em;
-   }
-   .logo-header img {
-    width: 150px;
-    height: auto;
-}
-   /* *** *** DATES FESTIVAL *** *** */
-   .festival-date {
-       justify-self: end;
-       padding: 0.4em 0em 0em 0em;
-   }
-   /* *** *** SUBTITLES *** *** */
-   .header-subtitles {
-       justify-self: end;
-       padding: 0em 1em 0em 0em;
-   }
-   /* *** ***  TICKET ICON *** *** */
-   .ticket-icon {
-        display: none;
-   }
-}
-
-@media only screen and (min-width:601px) and (max-width:768px) {
-    /* *** *** Header Section MAX WIDTH 768 *** *** */
-    header {
-       padding: 3.7em 0em 0em 0em;
-   }    
-   .grid-container-header {
-       grid-template-columns: 1fr 10fr;
-       gap: 1em;
-   }
-   /* *** *** LOGO *** *** */
-   .logo-header {
-       margin-top: -0.5em;
-   }
-   .logo-header img {
-    width: 150px;
-    height: auto;
-}
-   /* *** *** DATES FESTIVAL *** *** */
-   .festival-date {
-       justify-self: end;
-       padding: 0.4em 1em 0em 0em;
-   }
-   /* *** *** SUBTITLES *** *** */
-   .header-subtitles {
-        display: none;
-   }
-   /* *** ***  TICKET ICON *** *** */
-   .ticket-icon {
-        display: none;
-   }
-}
-
-@media only screen and (max-width:601px) {
-    /* *** *** Header Section MAX WIDTH 601 *** *** */
-    header {
-       padding: 3.7em 0em 0em 0em;
-   }    
-   .grid-container-header {
-       grid-template-columns: 1fr 10fr;
-       gap: 1em;
-   }
-   /* *** *** LOGO *** *** */
-   .logo-header {
-       margin-top: -0.5em;
-   }
-   .logo-header img {
-    width: 125px;
-    height: auto;
-}
-   /* *** *** DATES FESTIVAL *** *** */
-   .festival-date {
-       justify-self: end;
-       padding: 0.4em 1em 0em 0em;
-   }
-   /* *** *** SUBTITLES *** *** */
-   .header-subtitles {
-        display: none;
-   }
-   /* *** ***  TICKET ICON *** *** */
-   .ticket-icon {
-        display: none;
-   }
-}
-
-/* *** *** General Background *** *** */
-
+/* *** *** General Background *** *** */ 
 .background {
     background-image: url(../media/concert-3084876_640.jpg);
     background-repeat:no-repeat;
@@ -553,18 +322,7 @@ body:has(.ticket-icon p:hover)
     animation: bg-img-hue 3s infinite;
     height: 500px;
 }
-@media only screen and (max-width:768px) {
-    .background {
-        background-image: url(../media/concert-3084876_640.jpg);
-        background-repeat:no-repeat;
-        background-attachment:fixed;
-        background-size: 150%;
-        background-position: top;
-        top: 0;
-        animation: bg-img-hue 3s infinite;
-        height: 350px;
-    }
-}
+
 @keyframes bg-img-hue {
     0%  { -webkit-filter: hue-rotate(0deg); }
     50% { -webkit-filter: hue-rotate(300deg); }
@@ -605,10 +363,9 @@ body:has(.ticket-icon p:hover)
     position: absolute;
     width: 50vw;
     height: auto;
-    margin: 4em 0em;
     display: none;
     justify-self: end;
-    align-self: end;
+    align-self: center;
     text-align: right;
 }
 .header-subtitles-cards h1 {
@@ -697,106 +454,6 @@ body:has(#inclusivity-title:hover)
 }
 .first-section-container1 {
     display: none;
-}
-
-@media only screen and (max-width:768px) {
-    /* *** *** NHERO BANNER Section SMALLER Screens *** *** */
-    .first-section-container {
-        display: none;
-    }
-.first-section-container1 {
-    display: block;
-    height: auto;
-}
-/* *** *** WEEKEND ACTS ANNOUNCEMENT *** *** */
-.weekend-acts1 {
-    position: absolute;
-    margin: 0em 1em 0em 2em;
-    margin-top: -12em;
-}
-.weekend-acts1 h1 {
-    font-size: xx-large;
-    font-weight: 600;
-}
-.weekend-acts1 h3 {
-    padding: 0.5em 0.5em 0em 0.2em;
-    font-weight: 300;
-}
-/* *** *** Countdown Clock *** *** */
-.countdown-container1 {
-    display: block;
-    padding: 1em 2em;
-    background: var(--secondaryColor);
-    border-top: solid 0.2em var(--primaryColor);
-}
-.countdown-sub-container1 {
-    opacity: 0.8;
-}
-.countdown-sub-container1 h2 {
-    padding: 0em 0em 0.7em 0em;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.3em;
-    color: var(--primaryColor);
-}
-.digits-container1 {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-}
-.clock-circle1 {
-    display: grid;
-    width: 3em;
-    height: 3em;
-    margin-right: auto;
-    margin-left: auto;
-    border: solid 0.1em white;
-    border-radius: 50%;
-}
-.clock-label1 {
-    display: grid;
-    width: 100px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-.digits-container1 h1 {
-    display: grid;
-    font-size: 2em;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-}
-.digits-container1 p {
-    display: grid;
-    font-size: 1.2em;
-    font-weight: 100;
-    padding-top: 0.5em;
-    justify-content: center;
-    align-items: center;
-}
-/* *** *** header subtitles *** *** */
-.subtitles-cards-small {
-    width: 100%;
-    height: auto;
-    background: var(--primaryColor);
-    padding: 1em 0em 0em 0em;
-    border-bottom: solid 0.2em var(--secondaryColor);
-}
-.header-subtitles-cards1 {
-    width: auto;
-    height: auto;    
-    padding: 2em;
-    text-align: justify;
-}
-.header-subtitles-cards1 h1 {
-    font-size: large;
-    padding: 0.5em 0em;
-}
-.header-subtitles-cards1 span {
-    font-size: large;
-    color:  var(--secondaryColor);
-    font-weight: 600;
-}
 }
 
 /* *** *** Information Section *** *** */
@@ -969,7 +626,6 @@ body:has(.advocacy:hover)
     border-right: solid 0.5em var(--primaryColor);
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-
     cursor: pointer;
     opacity: 0.7;
 }
@@ -1004,8 +660,11 @@ button {
     max-height: 70%;
     max-width: 90%;
     padding: 1.5em 2em 0em 2em;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
 }
+
 .modal.active {
     transform: translate(-50%, -50%) scale(1);
 }
@@ -1059,10 +718,6 @@ button {
     cursor: pointer;
 }
 
-
-
-
-
 #overlay {
     position: fixed;
     opacity: 0;
@@ -1073,16 +728,12 @@ button {
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
-  }
+}
   
-  #overlay.active {
+#overlay.active {
     opacity: 1;
     pointer-events: all;
-  }
-
-
-
-
+}
 
 /* *** *** partners section *** *** */
 #partners-section {
@@ -1185,7 +836,6 @@ button {
 }
 .newsPanelCard:hover {
     filter: brightness(90%);
-    cursor: pointer;
     transition-delay: 0.1s;
 }
 .newsPanelCard p {
@@ -1304,6 +954,7 @@ button {
     bottom: 0;
     right: 0;
     box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
+    z-index: 2;
 }
 .footer-copyright-wrapper {
     margin-left: auto;
@@ -1324,26 +975,16 @@ button {
 .wave-svg-header {
     position:absolute;
     width: 100%;
-    height: 30px;
+    height: 1.3em;
     z-index: 1;
 }
 .wave-path-header {
     fill: var(--secondaryColor);
 }
-@media only screen and (max-width:768px) {
-    .wave-svg-header {
-        height: 15px;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:992px) {
-    .wave-svg-header {
-        height: 20px;
-    }
-}
+
 .wave-svg-footer {
     width: 100%;
-    height: auto;
-    height: 50px;
+    height: 1.3em;
     z-index: 1;
 }
 .wave-path-footer {
@@ -1357,6 +998,7 @@ button {
     right: 0;
     height: 50px;
     width: 260px;
+    z-index: 2;
 }
 .footer-socials-svg {
     height: 50px;
@@ -1408,9 +1050,6 @@ button {
     height: 40px;
     width: 40px;
     margin-bottom: 4em;
-    -webkit-animation: bounce 1.5s infinite;
-    -moz-animation: bounce 1.5s infinite;
-    -o-animation: bounce 1.5s infinite;
     animation: bounce 1.5s infinite;
     z-index: 3;
     cursor: pointer;
@@ -1436,39 +1075,20 @@ button {
     100%     {bottom: 20;}
   }
 
+  /* *** *** TICKETS PAGE *** *** */
 
-
-
-
-
-/* *** *** 
-
-  @media only screen and (min-width:1200px) {
-    . {
-
-    }
-}
-@media only screen and (min-width:992px) {
-    . {
-
-    }
-}
-@media only screen and (min-width:768px) {
-    . {
-
-    }
-}
-@media only screen and (min-width:601px) {
-    . {
-
-    }
-}
-@media only screen and (max-width:601px) {
-    . {
-
-    }
+  .background-tickets {
+    background-image: url(../media/twoladysingers.gif);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
 }
 
-
-
-*** *** */
+.tickets-page-title {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 150px;
+    gap: 4em;
+}

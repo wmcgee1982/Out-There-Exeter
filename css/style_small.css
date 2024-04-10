@@ -1,0 +1,45 @@
+/* *** ***  Toggle Menu - small screen *** *** */
+@media only screen and (min-width:601px) {
+    .toggle-menu1 {
+        display: none;
+    }
+}
+@media only screen and (max-width:601px) {
+.toggle-menu1 {
+    position: absolute;
+    z-index: 99;
+    top: -0.8em;
+    right: 0;
+    display: block;
+}
+.toggle-menu1 #myLinks1 {
+    display: none;
+    text-align: right;
+    min-height: auto;
+    min-width: 30vw;
+    margin: 3em 1.5em;
+    background: var(--primaryColor);
+    border: var(--lightGrey) solid 0.15em;
+    box-shadow: 5px 5px 20px 0px var(--darkGrey);
+    border-radius: 2em;
+}
+.toggle-menu1 a {
+    padding: 0.5em 1em;
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--lightGrey);
+}
+.toggle-menu1 a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.toggle-menu1 a:hover {
+    color: var(--secondaryColor);
+    cursor: pointer;
+    font-weight: 500;
+}
+}

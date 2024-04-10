@@ -19,7 +19,7 @@ document.getElementById("days").innerHTML = days
 document.getElementById("hours").innerHTML = hours
 document.getElementById("mins").innerHTML = minutes
 document.getElementById("secs").innerHTML = seconds
-document.getElementById("message").innerHTML = "Out There Queer Fest opens in..";
+document.getElementById("message").innerHTML = "OUT THERE QUEER FEST begins in..";
     
 // Display the message when countdown is over
 if (timeleft < 0) {
