@@ -12,20 +12,22 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_small.css">
     <link rel="icon" type="image/x-icon" href="./media/logo.jpg">
     
 </head>
 
-<body>       
+<body>
+<section id="body">       
     <!-- Navbar Section -->
     <nav id="nav-bar" include-html="sections/nav.html"></nav>
 
     <!-- Header Section -->
-    <header include-html="sections/header.html"></header>
+    <header id="header-section" include-html="sections/header.html"></header>
 
-    <main>
+    <main id="main">
         <!-- Hero-banner Section -->
-        <section include-html="sections/hero-banner.html"></section>
+        <section id="hero-banner" include-html="sections/hero-banner.html"></section>
 
         <!-- Information Section -->
         <section include-html="sections/information.html"></section>
@@ -41,8 +43,41 @@
     </main>
 
     <!-- Footer Section -->
-    <section include-html="sections/footer.html"></section>
+    <footer include-html="sections/footer.html"></footer>
+
+</section>
+
+<section id="body-small">  
+    <div class="background-small"></div>   
+
+    <!-- Navbar Section -->
+    <nav id="nav-bar-small" include-html="sections/nav-small.html"></nav>
+ 
+    <main id="main-small">
+        <!-- Hero Section -->
+        <section id="hero-banner-small" include-html="sections/hero-banner-small.html"></section>
+
+        <!-- Information Section -->
+        <section id="information-small" include-html="sections/information-small.html"></section>
+
+        <!-- Take Part Section -->
+        <section id="takepart-small" include-html="sections/takepart-small.html"></section>
+        
+        <!-- Partners Section -->
+        <section id="partners-small" include-html="sections/partners-small.html"></section>
+        
+        <!-- News Section -->
+        <section id="news-small" include-html="sections/news-small.html"></section>
     
+    </main>
+
+    <!-- Footer Section -->
+    <section id="footer-small" include-html="sections/footer-small.html"></section>
+
+
+
+</section>
+
     <!-- Scripts -->
     <script src="./js/sections.js"></script>
     <script src="./js/arrowbounce.js"></script>
@@ -51,6 +86,5 @@
     <script src="./js/participation.js"></script>
     <script src="./js/apply.js"></script>
     <script>includeHTML();</script>
-
 </body>
 </html>

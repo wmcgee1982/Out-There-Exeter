@@ -8,7 +8,7 @@ function toggle() {
   }
 
   function toggle1() {
-    var x = document.getElementById("myLinks1");
+    var x = document.getElementById("myLinks-small");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
