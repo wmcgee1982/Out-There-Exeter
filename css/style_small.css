@@ -526,27 +526,27 @@
 }
 
 /* *** *** Footer Copyright *** *** */
-.footer-copyright {
+.footer-copyright-small {
     background-color: var(--primaryColor);
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     bottom: 0;
     right: 0;
     box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
     z-index: 2;
 }
-.footer-copyright-wrapper {
+.footer-copyright-wrapper-small {
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 30px;
+    padding: 20px;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
 }
 .footer-copyright-text-small {
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
