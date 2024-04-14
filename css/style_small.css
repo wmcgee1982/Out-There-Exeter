@@ -55,9 +55,11 @@
     text-align: right;
     background: var(--primaryColor);
     padding-top: 4em;
+    -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small li {
     list-style-type: none;
+    -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small a {
     color: var(--lightGrey);
@@ -82,7 +84,7 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 25vh;
+    top: 23vh;
     width: 100%;
     overflow: hidden;
 }
@@ -132,20 +134,15 @@
     font-weight: 400;
 }
 .weekend-acts-small p {
-    margin: 10em 0.2em 0em 0em;
+    margin: 8em 0em 0em 0em;
     width: auto;
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: 400;
     line-height: 6vw;
 }
 .weekend-acts-small a {
     text-decoration: none;
     color: var(--backgroundColor);
-}
-
-.weekend-acts-small span {
-    position: absolute;
-    margin: 0.15em 0em 0em 0.1em;
 }
 
 
