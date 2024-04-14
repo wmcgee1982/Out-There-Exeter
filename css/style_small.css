@@ -46,6 +46,7 @@
     top: 0;
     right: 0;
     z-index: 99;
+    -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small #myLinks-small {
     display: none;
@@ -72,15 +73,17 @@
     position: absolute;
     right: 10px;
     top: 5px;
+    -webkit-tap-highlight-color: transparent; 
 }
 .fa-main-bars-small {
-    content: url("../media/toggleIcon_purple.svg");
+    content: url("../media/toggleIcon_white.svg");
+    -webkit-tap-highlight-color: transparent; 
 } 
 
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 23vh;
+    top: 22vh;
     width: 100%;
     overflow: hidden;
 }
@@ -130,7 +133,7 @@
     font-weight: 400;
 }
 .weekend-acts-small p {
-    margin: 6em 0em 0em 0em;
+    margin: 5em 0em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
@@ -521,7 +524,7 @@
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
@@ -603,8 +606,8 @@
     bottom: 0px;
     height: 40px;
     width: 40px;
-    margin-bottom: 6em;
-    animation: bounce 1.5s infinite;
+    margin-bottom: 5em;
+    animation: bonce 1.5s infinite;
     z-index: 3;
     cursor: pointer;
   }
