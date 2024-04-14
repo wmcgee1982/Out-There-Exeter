@@ -79,6 +79,28 @@
     content: url("../media/toggleIcon_white.svg");
     -webkit-tap-highlight-color: transparent; 
 } 
+.menu-title-small h1 {
+    text-align: left;
+    font-size: 11vw;
+    font-weight: 900;
+    padding: 1em 1em 0.2em 1em;
+    color: var(--backgroundColor);
+    text-shadow: 0.1em 0.1em var(--secondaryColor);
+}
+.menu-title-small h5 {
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: left;
+    padding: 0em 0em 0em 3em;
+}
+.menu-title-small h2 {
+    padding: 0.5em 0em 0em 3em;
+    text-align: left;
+    color: var(--lightGrey);
+    text-shadow: 0.1em 0.1em var(--secondaryColor);
+    font-size: 4vw;
+    font-weight: 400;
+}
 
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
@@ -88,7 +110,6 @@
     overflow: hidden;
 }
 .title-small {
-    position: relative;
     margin: 0em 0em 0em 2em;
 }
 .title-small h1 {
@@ -112,28 +133,19 @@
     font-size: 11vw;
     font-weight: 900;
     line-height: 6vh;
-    padding: 0.1em 0em 1em 0em;
+    padding: 0.1em 0em 0.2em 0em;
     color: var(--backgroundColor);
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
-.weekend-acts-slop-left-small {
-    position: absolute;
-    background-color: var(--primaryColor);
-    height: auto;
-    width: auto;
-    transform: skewX(-20deg);
-    padding: 1rem 1rem 1rem 1.5rem;
-    left: 0;
-    margin: 8em 0em 0em -1em;
-    text-align: left;
-}
 .weekend-acts-small h5 {
-    transform: skewX(20deg);
+    width: auto;
     font-size: 4vw;
     font-weight: 400;
+    text-align: right;
+    margin: 0em 1em 0em 0em;
 }
 .weekend-acts-small p {
-    margin: 5em 0em 0em 0em;
+    margin: 7em 0em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
@@ -524,7 +536,7 @@
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
