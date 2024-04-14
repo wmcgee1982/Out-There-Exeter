@@ -63,22 +63,26 @@
     text-decoration: none;
     color: var(--lightGrey);
 }
-.toggle-menu-small a.icon {
+.toggle-menu-small {
+    cursor: none;
+}
+.iconSmall {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 5px;
+    cursor: none;
 }
 .toggle-menu-small a:hover {
     color: var(--secondaryColor);
-    font-weight: 500;
     cursor: none;
+    font-weight: 500;
 }
 .fa-main-bars-small:before {
     content: url("../media/toggleIcon_pink.svg");
     cursor: none;
 } 
-.fa-main-bars-small:hover {
-    content: url("../media/toggleIcon_pink.svg");
+.fa-main-bars-small:active {
+    content: url("../media/toggleIcon_purple.svg");
     cursor: none;
 }
 
@@ -265,7 +269,6 @@ body:has(#inclusivity-title-small:hover)
 .take-part-card-container-small {
     width: auto;
     background: var(--backgroundColor);
-    margin-bottom: 5em;
     padding: 1em 0em;
     border-right: solid 0.5em var(--primaryColor);
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
@@ -314,12 +317,12 @@ body:has(#inclusivity-title-small:hover)
 
 /* *** *** partners section *** *** */
 #partners-section-small {
-    margin-top: -100vw;
+    margin-top: -125vw;
     width: auto;
     height: auto;
     background-image: linear-gradient(transparent 0%, #EB028A 50%, #692A92 100%);
     justify-items: center;
-    padding: 90vw 1em 2em 1em;
+    padding: 135vw 1em 2em 1em;
 }
 .partners-title-small {
     width: auto;
