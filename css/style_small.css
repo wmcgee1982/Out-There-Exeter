@@ -8,6 +8,14 @@
     overflow: hidden;
 }
 
+#main-small {
+    animation: fadeinmainsmall 5s;
+}
+@keyframes fadeinmainsmall {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
     background-repeat: no-repeat;
@@ -609,3 +617,56 @@
 .facebook:hover {
     fill: var(--lightGrey);
 }
+
+
+
+
+.testloading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    opacity: 1;
+    animation: fadeoutloading 1s normal forwards ease-in-out;
+    animation-delay: 4s;
+    align-content: center;
+    text-align: center;
+}
+@keyframes fadeoutloading {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+.testloading img {
+    width: 90vw;
+    height: auto;
+    margin: -10em 0em -2.5em 0em;
+    z-index: 1;
+    text-shadow: 0.1em 0.1em var(--secondaryColor);
+    animation: spin 1s;
+    filter: drop-shadow(0px 0px 100px #000);
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.testloading h1 {
+    font-size: 6vw;
+    font-weight: 900;
+    color: var(--primaryColor);
+    text-shadow: 0.1em 0.1em var(--yellow);
+    animation: fadeintitle 4s;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+@keyframes fadeintitle {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
