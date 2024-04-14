@@ -4,6 +4,10 @@
         display: none;
     }
 }
+#body-small {
+    overflow: hidden;
+}
+
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
     background-repeat: no-repeat;
@@ -37,34 +41,31 @@
 
 /* *** ***  Toggle Menu - small screen *** *** */
 .toggle-menu-small {
+    display: block;
     position: absolute;
-    z-index: 99;
     top: 0;
     right: 0;
-    display: block;
+    z-index: 99;
 }
 .toggle-menu-small #myLinks-small {
     display: none;
+    min-height: 100vh;
+    min-width: 100vw;
     text-align: right;
-    min-height: auto;
-    min-width: 50vw;
-    margin: 3em 1.5em;
     background: var(--primaryColor);
-    border: var(--lightGrey) solid 0.15em;
-    box-shadow: 5px 5px 20px 0px var(--darkGrey);
-    border-radius: 1em;
+    padding-top: 4em;
+}
+.toggle-menu-small li {
+    list-style-type: none;
 }
 .toggle-menu-small a {
-    padding: 0.5em 1em;
-    display: block;
-    text-align: right;
-    font-size: 4vw;
-    font-weight: 100;
-    text-decoration: none;
     color: var(--lightGrey);
-}
-.toggle-menu-small {
-    cursor: none;
+    text-decoration: none;
+    font-size: 6vw;
+    font-weight: 100;
+    line-height: 1.7em;
+    padding: 0em 1em;
+    -webkit-tap-highlight-color: transparent; 
 }
 .iconSmall {
     position: absolute;
@@ -72,25 +73,16 @@
     top: 5px;
     cursor: none;
 }
-.toggle-menu-small a:hover {
-    color: var(--secondaryColor);
-    cursor: none;
-    font-weight: 500;
-}
-.fa-main-bars-small:before {
-    content: url("../media/toggleIcon_pink.svg");
-    cursor: none;
+.fa-main-bars-small {
+    content: url("../media/toggleIcon_white.svg");
 } 
-.fa-main-bars-small:active {
-    content: url("../media/toggleIcon_purple.svg");
-    cursor: none;
-}
 
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
     top: 150px;
     width: 100%;
+    overflow: hidden;
 }
 .title-small {
     position: relative;
@@ -119,29 +111,48 @@
     padding: 0.1em 0em 1em 0em;
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
+.weekend-acts-slop-left-small {
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: auto;
+    width: auto;
+    transform: skewX(-20deg);
+    padding: 0.5em 1em 0.5em 1.5em;
+    left: 0;
+    margin: 5em 0em 0em -1em;
+    text-align: left;
+}
+.weekend-acts-slop-right-small {
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: auto;
+    width: auto;
+    transform: skewX(20deg);
+    padding: 0.5em 1.5em 0.5em 1em;
+    right: 0;
+    margin: 10em -1em 0em 0em;
+    text-align: right;
+}
 .weekend-acts-small h5 {
+    transform: skewX(20deg);
     font-size: 4vw;
     font-weight: 400;
 }
 .weekend-acts-small p {
-    margin: 10em 0em 0em 0em;
-}
-.weekend-acts-small b {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    width: 55vw;
+    margin: 15em 0.2em 0em 0em;
+    width: auto;
     font-size: 4vw;
     font-weight: 400;
     line-height: 4vw;
-    background: var(--primaryColor);
-    padding: 0.3em 2em 0.3em 0em;
-    border-top-left-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
 }
+.weekend-acts-small a {
+    text-decoration: none;
+    color: var(--backgroundColor);
+}
+
 .weekend-acts-small span {
     position: absolute;
-    margin: 0.2em 0em 0em 0.5em;
+    margin: 0.15em 0em 0em 0.1em;
 }
 
 
@@ -193,11 +204,6 @@
     position: absolute;
     padding: 0.15em 0em 0em 0.5em;
 }
-.subtitles-small h3:hover {
-    color: var(--primaryColor);
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /* *** *** HIDDEN header subtitles *** *** */
 .header-subtitles-cards-small {
@@ -216,21 +222,7 @@
     color: var(--primaryColor);
     font-weight: 500;
 }
-body:has(#networks-title-small:hover)
-.networks-small {
-    display: block;
-    cursor: pointer;
-}
-body:has(#communities-title-small:hover)
-.communities-small {
-    display: block;
-    cursor: pointer;
-}
-body:has(#inclusivity-title-small:hover)
-.inclusivity-small {
-    display: block;
-    cursor: pointer;
-}
+
 /* *** *** Take Part  *** *** */
 #take-part-section-small {
     padding: 1em;
@@ -423,10 +415,6 @@ body:has(#inclusivity-title-small:hover)
     box-shadow: 1px 1px 10px -10px var(--darkGrey);
     padding: 1em 1.5em;
 }
-.newsPanelCard:hover {
-    filter: brightness(90%);
-    transition-delay: 0.1s;
-}
 .newsPanelCard p {
     color: var(--darkGrey);
 }
@@ -465,9 +453,6 @@ body:has(#inclusivity-title-small:hover)
 }
 .newsPanelCard-first {
     background-color: var(--primaryColor);
-}
-.newsPanelCard-first:hover {
-    filter: brightness(100%);
 }
 .newsPanelCard-first p {
     color: var(--lightGrey);
@@ -527,12 +512,6 @@ body:has(#inclusivity-title-small:hover)
     text-decoration: none;
     align-items: center;
     justify-content: center;
-}
-.footer-buttons:hover {
-    color: var(--secondaryColor);
-    background-color: var(--lightGrey);
-    border-color: var(--secondaryColor);
-    cursor: pointer;
 }
 
 /* *** *** Footer Copyright *** *** */
