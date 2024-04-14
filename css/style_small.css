@@ -11,7 +11,8 @@
     background-size: cover;
     background-position: center -100px;
     animation: bg-img-hue 3s infinite;
-    height: 100vh;
+    height: 600px;
+    max-width: 100%;
 }
 
 /* *** ***  Nav section - small screen *** *** */
@@ -25,7 +26,7 @@
 .navbar-wrapper-small {
     display: grid;
     padding: 0.5em 1em;
-    width: 100%;
+    max-width: 100%;
     gap: 1em;
     align-items: center;
     overflow: hidden;
@@ -84,7 +85,8 @@
 
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
-    margin-top: -830px;
+    position: absolute;
+    top: 150px;
     width: 100%;
 }
 .title-small {
@@ -93,42 +95,47 @@
 }
 .title-small h1 {
     color: var(--lightGrey);
-    text-shadow: 0.1em 0.1em var(--primaryColor);
-    font-size: 3.5vw;
+    text-shadow: 0.1em 0.1em var(--secondaryColor);
+    font-size: 4vw;
     font-weight: 400;
 }
 .title-small span {
     color: var(--lightGrey);
-    font-size: 2vw;
+    font-size: 3.5vw;
     font-weight: 400;
     font-style: italic;
     text-shadow: none;
 }
 .weekend-acts-small {
-    position: relative;
     text-align: center;
     padding-bottom: 10vh;
 }
 .weekend-acts-small h1 {
     font-size: 10vw;
     font-weight: 900;
-    padding: 0em 0em 0.2em 0em;
+    line-height: 3vh;
+    padding: 0.5em 0em 0.6em 0em;
+    text-shadow: 0.1em 0.1em var(--primaryColor);
 }
 .weekend-acts-small h5 {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 400;
 }
 .weekend-acts-small p {
     margin: 10em 0em 0em 0em;
 }
 .weekend-acts-small span {
-    font-size: 3vw;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 55vw;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 4vw;
     background: var(--primaryColor);
     padding: 0.3em 0.5em;
-    font-weight: 400;
-    position: absolute;
-    text-align: right;
-    line-height: 3vw;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
 }
 .weekend-acts-small span:hover {
     cursor: pointer;
@@ -138,7 +145,7 @@
 #information-section-small {
     position: relative;
     padding: 1em;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     border-top: solid 0.2em var(--primaryColor);
@@ -149,21 +156,20 @@
 .information-container-small h3 {
     padding: 1em 0em 0em 0.4em;
     color: var(--secondaryColor);
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 600;
 }
 .information-container-small p {
     padding: 0.5em;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 .information-container-small span {
     position: absolute;
-    padding: 0.1em 0em 0em 0.3em;
+    padding: 0.16em 0em 0em 0.5em;
     cursor: pointer;
 }
 .information-container-small a {
-    padding: 0.5em;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: none;
     color: var(--backgroundColor);
     font-weight: 500;
@@ -194,10 +200,9 @@
 .header-subtitles-cards-small {
     width: auto;
     height: auto;
-    display: none;
     background: var(--lightGrey);
     padding: 1em;
-    margin: 0em 0em 1em 0em;
+    margin: 1em 0em;
     border-radius: 0.5em;
 }
 .header-subtitles-cards-small h1 {
@@ -226,13 +231,13 @@ body:has(#inclusivity-title-small:hover)
 /* *** *** Take Part  *** *** */
 #take-part-section-small {
     padding: 1em;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background-image: url(../media/twoladysingers.gif);
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 .take-part-title-small {
     display: grid;
@@ -261,7 +266,7 @@ body:has(#inclusivity-title-small:hover)
 .take-part-card-container-small {
     width: auto;
     background: var(--backgroundColor);
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     padding: 1em 0em;
     border-right: solid 0.5em var(--primaryColor);
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
@@ -279,22 +284,21 @@ body:has(#inclusivity-title-small:hover)
 .take-part-card-container-small p {
     color: var(--secondaryColor);
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding: 1em 1em 0em 1em;
 }
 .take-part-card-container-small span {
     font-weight: 500;
-    padding: 0em;
 }
 .take-part-card-container-small li {
     color: var(--secondaryColor);
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 .take-part-card-container-small ul {
     padding: 1em 3em 0em 3em;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-decoration: none;
     cursor: default;
 }
@@ -305,7 +309,7 @@ body:has(#inclusivity-title-small:hover)
 
 /* *** *** partners section *** *** */
 #partners-section-small {
-    margin-top: -90vw;
+    margin-top: -100vw;
     width: auto;
     height: auto;
     background-image: linear-gradient(transparent 0%, #EB028A 50%, #692A92 100%);
@@ -325,7 +329,7 @@ body:has(#inclusivity-title-small:hover)
 .partners-title-small p {  
     color: var(--backgroundColor);
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding: 1em 1em 0em 1em;
 }
 .partners-information-small {
@@ -342,7 +346,7 @@ body:has(#inclusivity-title-small:hover)
 }
 .grid-item-partners-small img {
     display: inline-block;
-    width: 23vw; 
+    width: 25vw; 
     height: auto;
 }
 .library-small {
@@ -425,7 +429,7 @@ body:has(#inclusivity-title-small:hover)
 }
 .newsPanelCardTopLine {
     display: flex;
-    width: 100%;
+    max-width: 100%;
 }
 .newsPanelCardTopLine p {
     color: var(--secondaryColor);
@@ -527,7 +531,7 @@ body:has(#inclusivity-title-small:hover)
 .footer-copyright {
     background-color: var(--primaryColor);
     position: fixed;
-    width: 100%;
+    max-width: 100%;
     bottom: 0;
     right: 0;
     box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
@@ -538,8 +542,7 @@ body:has(#inclusivity-title-small:hover)
     margin-right: auto;
     padding: 15px 30px;
     text-align: center;
-    width: 100%;
-
+    max-width: 100%;
 }
 .footer-copyright-text {
     color: var(--lightGrey);
@@ -551,7 +554,7 @@ body:has(#inclusivity-title-small:hover)
 /* *** *** Waves *** *** */
 .wave-svg-header {
     position:absolute;
-    width: 100%;
+    max-width: 100%;
     height: 1.3em;
     z-index: 1;
 }
@@ -560,7 +563,7 @@ body:has(#inclusivity-title-small:hover)
 }
 
 .wave-svg-footer {
-    width: 100%;
+    max-width: 100%;
     height: 1.3em;
     z-index: 1;
 }
