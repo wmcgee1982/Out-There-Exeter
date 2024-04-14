@@ -83,7 +83,7 @@
     text-align: left;
     font-size: 11vw;
     font-weight: 900;
-    padding: 2em 2em 0.2em 0.5em;
+    padding: 1.5em 1.5em 0.2em 0.5em;
     color: var(--backgroundColor);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
 }
