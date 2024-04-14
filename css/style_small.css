@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center center;
     animation: bg-img-hue 3s infinite;
-    height: 700px;
+    height: 750px;
     max-width: 100%;
 }
 
@@ -46,6 +46,7 @@
     top: 0;
     right: 0;
     z-index: 99;
+    -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small #myLinks-small {
     display: none;
@@ -81,7 +82,7 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     width: 100%;
     overflow: hidden;
 }
@@ -104,6 +105,7 @@
 }
 .weekend-acts-small {
     text-align: center;
+    animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-small h1 {
     font-size: 11vw;
@@ -112,7 +114,6 @@
     padding: 0.1em 0em 1em 0em;
     color: var(--backgroundColor);
     text-shadow: 0.1em 0.1em var(--primaryColor);
-    animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-slop-left-small {
     position: absolute;
@@ -120,7 +121,7 @@
     height: auto;
     width: auto;
     transform: skewX(-20deg);
-    padding: 1em 1em 1em 1.5em;
+    padding: 1rem 1rem 1rem 1.5rem;
     left: 0;
     margin: 8em 0em 0em -1em;
     text-align: left;
@@ -131,9 +132,9 @@
     font-weight: 400;
 }
 .weekend-acts-small p {
-    margin: 12em 0.2em 0em 0em;
+    margin: 10em 0.2em 0em 0em;
     width: auto;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 400;
     line-height: 6vw;
 }
