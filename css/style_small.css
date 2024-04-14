@@ -71,16 +71,17 @@
     position: absolute;
     right: 10px;
     top: 5px;
-    cursor: none;
+    -webkit-tap-highlight-color: transparent; 
 }
 .fa-main-bars-small {
     content: url("../media/toggleIcon_white.svg");
+    -webkit-tap-highlight-color: transparent; 
 } 
 
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 150px;
+    top: 20vh;
     width: 100%;
     overflow: hidden;
 }
@@ -109,7 +110,9 @@
     font-weight: 900;
     line-height: 6vh;
     padding: 0.1em 0em 1em 0em;
+    color: var(--backgroundColor);
     text-shadow: 0.1em 0.1em var(--primaryColor);
+    animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-slop-left-small {
     position: absolute;
@@ -117,21 +120,10 @@
     height: auto;
     width: auto;
     transform: skewX(-20deg);
-    padding: 0.5em 1em 0.5em 1.5em;
+    padding: 1em 1em 1em 1.5em;
     left: 0;
-    margin: 5em 0em 0em -1em;
+    margin: 8em 0em 0em -1em;
     text-align: left;
-}
-.weekend-acts-slop-right-small {
-    position: absolute;
-    background-color: var(--primaryColor);
-    height: auto;
-    width: auto;
-    transform: skewX(20deg);
-    padding: 0.5em 1.5em 0.5em 1em;
-    right: 0;
-    margin: 10em -1em 0em 0em;
-    text-align: right;
 }
 .weekend-acts-small h5 {
     transform: skewX(20deg);
@@ -139,11 +131,11 @@
     font-weight: 400;
 }
 .weekend-acts-small p {
-    margin: 15em 0.2em 0em 0em;
+    margin: 12em 0.2em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
-    line-height: 4vw;
+    line-height: 6vw;
 }
 .weekend-acts-small a {
     text-decoration: none;
