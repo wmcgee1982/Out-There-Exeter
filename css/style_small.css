@@ -144,19 +144,23 @@
     position: absolute;
     top: 19vh;
     width: 100%;
+}
+#hero-transform-text {
+
     -webkit-transform:translateY(10%);
     -moz-transform:translateY(10%);
     -o-transform:translateY(10%);
     transform:translateY(10%);
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    transition-delay: 5.8s;
-    animation: fadeinmenusmall 6s;
-    -webkit-animation: fadeinmenusmall 6s;
-    -moz-animation: fadeinmenusmall 6s;
-    -o-animation: fadeinmenusmall 6s;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition-delay: 6s;
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
+    animation-delay: 1.1s;
 }
 .title-small {
     margin: 0em 0em 0em 2em;
@@ -185,7 +189,7 @@
     font-size: 11vw;
     font-weight: 900;
     line-height: 6vh;
-    padding: 0.1em 0em 0.2em 0em;
+    padding: 1em 0em 0.2em 0em;
     color: var(--backgroundColor);
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
@@ -196,14 +200,22 @@
     text-align: right;
     margin: 0em 1.5em 0em 0em;
 }
-.weekend-acts-small p {
+.weekend-acts-sub-small {
+    text-align: center;
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
+    animation-delay: 1.8s;
+}
+.weekend-acts-sub-small p {
     margin: 9em 0em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
     line-height: 6vw;
 }
-.weekend-acts-small a {
+.weekend-acts-sub-small a {
     text-decoration: none;
     color: var(--backgroundColor);
 }
@@ -217,6 +229,7 @@
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     border-top: solid 0.2em var(--primaryColor);
+    border-bottom: solid 0.2em var(--backgroundColor);
 }
 .information-container-small {
     width: auto;

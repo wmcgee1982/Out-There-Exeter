@@ -477,6 +477,7 @@ body:has(#inclusivity-title:hover)
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     border-top: solid 0.2em var(--primaryColor);
+    border-bottom: solid 0.2em var(--backgroundColor);
 }
 .information-container {
     width: auto;
