@@ -9,7 +9,10 @@
 }
 
 #main-small {
- 
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
 }
 @keyframes fadeinmainsmall {
     0%,80% { opacity: 0; }
@@ -42,10 +45,7 @@
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    animation: fadeinmenusmall 5.5s;
-    -webkit-animation: fadeinmenusmall 5.5s;
-    -moz-animation: fadeinmenusmall 5.5s;
-    -o-animation: fadeinmenusmall 5.5s;
+
 }
 @keyframes fadeinmenusmall {
     from { opacity: 0; }
