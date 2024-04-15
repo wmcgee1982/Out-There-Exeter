@@ -665,28 +665,27 @@
 }
 
 
-
-
-.testloading {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    min-height: 100vh;
-    min-width: 100vw;
-    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
-    opacity: 1;
+#loading-small {
     animation: fadeoutloading 6s normal forwards ease-in-out;
     -webkit-animation: fadeoutloading 6s normal forwards ease-in-out;
     -moz-animation: fadeoutloading 6s normal forwards ease-in-out;
     -o-animation: fadeoutloading 6s normal forwards ease-in-out;
-    align-content: center;
-    text-align: center;
 }
 @keyframes fadeoutloading {
     0%,100% { opacity: 0 }
     10% { opacity: 1 }
     80% { opacity: 1 }
+}
+.testloading {
+    display: grid;
+    position: absolute;
+    z-index: 999;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
 }
 .testloading img {
     width: 50vw;
@@ -698,7 +697,6 @@
     -webkit-animation: spin 1s;
     -moz-animation: spin 1s;
     -o-animation: spin 1s;
-    animation-delay: 0.5s;
     filter: drop-shadow(0px 0px 100px #000);
 }
 @keyframes spin {
@@ -710,6 +708,8 @@
     font-weight: 900;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
     background-clip: text;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
