@@ -9,7 +9,10 @@
 }
 
 #main-small {
-   
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
 }
 @keyframes fadeinmainsmall {
     0%,80% { opacity: 0; }
@@ -22,7 +25,12 @@
     background-attachment: scroll;
     background-size: cover;
     background-position: center center;
-  
+    animation-name: bg-img-hue, fadeinmainsmall;
+    animation-duration: 3s, 6s;
+    animation-iteration-count: infinite, 1;
+    -webkit-animation-name: bg-img-hue, fadeinmainsmall;
+    -moz-animation-name: bg-img-hue, fadeinmainsmall;
+    -o-animation-name: bg-img-hue, fadeinmainsmall;
     height: 750px;
     max-width: 100%;
 }
@@ -37,7 +45,10 @@
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    
+    animation: fadeinmenusmall 5.5s;
+    -webkit-animation: fadeinmenusmall 5.5s;
+    -moz-animation: fadeinmenusmall 5.5s;
+    -o-animation: fadeinmenusmall 5.5s;
 }
 @keyframes fadeinmenusmall {
     from { opacity: 0; }
@@ -134,7 +145,19 @@
     position: absolute;
     top: 19vh;
     width: 100%;
-
+    -webkit-transform:translateY(10%);
+    -moz-transform:translateY(10%);
+    -o-transform:translateY(10%);
+    transform:translateY(10%);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    transition-delay: 5.8s;
+    animation: fadeinmenusmall 6s;
+    -webkit-animation: fadeinmenusmall 6s;
+    -moz-animation: fadeinmenusmall 6s;
+    -o-animation: fadeinmenusmall 6s;
 }
 .title-small {
     margin: 0em 0em 0em 2em;
@@ -154,7 +177,10 @@
 }
 .weekend-acts-small {
     text-align: center;
-
+    animation: bg-img-hue 3s infinite;
+    -webkit-animation: bg-img-hue 3s infinite;
+    -moz-animation: bg-img-hue 3s infinite;
+    -o-animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-small h1 {
     font-size: 11vw;
@@ -419,7 +445,10 @@
 .panel-scroll-small h2 {
     color: var(--darkGrey);
     transform:translateX(100%);
-
+    animation: scroll-left 25s linear infinite;
+    -webkit-animation: scroll-left 25s linear infinite;
+    -moz-animation: scroll-left 25s linear infinite;
+    -o-animation: scroll-left 25s linear infinite;
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
@@ -517,7 +546,10 @@
 #footer-small {
     background-color: var(--secondaryColor);
     padding: 0;
-
+    animation: fadeinmenusmall 5.5s;
+    -webkit-animation: fadeinmenusmall 5.5s;
+    -moz-animation: fadeinmenusmall 5.5s;
+    -o-animation: fadeinmenusmall 5.5s;
 }
 .footer-container-small {
     padding: 0em 1em 6em 1em;
@@ -640,7 +672,10 @@
 
 
 #loading-small {
-   
+    animation: fadeoutloading 5s normal forwards ease-in-out;
+    -webkit-animation: fadeoutloading 5s normal forwards ease-in-out;
+    -moz-animation: fadeoutloading 5s normal forwards ease-in-out;
+    -o-animation: fadeoutloading 5s normal forwards ease-in-out;
 }
 @keyframes fadeoutloading {
     0%,100% { opacity: 0 }
@@ -661,13 +696,10 @@
 .testloading img {
     width: 50vw;
     height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    z-index: 1;
-    animation: spin 1s;
-    -webkit-animation: spin 1s;
-    -moz-animation: spin 1s;
-    -o-animation: spin 1s;
+    animation: spin 0.9s;
+    -webkit-animation: spin 0.9s;
+    -moz-animation: spin 0.9s;
+    -o-animation: spin 0.9s;
     filter: drop-shadow(0px 0px 100px #000);
 }
 @keyframes spin {
@@ -690,7 +722,7 @@
     background-size: 400% 100%;
 }
 @keyframes rainbow_animation {
-    0%,100% {background-position: 0 0;}
+    0%, 100% {background-position: 0 0;}
     50% {background-position: 100% 0;}
 }
 
