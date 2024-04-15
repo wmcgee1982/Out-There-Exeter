@@ -15,9 +15,11 @@
     -o-animation: fadeinmainsmall 6s;
 }
 @keyframes fadeinmainsmall {
-    0%,80% { opacity: 0; }
-    100%  { opacity: 1; }
+    0% { opacity: 0 }
+    80% { opacity: 0 }
+    100% { opacity: 1 }
 }
+
 
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
@@ -45,15 +47,12 @@
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    animation: fadeinmenusmall 5.5s;
-    -webkit-animation: fadeinmenusmall 5.5s;
-    -moz-animation: fadeinmenusmall 5.5s;
-    -o-animation: fadeinmenusmall 5.5s;
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
 }
-@keyframes fadeinmenusmall {
-    from { opacity: 0; }
-    to   { opacity: 0; }
-}
+
 .navbar-wrapper-small {
     display: grid;
     padding: 0.5em 1em;
@@ -546,10 +545,10 @@
 #footer-small {
     background-color: var(--secondaryColor);
     padding: 0;
-    animation: fadeinmenusmall 5s;
-    -webkit-animation: fadeinmenusmall 5s;
-    -moz-animation: fadeinmenusmall 5s;
-    -o-animation: fadeinmenusmall 5s;
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
 }
 .footer-container-small {
     padding: 0em 1em 6em 1em;
@@ -711,6 +710,7 @@
 .testloading h1 {
     font-size: 5vw;
     font-weight: 900;
+    margin: -3em 0em 0em 0em;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
     -moz-background-clip: text;
