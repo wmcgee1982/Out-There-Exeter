@@ -6,10 +6,14 @@
 }
 #body-small {
     overflow: hidden;
+    background-color: var(--primaryColor);
 }
 
 #main-small {
     animation: fadeinmainsmall 5s;
+    -webkit-animation: fadeinmainsmall 5s;
+    -moz-animation: fadeinmainsmall 5s;
+    -o-animation: fadeinmainsmall 5s;
 }
 @keyframes fadeinmainsmall {
     from { opacity: 0; }
@@ -23,6 +27,9 @@
     background-size: cover;
     background-position: center center;
     animation: bg-img-hue 3s infinite;
+    -webkit-animation: bg-img-hue 3s infinite;
+    -moz-animation: bg-img-hue 3s infinite;
+    -o-animation: bg-img-hue 3s infinite;
     height: 750px;
     max-width: 100%;
 }
@@ -34,6 +41,8 @@
     width: 100%;
     display: block;
     z-index: 999;
+    background: var(--primaryColor);
+    box-shadow: 0em 0em 1em 0em var(--darkGrey);
 }
 .navbar-wrapper-small {
     display: grid;
@@ -43,10 +52,17 @@
     align-items: center;
     overflow: hidden;
     grid-auto-flow: column;
-    grid-template-columns: 4fr  4fr 1.5fr;
+    grid-template-columns: 10fr 1.5fr;
     grid-template-rows: auto-fit;
 }
-
+#navbar-title-small {
+    justify-self: start;
+}
+#navbar-title-small h1 {
+    color: var(--primaryColor);
+    text-shadow: 0.1em 0.1em var(--lightGrey);
+    font-size: 4vw;
+}
 /* *** ***  Toggle Menu - small screen *** *** */
 .toggle-menu-small {
     display: block;
@@ -79,8 +95,8 @@
 }
 .iconSmall {
     position: absolute;
-    right: 10px;
-    top: 5px;
+    right: 5px;
+    top: -7px;
     -webkit-tap-highlight-color: transparent; 
 }
 .fa-main-bars-small {
@@ -136,6 +152,9 @@
 .weekend-acts-small {
     text-align: center;
     animation: bg-img-hue 3s infinite;
+    -webkit-animation: bg-img-hue 3s infinite;
+    -moz-animation: bg-img-hue 3s infinite;
+    -o-animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-small h1 {
     font-size: 11vw;
@@ -401,6 +420,9 @@
     color: var(--darkGrey);
     transform:translateX(100%);
     animation: scroll-left 25s linear infinite;
+    -webkit-animation: scroll-left 25s linear infinite;
+    -moz-animation: scroll-left 25s linear infinite;
+    -o-animation: scroll-left 25s linear infinite;
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
@@ -631,6 +653,9 @@
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     opacity: 1;
     animation: fadeoutloading 1s normal forwards ease-in-out;
+    -webkit-animation: fadeoutloading 1s normal forwards ease-in-out;
+    -moz-animation: fadeoutloading 1s normal forwards ease-in-out;
+    -o-animation: fadeoutloading 1s normal forwards ease-in-out;
     animation-delay: 4s;
     align-content: center;
     text-align: center;
@@ -650,6 +675,10 @@
     z-index: 1;
     text-shadow: 0.1em 0.1em var(--secondaryColor);
     animation: spin 1s;
+    -webkit-animation: spin 1s;
+    -moz-animation: spin 1s;
+    -o-animation: spin 1s;
+
     filter: drop-shadow(0px 0px 100px #000);
 }
 @keyframes spin {
@@ -662,6 +691,9 @@
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--yellow);
     animation: fadeintitle 4s;
+    -webkit-animation: fadeintitle 4s;
+    -moz-animation: fadeintitle 4s;
+    -o-animation: fadeintitle 4s;
     animation-delay: 0.5s;
     opacity: 0;
 }
