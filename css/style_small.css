@@ -9,10 +9,7 @@
 }
 
 #main-small {
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
+ 
 }
 @keyframes fadeinmainsmall {
     0%,80% { opacity: 0; }
@@ -25,7 +22,12 @@
     background-attachment: scroll;
     background-size: cover;
     background-position: center center;
-
+    animation-name: bg-img-hue, fadeinmainsmall;
+    animation-duration: 3s, 6s;
+    animation-iteration-count: infinite, 1;
+    -webkit-animation-name: bg-img-hue, fadeinmainsmall;
+    -moz-animation-name: bg-img-hue, fadeinmainsmall;
+    -o-animation-name: bg-img-hue, fadeinmainsmall;
     height: 750px;
     max-width: 100%;
 }
