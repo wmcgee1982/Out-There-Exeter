@@ -718,11 +718,7 @@
     -o-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 5s ease-in-out infinite;
-    -webkit-animation: rainbow_animation 5s ease-in-out infinite; 
-    -moz-animation: rainbow_animation 5s ease-in-out infinite; 
-    -o-animation: rainbow_animation 5s ease-in-out infinite;
-    background-size: 400% 100%;
+
 }
 @keyframes rainbow_animation {
     0%,100% {background-position: 0 0;}
