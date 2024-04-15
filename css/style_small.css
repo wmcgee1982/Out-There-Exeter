@@ -5,7 +5,6 @@
     }
 }
 #body-small {
-    overflow: hidden;
     background-color: var(--primaryColor);
 }
 
@@ -16,8 +15,8 @@
     -o-animation: fadeinmainsmall 5s;
 }
 @keyframes fadeinmainsmall {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    0%,50% { opacity: 0; }
+    100%  { opacity: 1; }
 }
 
 .background-small {
@@ -32,6 +31,10 @@
     -o-animation: bg-img-hue 3s infinite;
     height: 750px;
     max-width: 100%;
+    animation: fadeinmainsmall 5s;
+    -webkit-animation: fadeinmainsmall 5s;
+    -moz-animation: fadeinmainsmall 5s;
+    -o-animation: fadeinmainsmall 5s;
 }
 
 /* *** ***  Nav section - small screen *** *** */
@@ -43,6 +46,15 @@
     z-index: 999;
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
+    padding: 0.5em;
+    animation: fadeinmenusmall 4s;
+    -webkit-animation: fadeinmenusmall 4s;
+    -moz-animation: fadeinmenusmall 4s;
+    -o-animation: fadeinmenusmall 4s;
+}
+@keyframes fadeinmenusmall {
+    from { opacity: 0; }
+    to   { opacity: 0; }
 }
 .navbar-wrapper-small {
     display: grid;
@@ -69,7 +81,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
     -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small #myLinks-small {
@@ -96,7 +107,7 @@
 .iconSmall {
     position: absolute;
     right: 5px;
-    top: -7px;
+    top: 5px;
     -webkit-tap-highlight-color: transparent; 
 }
 .fa-main-bars-small {
@@ -647,38 +658,31 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 999;
     min-height: 100vh;
     min-width: 100vw;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     opacity: 1;
-    animation: fadeoutloading 1s normal forwards ease-in-out;
-    -webkit-animation: fadeoutloading 1s normal forwards ease-in-out;
-    -moz-animation: fadeoutloading 1s normal forwards ease-in-out;
-    -o-animation: fadeoutloading 1s normal forwards ease-in-out;
-    animation-delay: 4s;
+    animation: fadeoutloading 4s normal forwards ease-in-out;
+    -webkit-animation: fadeoutloading 4s normal forwards ease-in-out;
+    -moz-animation: fadeoutloading 4s normal forwards ease-in-out;
+    -o-animation: fadeoutloading 4s normal forwards ease-in-out;
     align-content: center;
     text-align: center;
 }
 @keyframes fadeoutloading {
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-    }
+    0%,100% { opacity: 0 }
+    10% { opacity: 1 }
+    80% { opacity: 1 }
 }
 .testloading img {
-    width: 90vw;
+    width: 50vw;
     height: auto;
-    margin: -10em 0em -2.5em 0em;
     z-index: 1;
-    text-shadow: 0.1em 0.1em var(--secondaryColor);
     animation: spin 1s;
     -webkit-animation: spin 1s;
     -moz-animation: spin 1s;
     -o-animation: spin 1s;
-
     filter: drop-shadow(0px 0px 100px #000);
 }
 @keyframes spin {
@@ -686,19 +690,17 @@
     to {transform:rotate(360deg);}
 }
 .testloading h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 900;
-    color: var(--primaryColor);
-    text-shadow: 0.1em 0.1em var(--yellow);
-    animation: fadeintitle 4s;
-    -webkit-animation: fadeintitle 4s;
-    -moz-animation: fadeintitle 4s;
-    -o-animation: fadeintitle 4s;
-    animation-delay: 0.5s;
-    opacity: 0;
+    background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
 }
-@keyframes fadeintitle {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes rainbow_animation {
+    0%,100% {background-position: 0 0;}
+    50% {background-position: 100% 0;}
 }
 
