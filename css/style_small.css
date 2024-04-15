@@ -707,7 +707,7 @@
     to {transform:rotate(360deg);}
 }
 .testloading h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 900;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
