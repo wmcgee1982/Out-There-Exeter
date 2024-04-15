@@ -145,6 +145,19 @@
     position: absolute;
     top: 19vh;
     width: 100%;
+    -webkit-transform:translateY(10%);
+    -moz-transform:translateY(10%);
+    -o-transform:translateY(10%);
+    transform:translateY(10%);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    transition-delay: 5.8s;
+    animation: fadeinmenusmall 6s;
+    -webkit-animation: fadeinmenusmall 6s;
+    -moz-animation: fadeinmenusmall 6s;
+    -o-animation: fadeinmenusmall 6s;
 }
 .title-small {
     margin: 0em 0em 0em 2em;
