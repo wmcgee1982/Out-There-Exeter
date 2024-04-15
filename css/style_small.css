@@ -544,6 +544,10 @@
 #footer-small {
     background-color: var(--secondaryColor);
     padding: 0;
+    animation: fadeinmenusmall 5.5s;
+    -webkit-animation: fadeinmenusmall 5.5s;
+    -moz-animation: fadeinmenusmall 5.5s;
+    -o-animation: fadeinmenusmall 5.5s;
 }
 .footer-container-small {
     padding: 0em 1em 6em 1em;
@@ -666,10 +670,10 @@
 
 
 #loading-small {
-    animation: fadeoutloading 6s normal forwards ease-in-out;
-    -webkit-animation: fadeoutloading 6s normal forwards ease-in-out;
-    -moz-animation: fadeoutloading 6s normal forwards ease-in-out;
-    -o-animation: fadeoutloading 6s normal forwards ease-in-out;
+    animation: fadeoutloading 5s normal forwards ease-in-out;
+    -webkit-animation: fadeoutloading 5s normal forwards ease-in-out;
+    -moz-animation: fadeoutloading 5s normal forwards ease-in-out;
+    -o-animation: fadeoutloading 5s normal forwards ease-in-out;
 }
 @keyframes fadeoutloading {
     0%,100% { opacity: 0 }
@@ -712,7 +716,10 @@
     -o-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    -webkit-animation: rainbow_animation 5s ease-in-out infinite; 
+    -moz-animation: rainbow_animation 5s ease-in-out infinite; 
+    -o-animation: rainbow_animation 5s ease-in-out infinite;
     background-size: 400% 100%;
 }
 @keyframes rainbow_animation {
