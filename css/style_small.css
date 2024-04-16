@@ -147,10 +147,10 @@
 }
 #hero-transform-text {
     visibility: visible;
-    -webkit-transform:translateY(10%);
-    -moz-transform:translateY(10%);
-    -o-transform:translateY(10%);
-    transform:translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    transform: translateY(10%);
     -webkit-transition: transform 1s ease-in-out;
     -moz-transition: transform 1s ease-in-out;
     -o-transition: transform 1s ease-in-out;
@@ -209,7 +209,7 @@
     animation-delay: 1.8s;
 }
 .weekend-acts-sub-small p {
-    margin: 17em 0.1em 0em 0em;
+    margin: 15em 0.1em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
@@ -626,6 +626,7 @@
 .wave-svg-footer-small {
     max-width: 100%;
     height: 3em;
+    margin-top: -1px;
 }
 .wave-path-footer-small {
     fill: var(--lightGrey);
@@ -723,7 +724,7 @@
 .testloading h1 {
     font-size: 10vw;
     font-weight: 900;
-    margin: -3em 0em 0em 0em;
+    margin: -4em 0em 0em 0em;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
     -moz-background-clip: text;
