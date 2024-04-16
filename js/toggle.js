@@ -9,7 +9,7 @@ function toggle() {
 
   function toggle1() {
     var x = document.getElementById("myLinks-small");
-    var y = document.getElementById("main-small");
+    var y = document.getElementById("main-hide-small");
     if (x.style.display === "block") {
       x.style.display = "none";
       y.style.display = "block";

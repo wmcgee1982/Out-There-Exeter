@@ -9,10 +9,10 @@
 }
 
 #main-small {
-    animation: fadeinmainsmall 1s;
-    -webkit-animation: fadeinmainsmall 1s;
-    -moz-animation: fadeinmainsmall 1s;
-    -o-animation: fadeinmainsmall 1s;
+    animation: fadeinmainsmall 5s;
+    -webkit-animation: fadeinmainsmall 5s;
+    -moz-animation: fadeinmainsmall 5s;
+    -o-animation: fadeinmainsmall 5s;
 }
 @keyframes fadeinmainsmall {
     0% { opacity: 0 }
@@ -32,7 +32,7 @@
     background-size: cover;
     background-position: center center;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 1s;
+    animation-duration: 3s, 5s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
@@ -51,10 +51,10 @@
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
     z-index: 99;
-    animation: fadeinmainsmall 1s;
-    -webkit-animation: fadeinmainsmall 1s;
-    -moz-animation: fadeinmainsmall 1s;
-    -o-animation: fadeinmainsmall 1s;
+    animation: fadeinmainsmall 5s;
+    -webkit-animation: fadeinmainsmall 5s;
+    -moz-animation: fadeinmainsmall 5s;
+    -o-animation: fadeinmainsmall 5s;
 }
 
 .navbar-wrapper-small {
@@ -70,6 +70,7 @@
 }
 #navbar-title-small {
     justify-self: start;
+    z-index: 99;
 }
 #navbar-title-small h1 {
     color: var(--primaryColor);
@@ -115,6 +116,14 @@
     content: url("../media/toggleIcon_white.svg");
     -webkit-tap-highlight-color: transparent; 
 } 
+.menu-title-small h2 {
+    padding: 35vh 0em 0em 1.7em;
+    text-align: left;
+    color: var(--lightGrey);
+    text-shadow: 0.1em 0.1em var(--secondaryColor);
+    font-size: 4vw;
+    font-weight: 400;
+}
 .menu-title-small h1 {
     text-align: left;
     font-size: 11vw;
@@ -129,14 +138,6 @@
     text-align: left;
     padding: 0em 0em 0em 1.7em;
 }
-.menu-title-small h2 {
-    padding: 4em 0em 0em 1.7em;
-    text-align: left;
-    color: var(--lightGrey);
-    text-shadow: 0.1em 0.1em var(--secondaryColor);
-    font-size: 4vw;
-    font-weight: 400;
-}
 .menu-title-small span {
     font-size: 3.5vw;
     font-weight: 300;
@@ -148,10 +149,6 @@
     position: absolute;
     top: 8em;
     width: 100%;
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
 }
 /*
 #hero-transform-text {
@@ -190,7 +187,7 @@
     -o-animation: bg-img-hue 3s infinite;
 }
 .weekend-acts-small h1 {
-    font-size: 11vw;
+    font-size: 9vw;
     font-weight: 900;
     line-height: 6vh;
     padding: 0.1em 0em 0.2em 0em;
@@ -607,10 +604,10 @@
 #footer-small {
     background-color: var(--secondaryColor);
     padding: 0;
-    animation: fadeinmainsmall 1s;
-    -webkit-animation: fadeinmainsmall 1s;
-    -moz-animation: fadeinmainsmall 1s;
-    -o-animation: fadeinmainsmall 1s;
+    animation: fadeinmainsmall 5s;
+    -webkit-animation: fadeinmainsmall 5s;
+    -moz-animation: fadeinmainsmall 5s;
+    -o-animation: fadeinmainsmall 5s;
 }
 .footer-container-small {
     padding: 0em 1em 6em 1em;
@@ -653,7 +650,6 @@
     bottom: 0;
     right: 0;
     background-color: var(--primaryColor);
-    box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
     z-index: 99;
 }
 .footer-copyright-wrapper-small {
@@ -742,7 +738,6 @@
     -webkit-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
     -moz-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
     -o-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
-    z-index: 999;
     opacity: 0;
 }
 .testloading {
