@@ -117,7 +117,7 @@
     -webkit-tap-highlight-color: transparent; 
 } 
 .menu-title-small h2 {
-    padding: 35vh 0em 0em 1.7em;
+    padding: 25vh 0em 0em 1.7em;
     text-align: left;
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
