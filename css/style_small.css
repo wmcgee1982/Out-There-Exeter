@@ -117,7 +117,7 @@
     -webkit-tap-highlight-color: transparent; 
 } 
 .menu-title-small h2 {
-    padding: 25vh 0em 0em 1.7em;
+    padding: 15vh 0em 0em 1.7em;
     text-align: left;
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -147,22 +147,9 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 8em;
+    top: 5em;
     width: 100%;
 }
-/*
-#hero-transform-text {
-    visibility: visible;
-    -webkit-transform: translateY(10%);
-    -moz-transform: translateY(10%);
-    -o-transform: translateY(10%);
-    transform: translateY(10%);
-    -webkit-transition: transform 1s ease-in-out;
-    -moz-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
-    transition-delay: 6s;
-}*/
 .title-small {
     margin: 0em 0em 0em 2em;
 }
@@ -218,7 +205,7 @@
 /* *** *** Countdown Clock *** *** */
 .countdown-sub-container1 {
     display: block;
-    margin: 4em 0em;
+    margin: 3.5em 0em;
     padding: 0.5em;
     background: var(--primaryColor);
     opacity: 0.5;
