@@ -737,6 +737,7 @@
 
 #loading-small {
     position: absolute;
+    display: block;
     animation: fadeoutmainsmall 5s normal forwards ease-in-out;
     -webkit-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
     -moz-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
