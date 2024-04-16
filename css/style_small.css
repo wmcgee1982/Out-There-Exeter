@@ -14,16 +14,6 @@
     -moz-animation: fadeinmainsmall 5s;
     -o-animation: fadeinmainsmall 5s;
 }
-@keyframes fadeinmainsmall {
-    0% { opacity: 0 }
-    80% { opacity: 0 }
-    100% { opacity: 1 }
-}
-@keyframes fadeoutmainsmall {
-    0% { opacity: 1 }
-    80% { opacity: 1 }
-    100% { opacity: 0 }
-}
 
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
@@ -117,7 +107,7 @@
     -webkit-tap-highlight-color: transparent; 
 } 
 .menu-title-small h2 {
-    padding: 15vh 0em 0em 1.7em;
+    padding: 17vh 0em 0em 1.7em;
     text-align: left;
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
@@ -257,7 +247,7 @@
 /* *** *** information Section - small *** *** */
 #information-section-small {
     position: relative;
-    padding: 1em;
+    padding: 3em 2em;
     max-width: 100%;
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
@@ -268,7 +258,7 @@
     width: auto;
 }
 .information-container-small h3 {
-    padding: 1em 0em 0em 0.4em;
+    padding: 0em 0em 0em 0.4em;
     color: var(--secondaryColor);
     font-size: 5.5vw;
     font-weight: 600;
@@ -324,7 +314,7 @@
 
 /* *** *** Take Part  *** *** */
 #take-part-section-small {
-    padding: 1em;
+    padding: 2em;
     max-width: 100%;
     height: auto;
     background-image: url(../media/twoladysingers.gif);
@@ -338,7 +328,6 @@
     grid-auto-flow: column;
     grid-template-columns: 150px;
     gap: 0.1em;
-    padding: 0em 0em 1em 0em;
 }
 .take-part-title-small img {
     width: 150px; 
@@ -357,12 +346,12 @@
     font-weight: 500;
     color: var(--backgroundColor);
     text-shadow: 2px 2px 2px var(--darkGrey);
-    padding: 1em 0.5em 3em 0.5em;
 }
 /* *** *** Take Part LABELS *** *** */
 .take-part-card-section-small {
     display: grid;
     justify-content: center;
+    padding: 1em 0em 0em 0em;
 }
 .take-part-card-container-small {
     width: auto;
@@ -420,7 +409,7 @@
     height: auto;
     background-image: linear-gradient(transparent 0%, #EB028A 50%, #692A92 100%);
     justify-items: center;
-    padding: 135vw 1em 2em 1em;
+    padding: 135vw 1em 3em 1em;
 }
 .partners-title-small {
     width: auto;
@@ -461,7 +450,7 @@
 
 /* *** *** News Section *** *** */
 #news-section-small {
-    padding: 1em;
+    padding: 4em 2em;
     width: auto;
     height: auto;
     background: var(--lightGrey);
@@ -590,14 +579,13 @@
 /* *** *** Footer *** *** */
 #footer-small {
     background-color: var(--secondaryColor);
-    padding: 0;
-    animation: fadeinmainsmall 5s;
-    -webkit-animation: fadeinmainsmall 5s;
-    -moz-animation: fadeinmainsmall 5s;
-    -o-animation: fadeinmainsmall 5s;
+    animation: fadeinmainsmall 4s;
+    -webkit-animation: fadeinmainsmall 4s;
+    -moz-animation: fadeinmainsmall 4s;
+    -o-animation: fadeinmainsmall 4s;
 }
 .footer-container-small {
-    padding: 0em 1em 6em 1em;
+    padding: 1em 1em 6em 1em;
 }
 .footer-container-small h1 {
     font-size: 6vw;
@@ -715,17 +703,13 @@
     fill: var(--lightGrey);
 }
 
-
-
-
 #loading-small {
     position: absolute;
     display: block;
-    animation: fadeoutmainsmall 5s normal forwards ease-in-out;
-    -webkit-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
-    -moz-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
-    -o-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
-    opacity: 0;
+    animation: fadeoutmainsmall 4s normal forwards ease-in-out;
+    -webkit-animation: fadeoutmainsmall 4s normal forwards ease-in-out;
+    -moz-animation: fadeoutmainsmall 4s normal forwards ease-in-out;
+    -o-animation: fadeoutmainsmall 4s normal forwards ease-in-out;
 }
 .testloading {
     display: grid;
@@ -765,10 +749,22 @@
     -webkit-animation-name: rainbow_animation, fadeinmainsmall; 
     -moz-animation-name: rainbow_animation, fadeinmainsmall;
     -o-animation-name: rainbow_animation, fadeinmainsmall;
-    animation-duration: 6s, 1.5s;
+    animation-duration: 6s, 0.5s;
     animation-iteration-count: 1, 1;
     animation-timing-function: ease-in-out;
     background-size: 400% 100%;
+}
+
+/* *** *** Keyframes *** *** */
+@keyframes fadeinmainsmall {
+    0% { opacity: 0 }
+    80% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@keyframes fadeoutmainsmall {
+    0% { opacity: 1 }
+    80% { opacity: 1 }
+    100% { opacity: 0 }
 }
 @keyframes rainbow_animation {
     0%, 100% {background-position: 0 0;}
