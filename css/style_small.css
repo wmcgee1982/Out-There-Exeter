@@ -9,17 +9,21 @@
 }
 
 #main-small {
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
+    animation: fadeinmainsmall 1s;
+    -webkit-animation: fadeinmainsmall 1s;
+    -moz-animation: fadeinmainsmall 1s;
+    -o-animation: fadeinmainsmall 1s;
 }
 @keyframes fadeinmainsmall {
     0% { opacity: 0 }
     80% { opacity: 0 }
     100% { opacity: 1 }
 }
-
+@keyframes fadeoutmainsmall {
+    0% { opacity: 1 }
+    80% { opacity: 1 }
+    100% { opacity: 0 }
+}
 
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
@@ -28,7 +32,7 @@
     background-size: cover;
     background-position: center center;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 6s;
+    animation-duration: 3s, 1s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
@@ -40,17 +44,17 @@
 /* *** ***  Nav section - small screen *** *** */
 #nav-bar-small {
     position: fixed;
+    display: block;
     top: 0;
     width: 100%;
-    display: block;
-    z-index: 999;
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
+    z-index: 99;
+    animation: fadeinmainsmall 1s;
+    -webkit-animation: fadeinmainsmall 1s;
+    -moz-animation: fadeinmainsmall 1s;
+    -o-animation: fadeinmainsmall 1s;
 }
 
 .navbar-wrapper-small {
@@ -142,9 +146,14 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 15vh;
+    top: 8em;
     width: 100%;
+    animation: fadeinmainsmall 6s;
+    -webkit-animation: fadeinmainsmall 6s;
+    -moz-animation: fadeinmainsmall 6s;
+    -o-animation: fadeinmainsmall 6s;
 }
+/*
 #hero-transform-text {
     visibility: visible;
     -webkit-transform: translateY(10%);
@@ -156,12 +165,7 @@
     -o-transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
     transition-delay: 6s;
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
-    animation-delay: 1.1s;
-}
+}*/
 .title-small {
     margin: 0em 0em 0em 2em;
 }
@@ -202,14 +206,8 @@
 }
 .weekend-acts-sub-small {
     text-align: center;
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
-    animation-delay: 1.8s;
 }
 .weekend-acts-sub-small p {
-    margin: 15em 0.1em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
@@ -218,6 +216,57 @@
 .weekend-acts-sub-small a {
     text-decoration: none;
     color: var(--backgroundColor);
+}
+
+/* *** *** Countdown Clock *** *** */
+.countdown-sub-container1 {
+    display: block;
+    margin: 4em 0em;
+    padding: 0.5em;
+    background: var(--primaryColor);
+    opacity: 0.5;
+}
+.countdown-sub-container1 h2 {
+    padding: 0em 0em 0.7em 0em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: var(--backgroundColor);
+}
+.digits-container1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+.clock-circle1 {
+    display: grid;
+    width: 3em;
+    height: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 0.1em white;
+    border-radius: 50%;
+}
+.clock-label1 {
+    display: grid;
+    width: 100px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.digits-container1 h1 {
+    display: grid;
+    font-size: 2em;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+.digits-container1 p {
+    display: grid;
+    font-size: 1.2em;
+    font-weight: 100;
+    padding-top: 0.5em;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -558,10 +607,10 @@
 #footer-small {
     background-color: var(--secondaryColor);
     padding: 0;
-    animation: fadeinmainsmall 6s;
-    -webkit-animation: fadeinmainsmall 6s;
-    -moz-animation: fadeinmainsmall 6s;
-    -o-animation: fadeinmainsmall 6s;
+    animation: fadeinmainsmall 1s;
+    -webkit-animation: fadeinmainsmall 1s;
+    -moz-animation: fadeinmainsmall 1s;
+    -o-animation: fadeinmainsmall 1s;
 }
 .footer-container-small {
     padding: 0em 1em 6em 1em;
@@ -599,13 +648,13 @@
 
 /* *** *** Footer Copyright *** *** */
 .footer-copyright-small {
-    background-color: var(--primaryColor);
     position: fixed;
     width: 100%;
     bottom: 0;
     right: 0;
+    background-color: var(--primaryColor);
     box-shadow: 0em 0em 0.2em 0em var(--darkGrey);
-    z-index: 2;
+    z-index: 99;
 }
 .footer-copyright-wrapper-small {
     margin-left: auto;
@@ -639,7 +688,7 @@
     right: 0;
     height: 50px;
     width: 260px;
-    z-index: 2;
+    z-index: 99;
 }
 .footer-socials-svg {
     height: 50px;
@@ -684,21 +733,20 @@
 }
 
 
+
+
 #loading-small {
-    animation: fadeoutloading 5s normal forwards ease-in-out;
-    -webkit-animation: fadeoutloading 5s normal forwards ease-in-out;
-    -moz-animation: fadeoutloading 5s normal forwards ease-in-out;
-    -o-animation: fadeoutloading 5s normal forwards ease-in-out;
-}
-@keyframes fadeoutloading {
-    0%,100% { opacity: 0 }
-    10% { opacity: 1 }
-    80% { opacity: 1 }
+    position: absolute;
+    animation: fadeoutmainsmall 5s normal forwards ease-in-out;
+    -webkit-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
+    -moz-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
+    -o-animation: fadeoutmainsmall 5s normal forwards ease-in-out;
+    z-index: 999;
+    opacity: 0;
 }
 .testloading {
     display: grid;
     position: absolute;
-    z-index: 999;
     min-height: 100vh;
     min-width: 100vw;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
@@ -724,17 +772,19 @@
 .testloading h1 {
     font-size: 10vw;
     font-weight: 900;
-    margin: -4em 0em 0em 0em;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -o-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 5s ease-in-out infinite;
-    -webkit-animation: rainbow_animation 5s ease-in-out infinite; 
-    -moz-animation: rainbow_animation 5s ease-in-out infinite; 
-    -o-animation: rainbow_animation 5s ease-in-out infinite;
+    animation-name: rainbow_animation, fadeinmainsmall;
+    -webkit-animation-name: rainbow_animation, fadeinmainsmall; 
+    -moz-animation-name: rainbow_animation, fadeinmainsmall;
+    -o-animation-name: rainbow_animation, fadeinmainsmall;
+    animation-duration: 6s, 1.5s;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: ease-in-out;
     background-size: 400% 100%;
 }
 @keyframes rainbow_animation {
