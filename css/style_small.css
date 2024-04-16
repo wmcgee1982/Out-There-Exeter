@@ -209,7 +209,7 @@
     animation-delay: 1.8s;
 }
 .weekend-acts-sub-small p {
-    margin: 15em 0em 0em 0em;
+    margin: 17em 0.1em 0em 0em;
     width: auto;
     font-size: 4vw;
     font-weight: 400;
@@ -721,9 +721,9 @@
 }
 */
 .testloading h1 {
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: 900;
-    margin: -5em 0em 0em 0em;
+    margin: -3em 0em 0em 0em;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
     -webkit-background-clip: text;
     -moz-background-clip: text;
