@@ -33,7 +33,7 @@
 }
 
 /* *** ***  Nav section - small screen *** *** */
-#nav-bar-small {
+#nav-bar-home-small {
     position: fixed;
     display: block;
     top: 0;
@@ -46,6 +46,16 @@
     -webkit-animation: fadeinmainsmall 5s;
     -moz-animation: fadeinmainsmall 5s;
     -o-animation: fadeinmainsmall 5s;
+}
+#nav-bar-small {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    background: var(--primaryColor);
+    box-shadow: 0em 0em 1em 0em var(--darkGrey);
+    padding: 0.5em;
+    z-index: 99;
 }
 
 .navbar-wrapper-small {
@@ -594,6 +604,9 @@
 /* *** *** Footer *** *** */
 #footer-small {
     background: var(--secondaryColor);
+}
+#footer-home-small {
+    background: var(--secondaryColor);
     animation: fadeinmainsmall 5s;
     -webkit-animation: fadeinmainsmall 5s;
     -moz-animation: fadeinmainsmall 5ms;
@@ -661,7 +674,7 @@
 .wave-svg-footer-small {
     max-width: 100%;
     height: 4em;
-    margin: 0em 0em -1em 0em;
+    margin: -0.1em 0em 0em 0em;
     background: var(--secondaryColor);
 }
 .wave-path-footer-small {
@@ -719,7 +732,8 @@
     fill: var(--lightGrey);
 }
 
-#loading-small {
+/* *** *** Front page loading element *** *** */
+#loading-page-small {
     position: absolute;
     display: block;
     animation: fadeoutmainsmall 4s normal forwards ease-in-out;
@@ -727,7 +741,7 @@
     -moz-animation: fadeoutmainsmall 4s normal forwards ease-in-out;
     -o-animation: fadeoutmainsmall 4s normal forwards ease-in-out;
 }
-.testloading {
+.loading-page-container-small {
     display: grid;
     position: absolute;
     min-height: 100vh;
@@ -737,7 +751,8 @@
     align-content: center;
     justify-content: center;
 }
-.testloading h1 {
+.loading-page-container-small h1 {
+    margin: -2.5em 0em 0em 0em;
     font-size: 10vw;
     font-weight: 900;
     background: linear-gradient(to right, #EB028A, #692A92, #EB028A, #692A92, #EB028A, #692A92);
@@ -824,8 +839,8 @@
 }
 .info-cards-small {
     display: grid;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     box-shadow: 1px 1px 10px -5px var(--darkGrey);
     border-radius: 1rem;
     filter: drop-shadow(0.5em 0.5em var(--primaryColor));
@@ -856,8 +871,8 @@
     background-position: center;
 }
 .info-cards-small h1 {
-    color: var(--backgroundColor);
-    text-shadow: 0.1em 0.1em var(--primaryColor);
+    color: var(--primaryColor);
+    text-shadow: 0.1em 0.1em 0em var(--secondaryColor);
     font-size: 6vw;
     font-weight: 900;
     text-align: center;
@@ -867,11 +882,75 @@
     padding: 0.3em;;
     background-color: var(--primaryColor);
     color: var(--lightGrey);
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: 300;
     text-align: center;
 }
 
+/* *** *** Festival Section - small *** *** */
+#festival-small {
+    padding: 1em 0em 0em 0em;
+}
+
+#information-section-festival-small {
+    position: relative;
+    padding: 2em;
+    max-width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    border-bottom: solid 0.2em var(--primaryColor);
+}
+.information-container-festival-small {
+    width: auto;
+}
+.information-container-festival-small h3 {
+    color: #eeeeee; 
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+.information-container-festival-small p {
+    padding: 0.5em 0em;
+    font-size: 4vw;
+}
+.information-container-festival-small span {
+    position: absolute;
+    padding: 0.16em 0em 0em 0.5em;
+}
+#information-section-festival-bottom-small {
+    position: relative;
+    padding: 2em;
+    max-width: 100%;
+    height: auto;
+    background: var(--backgroundColor);
+}
+.information-container-festival-bottom-small h3 {
+    color: var(--primaryColor);
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+.information-container-festival-bottom-small p {
+    padding: 0.5em 0em 0em 0em;
+    font-size: 4vw;
+    color: var(--secondaryColor);
+}
+.information-container-festival-bottom-small a {
+    text-decoration: none;
+}
+.information-container-festival-bottom-small span {
+    position: absolute;
+    padding: 0.16em 0em 0em 0.5em;
+}
+.festival-image-festival-page-small {
+    margin: 1.5em -2em;
+}
+.festival-image-festival-page-small img {
+    max-width: 100vw;
+    height: auto;
+    overflow: hidden;
+    border-top: solid 0.1em var(--backgroundColor);
+    border-bottom: solid 0.1em var(--backgroundColor);
+    filter: hue-rotate(300deg);
+}
 
 /* *** *** Keyframes *** *** */
 @keyframes fadeinmainsmall {
