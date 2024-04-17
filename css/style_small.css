@@ -433,14 +433,14 @@
 }
 .grid-item-partners-small {
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em;
     width: auto;
     height: auto;
     vertical-align: middle;
 }
 .grid-item-partners-small img {
     display: inline-block;
-    width: 25vw; 
+    width: 24vw; 
     height: auto;
 }
 .library-small {
