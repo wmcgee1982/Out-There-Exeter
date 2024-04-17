@@ -119,7 +119,7 @@
     font-size: 11vw;
     font-weight: 900;
     padding: 0.1em 1.5em 0.1em 0.5em;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
 }
 .menu-title-small h5 {
@@ -168,7 +168,7 @@
     font-weight: 900;
     line-height: 6vh;
     padding: 0.1em 0em 0.2em 0em;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
 .weekend-acts-small h5 {
@@ -189,7 +189,7 @@
 }
 .weekend-acts-sub-small a {
     text-decoration: none;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
 }
 
 /* *** *** Countdown Clock *** *** */
@@ -205,7 +205,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 1.3em;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
 }
 .digits-container1 {
     display: grid;
@@ -243,7 +243,6 @@
     align-items: center;
 }
 
-
 /* *** *** information Section - small *** *** */
 #information-section-small {
     position: relative;
@@ -273,8 +272,24 @@
 .information-container-small a {
     font-size: 4.5vw;
     text-decoration: none;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
     font-weight: 500;
+}
+
+/* *** *** subtitles Section - small *** *** */
+.subtitles-small {
+    position: relative;
+    text-align: center;
+    margin: 1em;
+}
+.subtitles-small h3 {
+    font-size: 3vw;
+    font-weight: 400;
+    padding: 0.5em 0em;
+}
+.subtitles-small span {
+    position: absolute;
+    padding: 0.15em 0em 0em 0.5em;
 }
 
 /* *** *** subtitles Section - small *** *** */
@@ -343,7 +358,7 @@
 #take-part-section-small h3 {
     font-size: 4vw;
     font-weight: 500;
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
     text-shadow: 2px 2px 2px var(--darkGrey);
 }
 /* *** *** Take Part LABELS *** *** */
@@ -421,7 +436,7 @@
     text-shadow: 2px 2px var(--primaryColor);
 }
 .partners-title-small p {  
-    color: var(--backgroundColor);
+    color: var(--lightGrey);
     font-weight: 300;
     font-size: 4vw;
     padding: 1em 2em;
@@ -451,7 +466,7 @@
     padding: 2em;
     width: auto;
     height: auto;
-    background: var(--lightGrey);
+    background: var(--backgroundColor);
     border-top: solid 0.2em var(--primaryColor);
 }
 #news-section-small h1 {  
@@ -512,7 +527,7 @@
     flex-flow: column wrap;
     width: auto;
     margin: 1em 0em;
-    background-color: var(--white);
+    background: var(--white);
     border-radius: 0.5em;
     box-shadow: 1px 1px 10px -10px var(--darkGrey);
     padding: 1em 1.5em;
@@ -563,7 +578,7 @@
     padding: 1em 0em 0em 0em;
 }
 .newsPanelCard-first-small {
-    background-color: var(--primaryColor);
+    background: var(--primaryColor);
 }
 .newsPanelCard-first-small p {
     color: var(--lightGrey);
@@ -577,7 +592,7 @@
 
 /* *** *** Footer *** *** */
 #footer-small {
-    background-color: var(--secondaryColor);
+    background: var(--secondaryColor);
     animation: fadeinmainsmall 5s;
     -webkit-animation: fadeinmainsmall 5s;
     -moz-animation: fadeinmainsmall 5ms;
@@ -609,7 +624,7 @@
     padding: 0.5em;
     border-radius: 2em;
     color: var(--secondaryColor);
-    background-color: var(--primaryColor);
+    background: var(--primaryColor);
     border: solid 0.1em var(--lightGrey);
     font-size: 4vw;
     text-decoration: none;
@@ -623,7 +638,7 @@
     width: 100%;
     bottom: 0;
     right: 0;
-    background-color: var(--primaryColor);
+    background: var(--primaryColor);
     z-index: 99;
 }
 .footer-copyright-wrapper-small {
@@ -644,11 +659,12 @@
 /* *** *** Waves *** *** */
 .wave-svg-footer-small {
     max-width: 100%;
-    height: 3em;
-    margin-top: -1px;
+    height: 4em;
+    margin: 0em 0em -1em 0em;
+    background: var(--secondaryColor);
 }
 .wave-path-footer-small {
-    fill: var(--lightGrey);
+    fill: var(--backgroundColor);
 }
 
 /* *** *** Social Media Links *** *** */
@@ -720,21 +736,6 @@
     align-content: center;
     justify-content: center;
 }
-/* *** *** Social Media Links *** *** 
-.testloading img {
-    width: 50vw;
-    height: auto;
-    animation: spin 0.9s;
-    -webkit-animation: spin 0.9s;
-    -moz-animation: spin 0.9s;
-    -o-animation: spin 0.9s;
-    filter: drop-shadow(0px 0px 100px #000);
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-}
-*/
 .testloading h1 {
     font-size: 10vw;
     font-weight: 900;
@@ -753,6 +754,124 @@
     animation-timing-function: ease-in-out;
     background-size: 400% 100%;
 }
+
+/* *** *** ABOUT PAGE *** *** */
+#about-small {
+    padding: 1em 0em 0em 0em;
+}
+
+#information-section-about-small {
+    position: relative;
+    padding: 2em;
+    max-width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    border-bottom: solid 0.2em var(--primaryColor);
+}
+.information-container-about-small {
+    width: auto;
+}
+.information-container-about-small h3 {
+    color: #eeeeee; 
+    padding: 1em 0em 0em 0em;
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+.information-container-about-small p {
+    padding: 0.5em 0em;
+    font-size: 4vw;
+}
+.information-container-about-small span {
+    position: absolute;
+    padding: 0.16em 0em 0em 0.5em;
+}
+.information-container-small-about a {
+    font-size: 4.5vw;
+    text-decoration: none;
+    color: var(--lightGrey);
+    font-weight: 500;
+}
+#information-section-about-bottom-small {
+    position: relative;
+    padding: 2em;
+    max-width: 100%;
+    height: auto;
+    background: var(--backgroundColor);
+}
+.information-container-about-bottom-small h3 {
+    color: var(--primaryColor);
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+.information-container-about-bottom-small p {
+    padding: 0.5em 0em 0em 0em;
+    font-size: 4vw;
+    color: var(--secondaryColor);
+}
+.information-container-about-bottom-small a {
+    text-decoration: none;
+}
+.information-container-about-bottom-small span {
+    position: absolute;
+    padding: 0.16em 0em 0em 0.5em;
+}
+/* *** *** Information Section Info Cards *** *** */
+.info-cards-container-small {
+    display: grid;
+    gap: 2em;
+    padding: 2em 0em;
+    justify-content: center;
+}
+.info-cards-small {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    box-shadow: 1px 1px 10px -5px var(--darkGrey);
+    border-radius: 1rem;
+    filter: drop-shadow(0.5em 0.5em var(--primaryColor));
+    align-items: center;
+}
+.arts-small { 
+    background-image: url(../media/istockphoto-1502556789-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.culture-small {
+    background-image: url(../media/istockphoto-1323377064-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sports-small {
+    background-image: url(../media/istockphoto-1369076485-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.advocacy-small {
+    background-image: url(../media/istockphoto-1498993169-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.info-cards-small h1 {
+    color: var(--backgroundColor);
+    text-shadow: 0.1em 0.1em var(--primaryColor);
+    font-size: 6vw;
+    font-weight: 900;
+    text-align: center;
+}
+.info-cards-small p {
+    display: grid;
+    padding: 0.3em;;
+    background-color: var(--primaryColor);
+    color: var(--lightGrey);
+    font-size: 3.5vw;
+    font-weight: 300;
+    text-align: center;
+}
+
 
 /* *** *** Keyframes *** *** */
 @keyframes fadeinmainsmall {
