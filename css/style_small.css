@@ -604,6 +604,7 @@
 /* *** *** Footer *** *** */
 #footer-small {
     background: var(--secondaryColor);
+    margin: -0.1em 0em 0em 0em;
 }
 #footer-home-small {
     background: var(--secondaryColor);
@@ -674,7 +675,7 @@
 .wave-svg-footer-small {
     max-width: 100%;
     height: 4em;
-    margin: -0.1em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
     background: var(--secondaryColor);
 }
 .wave-path-footer-small {
@@ -950,6 +951,26 @@
     border-top: solid 0.1em var(--backgroundColor);
     border-bottom: solid 0.1em var(--backgroundColor);
     filter: hue-rotate(300deg);
+}
+.partners-title-festival-small {
+    width: auto;
+    text-align: center;
+    margin: -0.5em 0em;
+    padding: 1em 0em;
+    background: var(--backgroundColor);
+}
+.partners-title-festival-small h1 {  
+    font-size: 6vw;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    text-shadow: 2px 2px var(--white);
+    padding: 0em 0em 0.5em 0em;
+}
+.partners-title-festival-small p {  
+    color: var(--lightGrey);
+    font-weight: 300;
+    font-size: 4vw;
+    padding: 1em 2em;
 }
 
 /* *** *** Keyframes *** *** */
