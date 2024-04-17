@@ -6,6 +6,7 @@
 }
 #body-small {
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    padding: 2.5em 0em 0em 0em;
 }
 
 #main-small {
@@ -137,7 +138,7 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 5em;
+    top: 4em;
     width: 100%;
 }
 .title-small {
@@ -773,7 +774,6 @@
 }
 .information-container-about-small h3 {
     color: #eeeeee; 
-    padding: 1em 0em 0em 0em;
     font-size: 5.5vw;
     font-weight: 600;
 }
