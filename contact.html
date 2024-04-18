@@ -12,34 +12,33 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_small.css">
     <link rel="icon" type="image/x-icon" href="./media/logo.jpg">
     
 </head>
 
-<body>       
-    <!-- Navbar Section -->
-    <nav id="nav-bar" include-html="sections/nav.html"></nav>
+<body>
 
-    <!-- Header Section -->
-    <header include-html="sections/header.html">
-    </header>
+    <!-- SMALL - PHONE SCREEN -->
+    <section id="body-small">
+        <!-- Navbar Section -->
+        <nav id="nav-bar-small" include-html="sections/nav-small.html"></nav>
 
-    <main>
+        <main id="main-about-small">
+            <nav id="contact-small" include-html="sections/contact-small.html"></nav>
+        </main>
+        
+        <!-- Footer Section -->
+        <footer id="footer-small" include-html="sections/footer-small.html"></footer>
+    </section>
 
-
-
-
-    </main>
-
-    <!-- Footer Section -->
-    <section include-html="sections/footer.html"></section>
-    
     <!-- Scripts -->
-    <script src="../js/sections.js"></script>
-    <script src="../js/arrowbounce.js"></script>
-    <script src="../js/countdown.js"></script>
-    <script src="../js/popup.js"></script>
+    <script src="./js/sections.js"></script>
+    <script src="./js/arrowbounce.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/registration.js"></script>
+    <script src="./js/participation.js"></script>
+    <script src="./js/apply.js"></script>
     <script>includeHTML();</script>
-
 </body>
 </html>
