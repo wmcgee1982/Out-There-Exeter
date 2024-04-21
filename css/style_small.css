@@ -125,7 +125,7 @@
 .menu-title-small {
     text-align: left; 
     padding: 1em;
-    padding-top: 20vh;
+    padding-top: 22vh;
 }
 .menu-title-small h2 {
     color: var(--lightGrey);
@@ -193,16 +193,16 @@
 /* *** *** Countdown Clock *** *** */
 .countdown-sub-container1 {
     display: block;
-    margin: 6em 0em 4em 0em;
+    margin: 5em 0em 3em 0em;
     padding: 0.5em;
     background: var(--primaryColor);
     opacity: 0.5;
 }
 .countdown-sub-container1 h2 {
-    padding: 0em 0em 0.7em 0em;
+    padding: 0em 0em 0.3em 0em;
     text-align: center;
-    font-weight: 500;
-    font-size: 1.3em;
+    font-weight: 400;
+    font-size: 1em;
     color: var(--lightGrey);
 }
 .digits-container1 {
@@ -210,16 +210,14 @@
     grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 .clock-circle1 {
-    display: grid;
-    width: 3em;
-    height: 3em;
+    width: 2.8em;
+    height: 2.8em;
     margin-right: auto;
     margin-left: auto;
     border: solid 0.1em white;
     border-radius: 50%;
 }
 .clock-label1 {
-    display: grid;
     width: 100px;
     height: auto;
     margin-right: auto;
@@ -227,16 +225,16 @@
 }
 .digits-container1 h1 {
     display: grid;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     justify-content: center;
     align-items: center;
 }
 .digits-container1 p {
     display: grid;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
-    padding-top: 0.5em;
+    padding-top: 0.1em;
     justify-content: center;
     align-items: center;
 }
@@ -748,7 +746,7 @@
 }
 .loading-page-container-small img {
     margin: -5em 0em 0em 0em;
-    width: 275px;
+    width: 250px;
     height: auto;
     animation-name: logo-img-hue, fadeinmainsmall;
     -webkit-animation-name: logo-img-hue, fadeinmainsmall;
