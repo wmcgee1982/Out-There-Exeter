@@ -69,6 +69,14 @@
     grid-template-columns: 10fr 1.5fr;
     grid-template-rows: auto-fit;
 }
+#navbar-title-small img {
+    margin-top: -1.9em; 
+    margin-bottom: -2.5em; 
+    margin-left: -1em;
+    width: 85px;
+    height: auto;
+    overflow: hidden;
+}
 #navbar-title-small {
     justify-self: start;
     z-index: 99;
@@ -117,27 +125,29 @@
     content: url("../media/toggleIcon_white.svg");
     -webkit-tap-highlight-color: transparent; 
 } 
+
+.menu-title-small {
+    text-align: left; 
+    margin-left: -2em;
+    padding-top: 17vh;
+}
 .menu-title-small h2 {
-    padding: 17vh 0em 0em 1.7em;
-    text-align: left;
+    padding-left: 2.4em;
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
     font-size: 4vw;
     font-weight: 400;
 }
-.menu-title-small h1 {
-    text-align: left;
-    font-size: 11vw;
-    font-weight: 900;
-    padding: 0.1em 1.5em 0.1em 0.5em;
-    color: var(--lightGrey);
-    text-shadow: 0.1em 0.1em var(--secondaryColor);
+.menu-title-small img {
+    width: 300px;
+    height: auto;
+    margin-top: -2.8em;
+    margin-bottom: -3em;
 }
 .menu-title-small h5 {
     font-size: 4vw;
     font-weight: 400;
-    text-align: left;
-    padding: 0em 0em 0em 1.7em;
+    padding-left: 2.4em;
 }
 .menu-title-small span {
     font-size: 3.5vw;
@@ -148,46 +158,30 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    top: 5em;
+    top: 6.5em;
     width: 100%;
 }
-.title-small {
-    margin: 2em 0em 0em 2em;
+.weekend-acts-small {
+    text-align: center;
 }
-.title-small h1 {
+.weekend-acts-small img {
+    margin-top: -3.2em;
+    margin-bottom: -3.5em;
+    width: 375px;
+    height: auto;
+    filter: contrast(100%);
+
+}
+.weekend-acts-small h1 {
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
     font-size: 4vw;
     font-weight: 400;
 }
-.title-small span {
-    color: var(--lightGrey);
-    font-size: 3.5vw;
-    font-weight: 400;
-    font-style: italic;
-    text-shadow: none;
-}
-.weekend-acts-small {
-    text-align: center;
-    animation: bg-img-hue 3s infinite;
-    -webkit-animation: bg-img-hue 3s infinite;
-    -moz-animation: bg-img-hue 3s infinite;
-    -o-animation: bg-img-hue 3s infinite;
-}
-.weekend-acts-small h1 {
-    font-size: 9vw;
-    font-weight: 900;
-    line-height: 6vh;
-    padding: 0.1em 0em 0.2em 0em;
-    color: var(--lightGrey);
-    text-shadow: 0.1em 0.1em var(--primaryColor);
-}
 .weekend-acts-small h5 {
     width: auto;
     font-size: 4vw;
     font-weight: 400;
-    text-align: right;
-    margin: 0em 1.5em 0em 0em;
 }
 .weekend-acts-sub-small {
     text-align: center;
@@ -206,7 +200,7 @@
 /* *** *** Countdown Clock *** *** */
 .countdown-sub-container1 {
     display: block;
-    margin: 3.5em 0em;
+    margin: 6em 0em 4em 0em;
     padding: 0.5em;
     background: var(--primaryColor);
     opacity: 0.5;
@@ -475,6 +469,7 @@
 /* *** *** News Section *** *** */
 #news-section-small {
     padding: 2em;
+    margin-bottom: -0.1em;
     width: auto;
     height: auto;
     background: var(--backgroundColor);
@@ -615,6 +610,15 @@
 .footer-container-small {
     padding: 1em 1em 7em 1em;
 }
+.footer-container-small img {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: 0;
+    padding: 0.9em 0em 0em 0em;
+    overflow: hidden;
+    margin-right: -0.9em;
+}
 .footer-container-small h1 {
     font-size: 6vw;
     border-bottom: solid 0.1rem var(--lightGrey);
@@ -674,7 +678,6 @@
 .wave-svg-footer-small {
     max-width: 100%;
     height: 4em;
-    margin: -0.2em 0em 0em 0em;
     background: var(--secondaryColor);
 }
 .wave-path-footer-small {
@@ -750,6 +753,18 @@
     opacity: 1;
     align-content: center;
     justify-content: center;
+}
+.loading-page-container-small img {
+    margin: -5em 0em 0em 0em;
+    width: 275px;
+    height: auto;
+    animation-name: logo-img-hue, fadeinmainsmall;
+    -webkit-animation-name: logo-img-hue, fadeinmainsmall;
+    -moz-animation-name: logo-img-hue, fadeinmainsmall;
+    -o-animation-name: logo-img-hue, fadeinmainsmall;
+    animation-duration: 1.2s, 1.5s;
+    animation-iteration-count: infinite, 1;
+    animation-timing-function: ease-in-out;
 }
 .loading-page-container-small h1 {
     margin: -2.5em 0em 0em 0em;
@@ -1038,6 +1053,11 @@
 @keyframes rainbow_animation {
     0%, 100% {background-position: 0 0;}
     50% {background-position: 100% 0;}
+}
+@keyframes logo-img-hue {
+    0%  { -webkit-filter: hue-rotate(0deg); }
+    50% { -webkit-filter: hue-rotate(40deg); }
+    100% { -webkit-filter: hue-rotate(0deg); }
 }
 
 
