@@ -124,7 +124,7 @@
 
 .menu-title-small {
     text-align: left; 
-    padding: 1em;
+    padding: 1.5em;
     padding-top: 18vh;
 }
 .menu-title-small h2 {
@@ -136,7 +136,7 @@
 .menu-title-small img {
     width: 200px;
     height: auto;
-    padding: 0.7em 0em 0.2em 0em;
+    padding: 0.7em 0em 0.15em 0em;
 }
 .menu-title-small h5 {
     font-size: 4vw;
@@ -151,8 +151,8 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    padding-top: 100px;
-    top: 1em;
+    padding-top: 150px;
+    top: 10em;
     width: 100%;
 }
 .weekend-acts-small {
@@ -608,7 +608,7 @@
     width: 150px;
     height: auto;
     right: 0;
-    padding: 2.8em 1em 0em 0em;
+    padding: 2.7em 1.5em 0em 0em;
 }
 .footer-container-small h1 {
     font-size: 6vw;
@@ -780,6 +780,7 @@
 /* *** *** ABOUT PAGE *** *** */
 #about-small {
     padding: 1em 0em 0em 0em;
+    margin-bottom: -0.2em;
 }
 
 #information-section-about-small {
