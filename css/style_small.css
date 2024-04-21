@@ -609,6 +609,7 @@
 }
 .footer-container-small {
     padding: 1em 1em 7em 1em;
+    overflow: hidden;
 }
 .footer-container-small img {
     position: absolute;
