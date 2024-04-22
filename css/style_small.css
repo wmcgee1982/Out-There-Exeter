@@ -9,25 +9,18 @@
     padding: 2.5em 0em 0em 0em;
 }
 
-#main-small {
-    animation: fadeinmainsmall 5s;
-    -webkit-animation: fadeinmainsmall 5s;
-    -moz-animation: fadeinmainsmall 5s;
-    -o-animation: fadeinmainsmall 5s;
-}
-
 .background-small {
     background-image: url(../media/concert-3084876_640.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     background-position: center center;
-    animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 5s;
-    animation-iteration-count: infinite, 1;
-    -webkit-animation-name: bg-img-hue, fadeinmainsmall;
-    -moz-animation-name: bg-img-hue, fadeinmainsmall;
-    -o-animation-name: bg-img-hue, fadeinmainsmall;
+    animation-name: bg-img-hue;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bg-img-hue;
+    -moz-animation-name: bg-img-hue;
+    -o-animation-name: bg-img-hue;
     height: 750px;
     max-width: 100%;
 }
@@ -42,10 +35,7 @@
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
     z-index: 99;
-    animation: fadeinmainsmall 5s;
-    -webkit-animation: fadeinmainsmall 5s;
-    -moz-animation: fadeinmainsmall 5s;
-    -o-animation: fadeinmainsmall 5s;
+
 }
 #nav-bar-small {
     position: fixed;
@@ -152,7 +142,7 @@
 #hero-banner-small {
     position: absolute;
     padding-top: 150px;
-    top: 5em;
+    top: 1em;
     width: 100%;
 }
 .weekend-acts-small {
@@ -164,7 +154,6 @@
     width: 375px;
     height: auto;
     filter: contrast(100%);
-
 }
 .weekend-acts-small h1 {
     color: var(--lightGrey);
@@ -595,10 +584,7 @@
 }
 #footer-home-small {
     background: var(--secondaryColor);
-    animation: fadeinmainsmall 5s;
-    -webkit-animation: fadeinmainsmall 5s;
-    -moz-animation: fadeinmainsmall 5ms;
-    -o-animation: fadeinmainsmall 5s;
+
 }
 .footer-container-small {
     padding: 1em 1em 7em 1em;
@@ -730,10 +716,13 @@
 #loading-page-small {
     position: absolute;
     display: block;
-    animation: fadeoutmainsmall 3s normal forwards ease-in-out;
-    -webkit-animation: fadeoutmainsmall 3s normal forwards ease-in-out;
-    -moz-animation: fadeoutmainsmall 3s normal forwards ease-in-out;
-    -o-animation: fadeoutmainsmall 3s normal forwards ease-in-out;
+    z-index: 999;
+    animation: cssAnimation 1s ease-in 5s forwards;
+    -moz-animation: cssAnimation 1s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 1s ease-in 5s forwards;
+    -o-animation: cssAnimation 1s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 .loading-page-container-small {
     display: grid;
@@ -745,6 +734,18 @@
     align-content: center;
     justify-content: center;
 }
+
+@keyframes cssAnimation {
+    to {
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        visibility:hidden;
+    }
+}
+
 .loading-page-container-small img {
     margin: -5em 0em 0em 0em;
     width: 200px;
