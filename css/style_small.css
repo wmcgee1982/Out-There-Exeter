@@ -1,11 +1,23 @@
 /* *** ***  Body and background - small screen *** *** */
 @media only screen and (min-width:768px) {
+    #body-home-small {
+        display: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overscroll-behavior-y: none;
+        width: 100%;
+        background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+        animation: fadeinmainsmall 5s linear;
+        -webkit-animation: fadeinmainsmall 5s linear;
+        -moz-animation: fadeinmainsmall 5s linear;
+        -o-animation: fadeinmainsmall 5s linear;
+    }
     #body-small {
         display: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overscroll-behavior-y: none;
+        width: 100%;
+        background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     }
-}
-#body-small {
-    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
 }
 
 .background-small {
@@ -344,7 +356,7 @@
     display: inline;
 }
 #take-part-section-small h1 {  
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 900;
     color: var(--yellow);
     text-shadow: 2px 2px var(--primaryColor);
@@ -353,7 +365,7 @@
 #take-part-section-small h3 {
     font-size: 4vw;
     font-weight: 500;
-    color: var(--lightGrey);
+    color: var(--yellow);
     text-shadow: 2px 2px 2px var(--darkGrey);
 }
 /* *** *** Take Part LABELS *** *** */
@@ -496,7 +508,7 @@
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-600%);}
+    100% {transform: translateX(-435%);}
 }
 
 /* *** *** Sharing News *** *** */
@@ -910,6 +922,10 @@
 .information-container-festival-small p {
     padding: 0.5em 0em;
     font-size: 4vw;
+}
+.information-container-festival-small a {
+    text-decoration: none;
+    color: var(--lightGrey);
 }
 .information-container-festival-small span {
     position: absolute;
