@@ -28,10 +28,12 @@
     background-position: center center;
     height: 750px;
     max-width: 100%;
-    animation: bg-img-hue 3s infinite;
-    -webkit-animation: bg-img-hue 3s infinite;
-    -moz-animation: bg-img-hue 3s infinite;
-    -o-animation: bg-img-hue 3s infinite;
+    animation-name: bg-img-hue, fadeinmainsmall;
+    animation-duration: 3s, 4s;
+    animation-iteration-count: infinite, 1;
+    -webkit-animation-name: bg-img-hue, fadeinmainsmall;
+    -moz-animation-name: bg-img-hue, fadeinmainsmall;
+    -o-animation-name: bg-img-hue, fadeinmainsmall;
 }
 
 /* *** ***  Nav section - small screen *** *** */
@@ -752,8 +754,8 @@
 .loading-page-container-small {
     display: grid;
     position: absolute;
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     opacity: 1;
     margin: 10vh, 0em 0em 0em;
@@ -836,6 +838,7 @@
 }
 .information-container-about-bottom-small a {
     text-decoration: none;
+    color: var(--secondaryColor);
 }
 .information-container-about-bottom-small span {
     position: absolute;
