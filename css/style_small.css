@@ -30,7 +30,7 @@
     background-size: cover;
     background-position: center center;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 2s;
+    animation-duration: 3s, 3s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
