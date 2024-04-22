@@ -29,7 +29,7 @@
     height: 750px;
     max-width: 100%;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 0s;
+    animation-duration: 3s, 1s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
@@ -997,7 +997,7 @@
 
 #information-section-registration-small {
     position: relative;
-    margin-bottom: -0.3em;
+    margin-bottom: -0.5em;
     padding: 2em;
     max-width: 100%;
     height: auto;
