@@ -783,7 +783,7 @@
 
 /* *** *** ABOUT PAGE *** *** */
 #main-page-small {
-    margin: 2.5em 0em -0.2em 0em;
+    margin: 2.5em 0em 0em 0em;
 }
 #about-small {
     padding: 1em 0em 0em 0em;
@@ -937,6 +937,7 @@
 #information-section-festival-bottom-small {
     position: relative;
     padding: 2em;
+    margin-bottom: -0.1em;
     max-width: 100%;
     height: auto;
     background: var(--backgroundColor);
