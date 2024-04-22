@@ -7,15 +7,15 @@
                 <h1>Talk to Us</h1>
         </div>
 
-        <form class="contact-form" action="contactform.php" method="post">
+        <form onsubmit="sendEmail(); reset(); return false;">
                 <!-- Name -->
-                <input type="text" name="name" class="form-control" placeholder="Name">
+                <input id="contactFormName" type="text" class="form-control" placeholder="Name">
                
                 <!-- E-mail -->
-                <input type="email" name="email" class="form-control" placeholder="E-mail">
+                <input id="contactFormEmail" type="email"  class="form-control" placeholder="E-mail">
               
                 <!-- Message -->
-                <textarea id="formMessage" name="message" class="form-control" rows="5" placeholder="Message"></textarea>
+                <textarea id="contactFormMessage" type="email" class="form-control" rows="5" placeholder="Message"></textarea>
                 
                 <!-- Submit btn -->
                 <button type="submit" name="submit" class="footer-buttons-small-contact-form" tabIndex="-1">SEND</button>

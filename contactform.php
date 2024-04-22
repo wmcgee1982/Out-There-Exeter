@@ -1,9 +1,9 @@
-<?php
+ <?php
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name']
-    $mailFrom = $_POST['email']
-    $message = $_POST['message']
+if (isset($_POST['SSUUBBMMIITT'])) {
+    $name = $_POST['namename']
+    $mailFrom = $_POST['emailemail']
+    $message = $_POST['messagemessage']
 
     $mailTo = "info@out-there-exeter.com"
     $headers = "From: ".$mailFrom;
@@ -12,4 +12,4 @@ if (isset($_POST['submit'])) {
 
     mail($mailTo, $txt, $headers);
     header("Location: index.php?mailsend");
-}
+} 
