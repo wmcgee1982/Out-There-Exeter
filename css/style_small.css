@@ -29,7 +29,7 @@
     height: 750px;
     max-width: 100%;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 4s;
+    animation-duration: 3s, 0s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
