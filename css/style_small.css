@@ -953,6 +953,7 @@
 }
 .information-container-festival-bottom-small a {
     text-decoration: none;
+    color: var(--secondaryColor);
 }
 .information-container-festival-bottom-small span {
     position: absolute;
@@ -996,6 +997,7 @@
 
 #information-section-registration-small {
     position: relative;
+    margin-bottom: -0.3em;
     padding: 2em;
     max-width: 100%;
     height: auto;
