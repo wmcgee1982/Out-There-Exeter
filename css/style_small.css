@@ -6,7 +6,6 @@
 }
 #body-small {
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
-    padding: 2.5em 0em 0em 0em;
 }
 
 .background-small {
@@ -15,14 +14,12 @@
     background-attachment: scroll;
     background-size: cover;
     background-position: center center;
-    animation-name: bg-img-hue;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: bg-img-hue;
-    -moz-animation-name: bg-img-hue;
-    -o-animation-name: bg-img-hue;
     height: 750px;
     max-width: 100%;
+    animation: bg-img-hue 3s infinite;
+    -webkit-animation: bg-img-hue 3s infinite;
+    -moz-animation: bg-img-hue 3s infinite;
+    -o-animation: bg-img-hue 3s infinite;
 }
 
 /* *** ***  Nav section - small screen *** *** */
@@ -34,8 +31,11 @@
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    z-index: 99;
-
+    z-index: 999;
+    animation: MoveDown 5.5s linear;
+    -webkit-animation: MoveDown 5.5s linear;
+    -moz-animation: MoveDown 5.5s linear;
+    -o-animation: MoveDown 5.5s linear;
 }
 #nav-bar-small {
     position: fixed;
@@ -45,8 +45,17 @@
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     padding: 0.5em;
-    z-index: 99;
+    z-index: 999;
 }
+
+@keyframes MoveDown {
+    0%, 90% {
+      top: -100px;
+    }
+    100% {
+      top: 0;
+    }
+  }
 
 .navbar-wrapper-small {
     display: grid;
@@ -141,7 +150,7 @@
 /* *** *** HERO BANNER Section - small *** *** */
 #hero-banner-small {
     position: absolute;
-    padding-top: 150px;
+    padding-top: 100px;
     top: 1em;
     width: 100%;
 }
@@ -584,7 +593,11 @@
 }
 #footer-home-small {
     background: var(--secondaryColor);
-
+    bottom: 0;
+    animation: fadeinmainsmall 5s linear;
+    -webkit-animation: fadeinmainsmall 5s linear;
+    -moz-animation: fadeinmainsmall 5s linear;
+    -o-animation: fadeinmainsmall 5s linear;
 }
 .footer-container-small {
     padding: 1em 1em 7em 1em;
@@ -634,7 +647,7 @@
     bottom: 0;
     right: 0;
     background: var(--primaryColor);
-    z-index: 99;
+    z-index: 999;
 }
 .footer-copyright-wrapper-small {
     margin-left: auto;
@@ -668,7 +681,7 @@
     right: 0;
     height: 50px;
     width: 260px;
-    z-index: 99;
+    z-index: 999;
 }
 .footer-socials-svg {
     height: 50px;
@@ -716,13 +729,13 @@
 #loading-page-small {
     position: absolute;
     display: block;
-    z-index: 999;
-    animation: cssAnimation 1s ease-in 5s forwards;
-    -moz-animation: cssAnimation 1s ease-in 5s forwards;
-    -webkit-animation: cssAnimation 1s ease-in 5s forwards;
-    -o-animation: cssAnimation 1s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 4.9s forwards;
+    -moz-animation: cssAnimation 0s ease-in 4.9s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 4.9s forwards;
+    -o-animation: cssAnimation 0s ease-in 4.9s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    z-index: 999;
 }
 .loading-page-container-small {
     display: grid;
@@ -731,6 +744,7 @@
     min-width: 100vw;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     opacity: 1;
+    margin: 10vh, 0em 0em 0em;
     align-content: center;
     justify-content: center;
 }
@@ -753,6 +767,9 @@
 }
 
 /* *** *** ABOUT PAGE *** *** */
+#main-page-small {
+    margin: 2.5em 0em 0em 0em;
+}
 #about-small {
     padding: 1em 0em 0em 0em;
     margin-bottom: -0.2em;
