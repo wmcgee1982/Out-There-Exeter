@@ -1,15 +1,20 @@
-function sendEmail(){
+
+
+function sendEmail() {
+    var sname=document.getElementById('contactFormName').value;
+    var semail=document.getElementById('contactFormEmail').value;
+    var message=document.getElementById('contactFormMessage').value;
+    var smsg='<html><strong>From :</strong>' + sname + '<br/><strong>Contact :</strong>' + semail +'<br/><strong>Message:</strong>' + message + '</html>';
+
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "outthereexe@gmail.com",
-        Password : "ote2024!!",
-        To : "outthereexe@gmail.com",
+        Host: "smtp.gmail.com",
+        Username:'outthereexe@gmail.com',
+        Password:'ote2024!!',
+        To : 'outthereexe@gmail.com',
         From : "outthereexe@gmail.com",
         Subject : "New Website Contact Form Enquiry",
-        Body : "Name: " +document.getElementById("contactFormName").value 
-                + "<br> Email: " +document.getElementById("contactFormEmail").value 
-                + "<br> Message: " +document.getElementById("contactFormMessage").value 
-            }).then(
-                message => alert("Message sent")
-            );
+        Body : smsg
+   }).then(
+    message => alert("Message sent")
+   );
 }
