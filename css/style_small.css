@@ -418,6 +418,7 @@
     text-decoration: none;
     font-size: 4vw;
     font-weight: 600;
+    color: var(--secondaryColor);
 }
 .take-part-card-container-small span {
     position: absolute;
