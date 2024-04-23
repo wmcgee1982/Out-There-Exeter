@@ -1058,12 +1058,16 @@
     justify-self: center;
     animation: float 2s ease-in-out infinite;
 }
+#contactformpaperforms {
+    padding: 0em 2em;
+    width: 100%;
+    height: 900px;
+}
 form {
     padding: 0em 0em 3em 0em;
     text-align: center;
 }
 .contact-form-title h1 {
-    padding: 0em 0em 0.5em 0em;
     text-align: center;
     font-size: 8vw;
     font-weight: 400;
