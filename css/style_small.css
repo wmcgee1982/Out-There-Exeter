@@ -418,6 +418,7 @@
     text-decoration: none;
     font-size: 4vw;
     font-weight: 600;
+    color: var(--secondaryColor);
 }
 .take-part-card-container-small span {
     position: absolute;
@@ -1057,22 +1058,37 @@
     justify-self: center;
     animation: float 2s ease-in-out infinite;
 }
-form {
-    padding: 0em 0em 3em 0em;
-    text-align: center;
-}
 .contact-form-title h1 {
-    padding: 0em 0em 0.5em 0em;
     text-align: center;
     font-size: 8vw;
     font-weight: 400;
-    background: linear-gradient(to right,#EB028A, #692A92, #f2f6f8);
+    background: linear-gradient(to right, #f2f6f8, #692A92, #EB028A);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
 }
+#JotFormIFrame-241132578902051 {
+    min-width:80%;max-width:80%;height:539px;border:none;
+    justify-self: center;
+    height: auto;
+    margin: -5em 0em 0em 0em;
+    background-color: var(--backgroundColor);
+    border-radius: 1rem;
+    border: none;
+    background: transparent;
+}
+#information-section-contact-bottom-small {
+    position: relative;
+    padding: 2em;
+    margin: -4em 0em -0.1em 0em;
+    max-width: 100%;
+    height: auto;
+    background: var(--backgroundColor);
+}
+
+
 .form-control {
     padding: 0.75em;
     margin: 0.5em 0em;
