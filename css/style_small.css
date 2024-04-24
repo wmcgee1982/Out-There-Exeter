@@ -104,13 +104,13 @@
     -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small #myLinks-small {
-    font-size: large;
+    font-size: x-large;
     display: none;
     min-height: 100vh;
     min-width: 100vw;
     text-align: right;
     background: var(--primaryColor);
-    padding-top: 3em;
+    padding-top: 2em;
     -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small li {
@@ -121,7 +121,7 @@
     text-decoration: none;
     font-weight: 100;
     line-height: 1.7em;
-    padding: 0em 1em;
+    padding: 0em 0.7em;
     -webkit-tap-highlight-color: transparent; 
 }
 .iconSmall {
@@ -144,6 +144,7 @@
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
     font-weight: 400;
+    font-size: medium;
 }
 .menu-title-small img {
     width: 200px;
@@ -151,7 +152,7 @@
     padding: 0.7em 0em 0.15em 0em;
 }
 .menu-title-small h5 {
-
+    font-size: small;
     font-weight: 400;
 }
 .menu-title-small span {
@@ -550,7 +551,6 @@
 }
 .newsPanelCard-small p {
     color: var(--darkGrey);
-    line-height: 5vw;
 }
 .newsPanelCard-small h3 {
     color: var(--darkGrey);
@@ -775,7 +775,7 @@
 
 .loading-page-container-small img {
     margin: -7em 0em 0em 0em;
-    width: 200px;
+    width: 225px;
     height: auto;
 }
 
