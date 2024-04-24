@@ -53,6 +53,17 @@ body {
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
 }
+#nav-bar-home-big {
+    position: fixed;
+    width: 100%;
+    background: var(--primaryColor);
+    box-shadow: 0em 0em 1em 0em var(--darkGrey);
+    z-index: 999;
+    animation: MoveDown 5.5s linear;
+    -webkit-animation: MoveDown 5.5s linear;
+    -moz-animation: MoveDown 5.5s linear;
+    -o-animation: MoveDown 5.5s linear;
+}
 
 .navbar-wrapper {
     display: grid;
@@ -869,7 +880,7 @@ button {
     text-shadow: 2px 2px var(--primaryColor);
 }
 .partners-title-mainpage {
-    width: 80vw;
+    width: 90vw;
     display: grid;
     justify-items: center;
 }
@@ -1036,6 +1047,16 @@ button {
     background-color: var(--secondaryColor);
     padding: 0 0 50px 0;
 }
+
+#footer-home-big {
+    background-color: var(--secondaryColor);
+    padding: 0 0 50px 0;
+    animation: fadeinmainsmall 5s linear;
+    -webkit-animation: fadeinmainsmall 5s linear;
+    -moz-animation: fadeinmainsmall 5s linear;
+    -o-animation: fadeinmainsmall 5s linear;
+}
+
 .footer-container {
     padding: 0em 2em 2em 2em;
 }
@@ -1167,7 +1188,7 @@ button {
 }
 #contactformpaperforms-big {
     padding: 0em 2em;
-    width: 80%;
+    width: 100%;
     height: 900px;
 }
 

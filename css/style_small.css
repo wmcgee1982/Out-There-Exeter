@@ -30,7 +30,7 @@
     background-size: cover;
     background-position: center center;
     animation-name: bg-img-hue, fadeinmainsmall;
-    animation-duration: 3s, 3s;
+    animation-duration: 3s, 4s;
     animation-iteration-count: infinite, 1;
     -webkit-animation-name: bg-img-hue, fadeinmainsmall;
     -moz-animation-name: bg-img-hue, fadeinmainsmall;
@@ -94,7 +94,6 @@
 #navbar-title-small h1 {
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em var(--lightGrey);
-    font-size: 5vw;
 }
 /* *** ***  Toggle Menu - small screen *** *** */
 .toggle-menu-small {
@@ -119,7 +118,6 @@
 .toggle-menu-small a {
     color: var(--lightGrey);
     text-decoration: none;
-    font-size: 6vw;
     font-weight: 100;
     line-height: 1.7em;
     padding: 0em 1em;
@@ -144,7 +142,7 @@
 .menu-title-small h2 {
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
-    font-size: 4vw;
+
     font-weight: 400;
 }
 .menu-title-small img {
@@ -153,11 +151,11 @@
     padding: 0.7em 0em 0.15em 0em;
 }
 .menu-title-small h5 {
-    font-size: 4vw;
+
     font-weight: 400;
 }
 .menu-title-small span {
-    font-size: 3.5vw;
+
     font-weight: 300;
     font-style: italic;
 }
@@ -182,12 +180,12 @@
 .weekend-acts-small h1 {
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
-    font-size: 4vw;
+
     font-weight: 400;
 }
 .weekend-acts-small h5 {
     width: auto;
-    font-size: 4vw;
+
     font-weight: 400;
 }
 .weekend-acts-sub-small {
@@ -195,7 +193,7 @@
 }
 .weekend-acts-sub-small p {
     width: auto;
-    font-size: 4vw;
+
     font-weight: 400;
     line-height: 6vw;
 }
@@ -216,7 +214,7 @@
     padding: 0em 0em 0.3em 0em;
     text-align: center;
     font-weight: 400;
-    font-size: 1em;
+
     color: var(--lightGrey);
 }
 .digits-container1 {
@@ -239,14 +237,14 @@
 }
 .digits-container1 h1 {
     display: grid;
-    font-size: 1.5em;
+
     font-weight: 400;
     justify-content: center;
     align-items: center;
 }
 .digits-container1 p {
     display: grid;
-    font-size: 1em;
+
     font-weight: 100;
     padding-top: 0.1em;
     justify-content: center;
@@ -268,19 +266,19 @@
 }
 .information-container-small h3 {
     color: var(--secondaryColor);
-    font-size: 5.5vw;
+
     font-weight: 600;
 }
 .information-container-small p {
     padding: 0.5em 0em;
-    font-size: 4vw;
+
 }
 .information-container-small span {
     position: absolute;
     padding: 0.16em 0em 0em 0.5em;
 }
 .information-container-small a {
-    font-size: 4.5vw;
+
     text-decoration: none;
     color: var(--lightGrey);
     font-weight: 500;
@@ -293,7 +291,7 @@
     margin: 1em;
 }
 .subtitles-small h3 {
-    font-size: 3vw;
+
     font-weight: 400;
     padding: 0.5em 0em;
 }
@@ -309,7 +307,7 @@
     margin: 1em;
 }
 .subtitles-small h3 {
-    font-size: 3vw;
+
     font-weight: 400;
     padding: 0.5em 0em;
 }
@@ -328,7 +326,7 @@
     border-radius: 0.5em;
 }
 .header-subtitles-cards-small h1 {
-    font-size: 4vw;
+
     color: var(--secondaryColor);
 }
 .header-subtitles-cards-small span {
@@ -359,14 +357,14 @@
     display: inline;
 }
 #take-part-section-small h1 {  
-    font-size: 5vw;
+
     font-weight: 900;
     color: var(--yellow);
     text-shadow: 2px 2px var(--primaryColor);
     align-self: center;
 }
 #take-part-section-small h3 {
-    font-size: 4vw;
+
     font-weight: 500;
     color: var(--yellow);
     text-shadow: 2px 2px 2px var(--darkGrey);
@@ -392,12 +390,12 @@
     border-left: solid 0.5em var(--primaryColor);
     line-height: 10vw;
     padding: 0em 0em 0em 0.5em;
-    font-size: 5vw;
+
 }
 .take-part-card-container-small p {
     color: var(--secondaryColor);
     font-weight: 300;
-    font-size: 4vw;
+ 
     padding: 1em 1em 0em 1em;
 }
 .take-part-card-container-small b {
@@ -406,24 +404,24 @@
 .take-part-card-container-small li {
     color: var(--secondaryColor);
     font-weight: 300;
-    font-size: 4vw;
+
 }
 .take-part-card-container-small ul {
     padding: 1em 3em 0em 3em;
     font-weight: 300;
-    font-size: 4vw;
+
     text-decoration: none;
 }
 .take-part-card-container-small a {
     text-decoration: none;
-    font-size: 4vw;
+
     font-weight: 600;
     color: var(--secondaryColor);
 }
 .take-part-card-container-small span {
     position: absolute;
     margin: 0.1em 0em 0em 0.5em;
-    font-size: 4vw;
+
     font-weight: 600;
 }
 
@@ -441,7 +439,7 @@
     text-align: center;
 }
 .partners-title-small h1 {  
-    font-size: 6vw;
+
     font-weight: 900;
     color: var(--lightGrey);
     text-shadow: 2px 2px var(--primaryColor);
@@ -449,7 +447,7 @@
 .partners-title-small p {  
     color: var(--lightGrey);
     font-weight: 300;
-    font-size: 4vw;
+
     padding: 1em 2em;
 }
 .partners-information-small {
@@ -482,7 +480,7 @@
     border-top: solid 0.2em var(--primaryColor);
 }
 #news-section-small h1 {  
-    font-size: 7vw;
+
     font-weight: 400;
     color: var(--secondaryColor);
     padding: 0.5em 0em 0em 0em;
@@ -524,11 +522,9 @@
 }
 .sharedNews-small p {
     color: var(--secondaryColor);
-    font-size: 4vw;
 }
 .sharedNews-small a {
     color: var(--secondaryColor);
-    font-size: 4vw;
     text-decoration: none;
     font-weight: 500;
 }
@@ -546,14 +542,12 @@
 }
 .newsPanelCard-small p {
     color: var(--darkGrey);
-    font-size: 4vw;
     line-height: 5vw;
 }
 .newsPanelCard-small h3 {
     color: var(--darkGrey);
     padding: 0em 0em 0.5em 0em;
     font-weight: 500;
-    font-size: 4.5vw;
 }
 .newsPanelCardTopLine-small {
     display: flex;
@@ -573,7 +567,6 @@
     align-items: center;
 }
 .newsPanelCardTopLineName-small p {
-    font-size: 3.5vw;
 }
 .newsPanelCardTopLineTime-small {
     display: flex;
@@ -582,7 +575,6 @@
     flex: 1;
 }
 .newsPanelCardTopLineTime-small p {
-    font-size: 3.5vw;
 }
 .newsPanelCardContent-small {
     display: flex;
@@ -626,7 +618,6 @@
     padding: 2.7em 1.5em 0em 0em;
 }
 .footer-container-small h1 {
-    font-size: 6vw;
     border-bottom: solid 0.1rem var(--lightGrey);
     padding: 0em 0em 0.2em 0em;
     width: 50vw;
@@ -634,7 +625,6 @@
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
 .footer-container-small p {
-    font-size: 4vw;
     line-height: 5vw;
     padding: 0.3em 0.2em 0.5em 0.2em;
 }
@@ -650,7 +640,6 @@
     color: var(--secondaryColor);
     background: var(--primaryColor);
     border: solid 0.1em var(--lightGrey);
-    font-size: 4vw;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -676,7 +665,6 @@
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 3.3vw;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
@@ -803,19 +791,16 @@
 }
 .information-container-about-small h3 {
     color: #eeeeee; 
-    font-size: 5.5vw;
     font-weight: 600;
 }
 .information-container-about-small p {
     padding: 0.5em 0em;
-    font-size: 4vw;
 }
 .information-container-about-small span {
     position: absolute;
     padding: 0.16em 0em 0em 0.5em;
 }
 .information-container-small-about a {
-    font-size: 4.5vw;
     text-decoration: none;
     color: var(--lightGrey);
     font-weight: 500;
@@ -829,12 +814,10 @@
 }
 .information-container-about-bottom-small h3 {
     color: var(--primaryColor);
-    font-size: 5.5vw;
     font-weight: 600;
 }
 .information-container-about-bottom-small p {
     padding: 0.5em 0em 0em 0em;
-    font-size: 4vw;
     color: var(--secondaryColor);
 }
 .information-container-about-bottom-small a {
@@ -889,7 +872,6 @@
 .info-cards-small h1 {
     color: var(--primaryColor);
     text-shadow: 0.1em 0.1em 0em var(--secondaryColor);
-    font-size: 6vw;
     font-weight: 900;
     text-align: center;
 }
@@ -898,7 +880,6 @@
     padding: 0.3em;;
     background-color: var(--primaryColor);
     color: var(--lightGrey);
-    font-size: 4vw;
     font-weight: 300;
     text-align: center;
 }
@@ -920,12 +901,10 @@
 }
 .information-container-festival-small h3 {
     color: #eeeeee; 
-    font-size: 5.5vw;
     font-weight: 600;
 }
 .information-container-festival-small p {
     padding: 0.5em 0em;
-    font-size: 4vw;
 }
 .information-container-festival-small a {
     text-decoration: none;
@@ -945,12 +924,10 @@
 }
 .information-container-festival-bottom-small h3 {
     color: var(--primaryColor);
-    font-size: 5.5vw;
     font-weight: 600;
 }
 .information-container-festival-bottom-small p {
     padding: 0.5em 0em 0em 0em;
-    font-size: 4vw;
     color: var(--secondaryColor);
 }
 .information-container-festival-bottom-small a {
@@ -979,7 +956,6 @@
     background: var(--backgroundColor);
 }
 .partners-title-festival-small h1 {  
-    font-size: 6vw;
     font-weight: 900;
     color: var(--secondaryColor);
     text-shadow: 2px 2px var(--white);
@@ -988,7 +964,6 @@
 .partners-title-festival-small p {  
     color: var(--lightGrey);
     font-weight: 300;
-    font-size: 4vw;
     padding: 1em 2em;
 }
 
@@ -1010,16 +985,13 @@
 }
 .information-container-registration-small h3 {
     color: #eeeeee; 
-    font-size: 5.5vw;
     font-weight: 600;
 }
 .information-container-registration-small p {
     padding: 0.5em 0em;
-    font-size: 4vw;
 }
 .information-container-registration-small h5 {
     margin: 0.5em 0em 0em 0em;
-    font-size: 4.5vw;
     font-weight: 600;
     color: var(--secondaryColor);
 }
@@ -1029,12 +1001,10 @@
 .information-container-registration-small ul {
     padding: 0em 0em 0em 2em;
     font-weight: 300;
-    font-size: 4vw;
     text-decoration: none;
 }
 .information-container-registration-small a {
     text-decoration: none;
-    font-size: 4vw;
     font-weight: 600;
 }
 
@@ -1069,7 +1039,6 @@ form {
 }
 .contact-form-title h1 {
     text-align: center;
-    font-size: 8vw;
     font-weight: 400;
     background: linear-gradient(to right,#EB028A, #692A92, #f2f6f8);
     -webkit-background-clip: text;
@@ -1091,7 +1060,6 @@ form {
 input,
 textarea {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2em;
 }
 .footer-buttons-small-contact-form {
     padding: 0.75em;
@@ -1102,7 +1070,6 @@ textarea {
     color: var(--lightGrey);
     background: var(--primaryColor);
     border: none;
-    font-size: 4vw;
     font-weight: 900;
     text-decoration: none;
     align-items: center;
