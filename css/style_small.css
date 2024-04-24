@@ -104,12 +104,13 @@
     -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small #myLinks-small {
+    font-size: large;
     display: none;
     min-height: 100vh;
     min-width: 100vw;
     text-align: right;
     background: var(--primaryColor);
-    padding-top: 4em;
+    padding-top: 3em;
     -webkit-tap-highlight-color: transparent; 
 }
 .toggle-menu-small li {
@@ -137,12 +138,11 @@
 .menu-title-small {
     text-align: left; 
     padding: 1.5em;
-    padding-top: 18vh;
+    padding-top: 16vh;
 }
-.menu-title-small h2 {
+.menu-title-small h3 {
     color: var(--lightGrey);
     text-shadow: 0.1em 0.1em var(--secondaryColor);
-
     font-weight: 400;
 }
 .menu-title-small img {
@@ -183,9 +183,8 @@
 
     font-weight: 400;
 }
-.weekend-acts-small h5 {
+.weekend-acts-small h4 {
     width: auto;
-
     font-weight: 400;
 }
 .weekend-acts-sub-small {
@@ -326,7 +325,6 @@
     border-radius: 0.5em;
 }
 .header-subtitles-cards-small h1 {
-
     color: var(--secondaryColor);
 }
 .header-subtitles-cards-small span {
@@ -357,7 +355,7 @@
     display: inline;
 }
 #take-part-section-small h1 {  
-
+    font-size: x-large;
     font-weight: 900;
     color: var(--yellow);
     text-shadow: 2px 2px var(--primaryColor);
@@ -384,18 +382,29 @@
     border-radius: 0.5em;
     opacity: 0.8;
 }
+.take-part-card-container-small-pink {
+    width: auto;
+    background: var(--primaryColor);
+    padding: 1em 0em;
+    box-shadow: 1px 1px 10px -5px var(--lightGrey);
+    border-radius: 0.5em;
+    opacity: 0.8;
+    margin-bottom: 2em;
+}
 .take-part-card-container-small h2 {
     color: var(--primaryColor);
     font-weight: 400;
     border-left: solid 0.5em var(--primaryColor);
     line-height: 10vw;
     padding: 0em 0em 0em 0.5em;
-
+}
+.take-part-card-container-small-pink p {
+    color: var(--backgroundColor);
+    padding: 0em 1em;
 }
 .take-part-card-container-small p {
     color: var(--secondaryColor);
     font-weight: 300;
- 
     padding: 1em 1em 0em 1em;
 }
 .take-part-card-container-small b {
@@ -447,7 +456,6 @@
 .partners-title-small p {  
     color: var(--lightGrey);
     font-weight: 300;
-
     padding: 1em 2em;
 }
 .partners-information-small {
@@ -473,14 +481,14 @@
 /* *** *** News Section *** *** */
 #news-section-small {
     padding: 2em;
-    margin-bottom: -0.2em;
+    margin-bottom: -1.5em;
     width: auto;
     height: auto;
     background: var(--backgroundColor);
     border-top: solid 0.2em var(--primaryColor);
 }
 #news-section-small h1 {  
-
+    font-size: x-large;
     font-weight: 400;
     color: var(--secondaryColor);
     padding: 0.5em 0em 0em 0em;
@@ -500,7 +508,7 @@
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
-.panel-scroll-small h2 {
+.panel-scroll-small h3 {
     color: var(--darkGrey);
     transform:translateX(100%);
     animation: scroll-left 25s linear infinite;
@@ -626,7 +634,7 @@
 }
 .footer-container-small p {
     line-height: 5vw;
-    padding: 0.3em 0.2em 0.5em 0.2em;
+    padding: 0.6em 0.3em 0.5em 0.2em;
 }
 
 /* *** *** Footer Buttons *** *** */
@@ -665,6 +673,7 @@
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
+    font-size: small;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
@@ -874,6 +883,7 @@
     text-shadow: 0.1em 0.1em 0em var(--secondaryColor);
     font-weight: 900;
     text-align: center;
+    font-size: x-large;
 }
 .info-cards-small p {
     display: grid;
@@ -951,8 +961,8 @@
 .partners-title-festival-small {
     width: auto;
     text-align: center;
-    margin: -0.1em 0em;
-    padding: 1em 0em;
+    padding: 2em 0em 0em 0em;
+    margin: 0em -2em;
     background: var(--backgroundColor);
 }
 .partners-title-festival-small h1 {  
@@ -990,7 +1000,7 @@
 .information-container-registration-small p {
     padding: 0.5em 0em;
 }
-.information-container-registration-small h5 {
+.information-container-registration-small h4 {
     margin: 0.5em 0em 0em 0em;
     font-weight: 600;
     color: var(--secondaryColor);
@@ -1038,6 +1048,7 @@ form {
     text-align: center;
 }
 .contact-form-title h1 {
+    font-size: xx-large;
     text-align: center;
     font-weight: 400;
     background: linear-gradient(to right,#EB028A, #692A92, #f2f6f8);

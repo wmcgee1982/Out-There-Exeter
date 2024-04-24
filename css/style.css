@@ -23,6 +23,10 @@
     --yellow: #fcc904;
 }
 
+html {
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+}
+
 /* *** *** Font *** *** */
 p, h1, h2, h3, h4, h5, h6, li {
     font-weight: 100;
@@ -503,6 +507,14 @@ body:has(#inclusivity-title:hover)
 /* *** *** Information Section *** *** */
 #information-section {
     padding: 4em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+    border-top: solid 0.2em var(--primaryColor);
+    border-bottom: solid 0.2em var(--backgroundColor);
+}
+#information-section-home {
+    padding: 3em 4em 4em 4em;
     width: 100%;
     height: auto;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
