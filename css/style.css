@@ -250,7 +250,7 @@ body {
 
 } 
 .header-subtitles p:hover {
-    margin: 0.2em 0em 0.2em 0em;
+    margin: 0.3em 0em 0.2em 0em;
     padding: 0.3em;
     background: var(--primaryColor);
     color: var(--secondaryColor);
@@ -259,6 +259,18 @@ body {
     filter: none;
     cursor: pointer;
 }
+
+.header-subtitles-bigmain {
+    justify-self: center;
+    width: 70%
+}
+.header-subtitles-bigmain p {
+    margin: 0.3em 0em 0.2em 0em;
+    padding: 0.3em;
+    background-color: var(--secondaryColor);
+    text-decoration: none;
+    filter: drop-shadow(0px 1px var(--primaryColor));
+} 
 /* *** ***  TICKET ICON *** *** */
 .ticket-icon {
     justify-self: center;
@@ -294,13 +306,13 @@ body {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    margin-right: 2em;
 }
 body:has(.ticket-icon a:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 4em;
+    top: -2.5em;
+    right: -0.5em;
     font-size: x-large;
     font-weight: 900;
     color: var(--primaryColor);
@@ -310,7 +322,8 @@ body:has(.ticket-icon p:hover)
 .ticket-icon p {
     display: block;
     position: absolute;
-    top: 4em;
+    top: -2.5em;
+    right: -0.5em;
     font-size: x-large;
     font-weight: 900;
     color: var(--primaryColor);
@@ -485,6 +498,12 @@ body:has(#inclusivity-title:hover)
     border-top: solid 0.2em var(--primaryColor);
     border-bottom: solid 0.2em var(--backgroundColor);
 }
+#information-section-bigpages {
+    padding: 4em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+}
 .information-container {
     width: auto;
 }
@@ -498,7 +517,22 @@ body:has(#inclusivity-title:hover)
     text-align: justify;
 }
 .information-container span {
-    font-weight: 500;
+    position: absolute;
+    font-weight: 600;
+    padding: 0.16em 0em 0em 0.5em;
+}
+.information-container a {
+    color: var(--backgroundColor);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.information-container img {
+    width: 100vw;
+    height: auto;
+    border-top: solid 0.1em var(--backgroundColor);
+    border-bottom: solid 0.1em var(--backgroundColor);
+    filter: hue-rotate(300deg);
 }
 
 /* *** *** Information Section Info Cards *** *** */
@@ -613,7 +647,7 @@ body:has(.advocacy:hover)
 
 /* *** *** Take Part Section *** *** */
 #take-part-section {
-    padding: 4em;
+    padding: 2em 4em 3em 4em;
     width: 100%;
     height: auto;
     background-image: url(../media/twoladysingers.gif);
@@ -639,20 +673,37 @@ body:has(.advocacy:hover)
     text-shadow: 2px 2px var(--primaryColor);
     align-self: center;
 }
+#take-part-section h4 {
+    font-size: large;
+    color: var(--backgroundColor);
+    font-weight: 500;
+    text-align: justify;
+    padding: 0em 1em 0em 1.65em;
+}
 /* *** *** Take Part LABELS *** *** */
 .take-part-card-section {
     display: grid;
     justify-content: center;
 }
 .take-part-card-container {
-    width: 50vw;
+    width: 70vw;
     background: var(--backgroundColor);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     padding: 1em 0em;
     border-right: solid 0.5em var(--primaryColor);
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-    cursor: pointer;
+    cursor: none;
+    opacity: 0.7;
+}
+.take-part-card-container-top {
+    width: 70vw;
+    background: var(--primaryColor);
+    margin-bottom: 2em;
+    padding: 1em 0em;
+    box-shadow: 1px 1px 10px -5px var(--lightGrey);
+    border-radius: 0.5em;
+    cursor: none;
     opacity: 0.7;
 }
 button {
@@ -661,16 +712,51 @@ button {
 .take-part-card-container:hover {
     opacity: 1;
 }
+.take-part-card-container-top:hover {
+    opacity: 1;
+}
+
 .take-part-card-container h2 {
     color: var(--secondaryColor);
     font-weight: 500;
     border-left: solid 0.5em var(--primaryColor);
     line-height: 2em;
-    cursor: pointer;
+   cursor: none;
     text-align: left;
-    padding: 0em 0em 0em 1em;
+    padding: 0em 0em 0em 0.8em;
     font-size: x-large;
 }
+.take-part-card-container p {
+    color: var(--secondaryColor);
+    text-align: justify;
+    padding: 0.5em 2em;
+}
+.take-part-card-container h3 {
+    color: var(--secondaryColor);
+    font-weight: 400;
+    text-align: justify;
+    padding: 1em 1em 0em 1.65em;
+}
+.take-part-card-container span {
+    font-weight: 500;
+}
+.take-part-card-container li {
+    color: var(--secondaryColor);
+}
+.take-part-card-container ul {
+    padding: 0.5em 2em 0em 4em;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: default;
+}
+.take-part-card-container a {
+    color: var(--secondaryColor);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
 /* *** *** Take Part Pop-up *** *** */
 .modal {
     position: fixed;
@@ -782,8 +868,26 @@ button {
     color: var(--lightGrey);
     text-shadow: 2px 2px var(--primaryColor);
 }
+.partners-title-mainpage {
+    width: 80vw;
+    display: grid;
+    justify-items: center;
+}
+.partners-title-mainpage h1 {  
+    font-size: xx-large;
+    font-weight: 900;
+    color: var(--primaryColor);
+    text-shadow: 2px 2px var(--secondaryColor);
+}
 .partners-information {
     padding: 2em 0em;
+    width: 90vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
+.partners-information-mainpage {
     width: 90vw;
     display: grid;
     justify-items: center;
@@ -812,7 +916,7 @@ button {
     background: var(--lightGrey);
     border-top: solid 0.2em var(--primaryColor);
 }
-#news-section h1 {  
+#news-section h2 {  
     padding: 0em 1em;
     font-size: 50px;
     font-weight: 500;
@@ -825,7 +929,7 @@ button {
 /* *** *** News Scroll Panel *** *** */
 .panel-scroll {
     white-space: nowrap;
-    margin: 2em 3.5em;
+    margin: 1em 3.5em;
     padding: 0.5em;
     overflow: hidden;
     border-right: solid var(--secondaryColor) 5em;
@@ -833,26 +937,31 @@ button {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
-.panel-scroll h2 {
+.panel-scroll h3 {
+    font-size: x-large;
     color: var(--darkGrey);
     transform:translateX(100%);
     animation: scroll-left 25s linear infinite;
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-330%);}
+    100% {transform: translateX(100%);}
 }
 
 /* *** *** Sharing News *** *** */
 .sharedNews {
     width: auto;
-    margin: 2em 3.5em;
+    margin: 1em 3.5em;
 }
 .sharedNews p {
     color: var(--darkGrey);
 }
 .sharedNews span {
     font-weight: 500;
+}
+.sharedNews a {
+    color: var(--darkGrey);
+    text-decoration: none;
 }
 
 /* *** *** News Items *** *** */
@@ -955,6 +1064,13 @@ button {
 .footer-info-cards p {
     line-height: 1.5em;
 }
+.footer-info-cards img {
+    position: absolute;
+    width: 125px;
+    height: auto;
+    right: 0;
+    margin: -4em 2em 0em 0em;
+}
 
 /* *** *** Footer Buttons *** *** */
 .footer-buttons {
@@ -999,6 +1115,60 @@ button {
     color: var(--lightGrey);
     margin-bottom: 0;
     margin-top: 0;
+}
+
+/* *** *** Bttom of main pages *** *** */
+#news-section-bigpages {
+    padding: 4em;
+    width: 100%;
+    height: auto;
+    background: var(--lightGrey);
+    border-top: solid 0.2em var(--primaryColor);
+}
+.information-container-about-bottom-big h3 {
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+.information-container-about-bottom-big p {
+    padding: 0.5em 0em 0em 0em;
+    color: var(--secondaryColor);
+}
+.information-container-about-bottom-big a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.information-container-about-bottom-big span {
+    position: absolute;
+    padding: 0.16em 0em 0em 0.5em;
+}
+/* *** *** Contact Form *** *** */
+.contact-form-big-page-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px;
+    gap: 0em;
+}
+.contact-form-title-big h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    background: linear-gradient(to right,#EB028A, #692A92, #f2f6f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+#envelope-big {
+    padding: 4em 0em 0em 0em;
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    animation: float 2s ease-in-out infinite;
+}
+#contactformpaperforms-big {
+    padding: 0em 2em;
+    width: 80%;
+    height: 900px;
 }
 
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
