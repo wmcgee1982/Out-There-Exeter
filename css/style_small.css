@@ -193,9 +193,7 @@
 }
 .weekend-acts-sub-small p {
     width: auto;
-
     font-weight: 400;
-    line-height: 6vw;
 }
 .weekend-acts-sub-small a {
     text-decoration: none;
@@ -396,7 +394,6 @@
     color: var(--primaryColor);
     font-weight: 400;
     border-left: solid 0.5em var(--primaryColor);
-    line-height: 10vw;
     padding: 0em 0em 0em 0.5em;
 }
 .take-part-card-container-small-pink p {
@@ -512,14 +509,14 @@
 .panel-scroll-small h3 {
     color: var(--darkGrey);
     transform:translateX(100%);
-    animation: scroll-left 25s linear infinite;
-    -webkit-animation: scroll-left 25s linear infinite;
-    -moz-animation: scroll-left 25s linear infinite;
-    -o-animation: scroll-left 25s linear infinite;
+    animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    -moz-animation: scroll-left 10s linear infinite;
+    -o-animation: scroll-left 10s linear infinite;
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-435%);}
+    100% {transform: translateX(-130%);}
 }
 
 /* *** *** Sharing News *** *** */
@@ -527,7 +524,6 @@
     width: auto;
     margin: 1.5em 0.5em;
     text-align: justify;
-    line-height: 6vw;
 }
 .sharedNews-small p {
     color: var(--secondaryColor);
@@ -574,15 +570,11 @@
     margin-left: 0.5em;
     align-items: center;
 }
-.newsPanelCardTopLineName-small p {
-}
 .newsPanelCardTopLineTime-small {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-}
-.newsPanelCardTopLineTime-small p {
 }
 .newsPanelCardContent-small {
     display: flex;
@@ -633,7 +625,6 @@
     text-shadow: 0.1em 0.1em var(--primaryColor);
 }
 .footer-container-small p {
-    line-height: 5vw;
     padding: 0.6em 0.3em 0.5em 0.2em;
 }
 
@@ -679,7 +670,7 @@
 /* *** *** OTHER DECORATIVE ELEMENTS *** *** */
 /* *** *** Waves *** *** */
 .wave-svg-footer-small {
-    max-width: 100%;
+    min-width: 100%;
     height: 4em;
     background: var(--secondaryColor);
 }
@@ -952,7 +943,7 @@
     margin: 1.5em -2em;
 }
 .festival-image-festival-page-small img {
-    max-width: 100vw;
+    min-width: 100vw;
     height: auto;
     border-top: solid 0.1em var(--backgroundColor);
     border-bottom: solid 0.1em var(--backgroundColor);

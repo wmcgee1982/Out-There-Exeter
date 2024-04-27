@@ -1178,7 +1178,7 @@ button {
 .contact-form-big-page-container {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 300px;
+    grid-template-columns: 200px;
     gap: 0em;
 }
 .contact-form-title-big h1 {
