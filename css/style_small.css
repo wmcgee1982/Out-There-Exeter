@@ -744,8 +744,8 @@
 .loading-page-container-small {
     display: grid;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
     background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
     opacity: 1;
     margin: 10vh, 0em 0em 0em;
