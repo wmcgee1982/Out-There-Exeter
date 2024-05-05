@@ -506,14 +506,14 @@
 .panel-scroll-small h3 {
     color: var(--darkGrey);
     transform:translateX(100%);
-    animation: scroll-small 20s linear infinite;
-    -webkit-animation: scroll-small 20s linear infinite;
-    -moz-animation: scroll-small 20s linear infinite;
-    -o-animation: scroll-small 20s linear infinite;
+    animation: scroll-small 15s linear infinite;
+    -webkit-animation: scroll-small 15s linear infinite;
+    -moz-animation: scroll-small 15s linear infinite;
+    -o-animation: scroll-small 15s linear infinite;
 }
 @keyframes scroll-small {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-120%);}
+    100% {transform: translateX(-200%);}
 }
 
 /* *** *** Sharing News *** *** */
