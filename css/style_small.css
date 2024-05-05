@@ -513,7 +513,7 @@
 }
 @keyframes scroll-small {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-200%);}
+    100% {transform: translateX(-250%);}
 }
 
 /* *** *** Sharing News *** *** */
