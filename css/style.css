@@ -542,7 +542,7 @@ body:has(#inclusivity-title:hover)
 .information-container span {
     position: absolute;
     font-weight: 600;
-    padding: 0.16em 0em 0em 0.5em;
+    padding: 0.1em 0em 0em 0.5em;
 }
 .information-container a {
     color: var(--backgroundColor);
