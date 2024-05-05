@@ -752,7 +752,9 @@ button {
     padding: 1em 1em 0em 1.65em;
 }
 .take-part-card-container span {
-    font-weight: 500;
+    font-weight: bold;
+    position: absolute;
+    padding: 0.1em 0em 0em 0.5em;
 }
 .take-part-card-container li {
     color: var(--secondaryColor);
