@@ -717,7 +717,6 @@ body:has(.advocacy:hover)
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
     cursor: none;
-    opacity: 0.7;
 }
 .take-part-card-container-top {
     width: 70vw;
@@ -727,18 +726,10 @@ body:has(.advocacy:hover)
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
     cursor: none;
-    opacity: 0.7;
 }
 button {
     border: none;
 }
-.take-part-card-container:hover {
-    opacity: 1;
-}
-.take-part-card-container-top:hover {
-    opacity: 1;
-}
-
 .take-part-card-container h2 {
     color: var(--secondaryColor);
     font-weight: 500;
