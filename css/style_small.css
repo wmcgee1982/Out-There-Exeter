@@ -386,7 +386,7 @@
     padding: 1em 0em;
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-    margin: 10em 0em 2em 0em;
+    margin: 2em 0em;
 }
 .take-part-card-container-small h2 {
     color: var(--primaryColor);
@@ -506,14 +506,14 @@
 .panel-scroll-small h3 {
     color: var(--darkGrey);
     transform:translateX(100%);
-    animation: scroll-left-small 15s linear infinite;
-    -webkit-animation: scroll-left-small 10s linear infinite;
-    -moz-animation: scroll-left-small 10s linear infinite;
-    -o-animation: scroll-left-small 10s linear infinite;
+    animation: scroll-left-small 20s linear infinite;
+    -webkit-animation: scroll-left-small 20s linear infinite;
+    -moz-animation: scroll-left-small 20s linear infinite;
+    -o-animation: scroll-left-small 20s linear infinite;
 }
 @keyframes scroll-left-small {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(-130%);}
+    100% {transform: translateX(-120%);}
 }
 
 /* *** *** Sharing News *** *** */
