@@ -413,19 +413,16 @@
 .take-part-card-container-small ul {
     padding: 1em 3em 0em 3em;
     font-weight: 300;
-
     text-decoration: none;
 }
 .take-part-card-container-small a {
     text-decoration: none;
-
     font-weight: 600;
-    color: var(--secondaryColor);
+    color: var(--secon8daryColor);
 }
 .take-part-card-container-small span {
     position: absolute;
     margin: 0.1em 0em 0em 0.5em;
-
     font-weight: 600;
 }
 
@@ -449,7 +446,7 @@
     text-shadow: 2px 2px var(--primaryColor);
 }
 .partners-title-small p {  
-    color: var(--lightGrey);
+    color: var(--ligh8tGrey);
     font-weight: 300;
     padding: 1em 2em;
 }
@@ -994,9 +991,6 @@
     font-weight: 600;
     color: var(--secondaryColor);
 }
-.information-container-registration-small b {
-    color: var(--secondaryColor);
-}
 .information-container-registration-small li {
     padding: 0.2em 0em 0em 0em;
 }
@@ -1006,7 +1000,8 @@
     text-decoration: none;
 }
 .information-container-registration-small a {
-    text-decoration: none;
+    text-decoration: none; 
+    color: var(--secondaryColor);
     font-weight: 600;
 }
 
