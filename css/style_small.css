@@ -472,7 +472,7 @@
 /* *** *** News Section *** *** */
 #news-section-small {
     padding: 2em;
-    margin-bottom: -1.5em;
+    margin-bottom: -1em;
     width: auto;
     height: auto;
     background: var(--backgroundColor);
