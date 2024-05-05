@@ -440,13 +440,12 @@
     text-align: center;
 }
 .partners-title-small h1 {  
-
     font-weight: 900;
     color: var(--lightGrey);
     text-shadow: 2px 2px var(--primaryColor);
 }
 .partners-title-small p {  
-    color: var(--ligh8tGrey);
+    color: var(--lightGrey);
     font-weight: 300;
     padding: 1em 2em;
 }
