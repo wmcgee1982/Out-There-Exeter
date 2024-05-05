@@ -908,7 +908,7 @@
 }
 .information-container-festival-small span {
     position: absolute;
-    padding: 0.16em 0em 0em 0.5em;
+    padding: 0.1em 0em 0em 0.5em;
 }
 #information-section-festival-bottom-small {
     position: relative;
@@ -938,7 +938,7 @@
     margin: 1.5em -2em;
 }
 .festival-image-festival-page-small img {
-    min-width: 100vw;
+    width: 100vw;
     height: auto;
     border-top: solid 0.1em var(--backgroundColor);
     border-bottom: solid 0.1em var(--backgroundColor);
@@ -982,6 +982,10 @@
 .information-container-registration-small h3 {
     color: #eeeeee; 
     font-weight: 600;
+}
+.information-container-registration-small span {
+    position: absolute;
+    padding: 0.1em 0em 0em 0.5em;
 }
 .information-container-registration-small p {
     padding: 0.5em 0em;
