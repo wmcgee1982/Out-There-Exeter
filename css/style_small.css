@@ -379,7 +379,6 @@
     border-right: solid 0.5em var(--primaryColor);
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-    opacity: 0.8;
 }
 .take-part-card-container-small-pink {
     width: auto;
@@ -387,8 +386,7 @@
     padding: 1em 0em;
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-    opacity: 0.8;
-    margin-bottom: 2em;
+    margin-bottom: 2em 0em;
 }
 .take-part-card-container-small h2 {
     color: var(--primaryColor);
@@ -411,7 +409,6 @@
 .take-part-card-container-small li {
     color: var(--secondaryColor);
     font-weight: 300;
-
 }
 .take-part-card-container-small ul {
     padding: 1em 3em 0em 3em;
