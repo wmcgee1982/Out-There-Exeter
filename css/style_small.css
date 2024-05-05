@@ -394,7 +394,7 @@
     padding: 1em 0em;
     box-shadow: 1px 1px 10px -5px var(--lightGrey);
     border-radius: 0.5em;
-    margin: 2em 0em;
+    margin: 10em 0em 2em 0em;
 }
 .take-part-card-container-small h2 {
     color: var(--primaryColor);
