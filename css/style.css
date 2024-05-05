@@ -952,14 +952,16 @@ button {
     border-bottom-right-radius: 0.5em;
 }
 .panel-scroll h3 {
-    font-size: x-large;
     color: var(--darkGrey);
     transform:translateX(100%);
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-small 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    -moz-animation: scroll-left 15s linear infinite;
+    -o-animation: scroll-left 15s linear infinite;
 }
 @keyframes scroll-left {
     0% {transform: translateX(100%);}
-    100% {transform: translateX(200%);}
+    100% {transform: translateX(-350%);}
 }
 
 /* *** *** Sharing News *** *** */
