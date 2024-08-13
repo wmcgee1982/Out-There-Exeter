@@ -50,7 +50,7 @@ document.getElementById("days1").innerHTML = days
 document.getElementById("hours1").innerHTML = hours
 document.getElementById("mins1").innerHTML = minutes
 document.getElementById("secs1").innerHTML = seconds
-document.getElementById("message1").innerHTML = "MONDAY 23 SEPTEMBER 2024";
+document.getElementById("message1").innerHTML = "23 SEPT - 06 OCT";
     
 // Display the message when countdown is over
 if (timeleft < 0) {
@@ -59,6 +59,6 @@ if (timeleft < 0) {
     document.getElementById("hours1").innerHTML = "0" 
     document.getElementById("mins1").innerHTML = "0"
     document.getElementById("secs1").innerHTML = "0"
-    document.getElementById("message1").innerHTML = "LET OUT THERE QUEER FEST BEGIN!";
+    document.getElementById("message1").innerHTML = "23rd Sept - 6th Oct";
 }
 }, 1000);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Out There Exeter: Celebrating Exeter's LGBTQIA+ community through the Out There Queer Fest! Find a platform to showcase your work, network with others, and celebrate inclusivity. Registration is open for performers, artists, speakers, and more! Join us, we take pride!">
-    <meta name="robots" content"index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
     <title>Out There Exeter</title>
 
@@ -25,72 +25,59 @@
     <!-- Google tag (gtag.js) --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS8CTMWHTM"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-JS8CTMWHTM'); </script>
     
-<section id="body">       
-    <nav id="loading-page-small" include-html="sections/loading-small.html"></nav>  
+    <section id="body">
+        <!-- Loading Page 
+        <nav id="loading-page-small" include-html="sections/loading-small.html"></nav>  
+    -->
+        <!-- Background Image -->
+        <div class="background-bimini"></div>
 
-    <!-- Navbar Section -->
-    <nav id="nav-bar-home-big" include-html="sections/nav.html"></nav>
+        <!-- Navbar Section -->
+        <nav id="nav-bar-home-big-bimini" include-html="sections/nav-bimini.html"></nav>
 
-    <!-- Header Section -->
-    <header id="header-section" include-html="sections/header.html"></header>
+        <main id="main">
+            <!-- Hero-banner Section -->
+            <section id="hero-banner" include-html="sections/hero-banner-bimini.html"></section>
+            
+            <!-- Programme Preview Section -->
+            <section include-html="sections/programme-preview.html"></section>
+        </main>
 
-    <main id="main">
-        <!-- Hero-banner Section -->
-        <section id="hero-banner" include-html="sections/hero-banner.html"></section>
+        <!-- Footer Section -->
+        <footer id="footer-home-big" include-html="sections/footer.html"></footer>
+    </section>
 
-        <!-- Information Section -->
-        <section include-html="sections/information.html"></section>
+
+    <!-- SMALL - PHONE SCREEN -->
+    <section id="body-home-small">
+         <!-- Loading Page 
+        <nav id="loading-page-small" include-html="sections/loading-small.html"></nav> 
+    -->
+        <!-- Background Image -->
+        <div class="background-bimini-small"></div>
+
+        <!-- Navbar Section -->
+        <nav id="nav-bar-home-small" include-html="sections/nav-small.html"></nav>
+
+        <main id="main-small">
+            <div id="main-hide-small">
+                <!-- Hero Section -->
+                <section id="hero-banner-small" include-html="sections/hero-banner-small.html"></section>
+                
+                <!-- Programme Preview Section -->
+                <section include-html="sections/programme-preview-small.html"></section>
+            </div>   
+        </main>
         
-        <!-- Take Part Section -->
-        <section include-html="sections/takepart.html"></section>
-
-        <!-- Partners Section -->
-        <section include-html="sections/partners.html"></section>
-
-        <!-- News Section -->
-        <section include-html="sections/news.html"></section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer id="footer-home-big" include-html="sections/footer.html"></footer>
-
-</section>
-
-<!-- SMALL - PHONE SCREEN -->
-    <!-- Loading Section -->
-<section id="body-home-small">
-    <nav id="loading-page-small" include-html="sections/loading-small.html"></nav> 
-    <!-- Navbar Section -->
-    <nav id="nav-bar-home-small" include-html="sections/nav-small.html"></nav>
-
-    <main id="main-small">
-        <div id="main-hide-small">
-            <div class="background-small"></div>   
-            <!-- Hero Section -->
-            <section id="hero-banner-small" include-html="sections/hero-banner-small.html"></section>
-
-            <!-- Information Section -->
-            <section id="information-small" include-html="sections/information-small.html"></section>
-
-            <!-- Take Part Section -->
-            <section id="takepart-small" include-html="sections/takepart-small.html"></section>
-            
-            <!-- Partners Section -->
-            <section id="partners-small" include-html="sections/partners-small.html"></section>
-            
-            <!-- News Section -->
-            <section id="news-small" include-html="sections/news-small.html"></section>
-        </div>   
-    </main>
-    
-    <!-- Footer Section -->
-    <footer id="footer-home-small" include-html="sections/footer-small.html"></footer>
-</section>
+        <!-- Footer Section -->
+        <footer id="footer-home-small" include-html="sections/footer-small.html"></footer>
+    </section>
 
     <!-- Scripts -->
     <script src="./js/sections.js"></script>
     <script src="./js/arrowbounce.js"></script>
     <script src="./js/countdown.js"></script>
+    <script src="./js/script.js"></script>
     <script>includeHTML();</script>
 
     <script>
