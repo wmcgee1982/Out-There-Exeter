@@ -23,12 +23,12 @@
 .background-bimini-small {
     background-image: url(../media/BIMINI_Main.jpg);
     background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-attachment: scroll;
     background-size: cover;
-    background-position-y: -80px;
-    background-position-x: center;
+    background-position: center center;
     animation: bg-img-hue 3s infinite;
     height: 770px;
+    max-width: 100%;
 }
 
 .background-small {
@@ -246,7 +246,7 @@
     color: var(--lightGrey);
     background: var(--primaryColor);
     border: solid 2px var(--lightGrey);
-    padding: 1em 1em;
+    padding: 1.5em 1em;
     border-radius: 50px;
     font-size: small;
     cursor: pointer;
@@ -266,13 +266,13 @@
 .countdown-sub-container1 {
     display: block;
     margin: 16em 0em 0em 0em;
-    padding: 0.3em;
     background: var(--primaryColor);
     opacity: 0.8;
     border-top: double 0.5em var(--lightGrey);
     border-bottom: double 0.5em var(--lightGrey);
 }
 .countdown-sub-container1 h2 {
+    padding: 0.5em;
     text-align: center;
     font-weight: 400;
     color: var(--lightGrey);
@@ -280,6 +280,7 @@
 }
 .countdown-sub-container1 h4 {
     text-align: center;
+    padding: 0.5em;
     padding-top: 0.5em;
     font-weight: 500;
 }
@@ -394,7 +395,7 @@
 }
 .volunteers-small {
     margin: 3em 1em;
-    padding: 2em 2em 0em 2em;
+    padding: 2em;
     background: var(--lightGrey);
     border-radius: 20px;
 }
@@ -773,7 +774,7 @@
 }
 .footer-container-small img {
     position: absolute;
-    width: 190px;
+    width: 175px;
     height: auto;
     right: 0;
     padding: 2.7em 1.5em 0em 0em;
