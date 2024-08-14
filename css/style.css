@@ -921,7 +921,7 @@ body:has(.advocacy:hover)
 .upcoming-events {
     width: 100%; 
     margin: auto;
-    padding: 20px; 
+    padding: 1em; 
     text-align: center;
 }
 .upcoming-events h1 {
@@ -2037,7 +2037,7 @@ button {
 }
 
 #filter-buttons {
-    padding: 2em;
+    padding: 0em 2em 3em 2em;
     text-align: center;
 }
 #filter-buttons button {
