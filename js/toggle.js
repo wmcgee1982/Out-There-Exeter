@@ -42,7 +42,7 @@ function toggle() {
   }
 
   function toggle4() {
-    var x = document.getElementById("workshopsListings");
+    var x = document.getElementById("workshopListings");
     if (x.style.display === "block") {
       x.style.display = "none";
       y.style.display = "block";
@@ -85,6 +85,72 @@ function toggle() {
     }
   }
 
+  function toggle8() {
+    var x = document.getElementById("freeListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle9() {
+    var x = document.getElementById("ticketListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle10() {
+    var x = document.getElementById("phoenixListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle11() {
+    var x = document.getElementById("barnfieldListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle12() {
+    var x = document.getElementById("libraryListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle13() {
+    var x = document.getElementById("rammListings");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
   function toggle2small() {
     var x = document.getElementById("musicListings-small");
     if (x.style.display === "block") {
@@ -108,7 +174,7 @@ function toggle() {
   }
 
   function toggle4small() {
-    var x = document.getElementById("workshopsListings-small");
+    var x = document.getElementById("workshopListings-small");
     if (x.style.display === "block") {
       x.style.display = "none";
       y.style.display = "block";
