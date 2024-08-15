@@ -63,20 +63,20 @@ body {
     background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
-    animation: MoveDown 5.5s linear;
-    -webkit-animation: MoveDown 5.5s linear;
-    -moz-animation: MoveDown 5.5s linear;
-    -o-animation: MoveDown 5.5s linear;
+    animation: MoveDown 3s linear;
+    -webkit-animation: MoveDown 3s linear;
+    -moz-animation: MoveDown 3s linear;
+    -o-animation: MoveDown 3s linear;
 }
 #nav-bar-home-big-bimini {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    animation: MoveDown 5.5s linear;
-    -webkit-animation: MoveDown 5.5s linear;
-    -moz-animation: MoveDown 5.5s linear;
-    -o-animation: MoveDown 5.5s linear;
+    animation: MoveDown 3.5s linear;
+    -webkit-animation: MoveDown 3.5s linear;
+    -moz-animation: MoveDown 3.5s linear;
+    -o-animation: MoveDown 3.5s linear;
 }
 
 .navbar-wrapper {
