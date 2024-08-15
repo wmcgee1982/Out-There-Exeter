@@ -5,7 +5,7 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         overscroll-behavior-y: none;
         width: 100%;
-        background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+
         animation: fadeinmainsmall 5s linear;
         -webkit-animation: fadeinmainsmall 5s linear;
         -moz-animation: fadeinmainsmall 5s linear;
@@ -16,7 +16,7 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         overscroll-behavior-y: none;
         width: 100%;
-        background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
+  
     }
 }
 
@@ -29,6 +29,9 @@
     animation: bg-img-hue 3s infinite;
     height: 770px;
     max-width: 100%;
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 1s ease-in-out 2s forwards;
 }
 
 .background-small {
@@ -1087,13 +1090,13 @@
     text-align: center;
 }
 .upcoming-events-small h1 {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     line-height: 1.5em;
     color: var(--yellow);
 }
 .upcoming-events-small h2 {
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     line-height: 1.5em;
 }
@@ -1660,10 +1663,10 @@ textarea {
 }
 
 .event-section-text-small {
-    padding: 1em;
+    padding: 0em;
 }
 .event-section-text-small h1 {
-    font-size: large;
+    font-size: medium;
     color: var(--yellow);
     line-height: 2em;
     font-weight: bold;
@@ -1682,8 +1685,15 @@ textarea {
     height: 250px;
     margin: 1em -1em;
     overflow: hidden;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 1s ease-in-out 2s forwards;
+}
+@keyframes fadeIn {
+to {
+    opacity: 1;
+}
 }
 .carousel-item-small {
     flex: 1 0 100%;
