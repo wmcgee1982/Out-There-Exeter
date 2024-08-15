@@ -73,10 +73,10 @@ body {
     top: 0;
     width: 100%;
     z-index: 999;
-    animation: MoveDown 3.5s linear;
-    -webkit-animation: MoveDown 3.5s linear;
-    -moz-animation: MoveDown 3.5s linear;
-    -o-animation: MoveDown 3.5s linear;
+    animation: MoveDown 4s linear;
+    -webkit-animation: MoveDown 4s linear;
+    -moz-animation: MoveDown 4s linear;
+    -o-animation: MoveDown 4s linear;
 }
 
 .navbar-wrapper {
@@ -799,6 +799,9 @@ body:has(#inclusivity-title:hover)
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 1s ease-in-out 2s forwards;
 }
 .arts { 
     background-image: url(../media/istockphoto-1502556789-612x612.jpg);

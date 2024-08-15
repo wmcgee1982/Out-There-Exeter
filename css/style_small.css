@@ -1011,6 +1011,9 @@
     border-radius: 1rem;
     filter: drop-shadow(0.2em 0.2em var(--primaryColor));
     align-items: end;
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 1s ease-in-out 2s forwards;
 }
 .arts-small { 
     background-image: url(../media/istockphoto-1502556789-612x612.jpg);
