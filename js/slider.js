@@ -26,3 +26,5 @@ function autoScroll() {
 
 setInterval(autoScroll, 5000); // Change slide every 5 seconds
 showSlide(slideIndex);
+
+

@@ -1,7 +1,7 @@
 <!-- Programme Section -->
 <div class="upcoming-events">
     <h1>Upcoming Events</h1>
-    <h2>FILTER BY CATEGORY</h2>
+    <h2>FILTER BY CATEGORY OR VENUE</h2>
     <p>Click <u>here</u> to download a programme copy <i>(last updated 12th August)</i></p>
 </div>
 
@@ -15,12 +15,20 @@
     <button onclick="filterEvents('film')">Film and TV</button>
     <button onclick="filterEvents('wellbeing')">Wellbeing</button>
     <button onclick="filterEvents('society')">Society and Community</button>
-    <button onclick="filterEvents('free')">Free Events</button>
-    <button onclick="filterEvents('pass')">Ticket Pass</button>
     <button onclick="filterEvents('phoenix')">Exeter Phoenix</button>
     <button onclick="filterEvents('barnfield')">Barnfield Theatre</button>
     <button onclick="filterEvents('library')">Exeter Library</button>
     <button onclick="filterEvents('ramm')">Royal Albert Memorial Musuem</button>
+    <button onclick="filterEvents('free')" 
+    style="background-color: var(--red); color: var(--yellow);" 
+    onmouseover="this.style.backgroundColor='var(--secondaryColor)'; this.style.color='var(--lightGrey)';"
+    onmouseout="this.style.backgroundColor='var(--red)'; this.style.color='var(--yellow)';">
+    Free Events</button>
+<button onclick="filterEvents('pass')" 
+    style="background-color: var(--red); color: var(--yellow);" 
+    onmouseover="this.style.backgroundColor='var(--secondaryColor)'; this.style.color='var(--lightGrey)';"
+    onmouseout="this.style.backgroundColor='var(--red)'; this.style.color='var(--yellow)';">
+    Ticket Pass</button>
 </div>
 
 <div id="event-list">
@@ -56,7 +64,7 @@
             </div>
         </div>
         <div id="workshopListings">
-            <section id="performance-listings" include-html="./events/workshop.html"></section>
+            <section id="workshop-listings" include-html="./events/workshop.html"></section>
         </div>
     </div>
 
@@ -68,7 +76,7 @@
             </div>
         </div>
         <div id="filmListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="film-listings" include-html="./events/film.html"></section>
         </div>
     </div>
 
@@ -80,7 +88,7 @@
             </div>
         </div>
         <div id="wellbeingListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="wellbeing-listings" include-html="./events/wellbeing.html"></section>
         </div>
     </div>
 
@@ -92,7 +100,7 @@
             </div>
         </div>
         <div id="societyListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="society-listings" include-html="./events/society.html"></section>
         </div>
     </div>
 
@@ -104,7 +112,7 @@
             </div>
         </div>
         <div id="freeListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="free-listings" include-html="./events/free.html"></section>
         </div>
     </div>
 
@@ -116,7 +124,7 @@
             </div>
         </div>
         <div id="passListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="pass-listings" include-html="./events/pass.html"></section>
         </div>
     </div>
 
@@ -128,7 +136,7 @@
             </div>
         </div>
         <div id="phoenixListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="phoenix-listings" include-html="./events/phoenix.html"></section>
         </div>
     </div>
 
@@ -140,7 +148,7 @@
             </div>
         </div>
         <div id="barnfieldListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="barnfield" include-html="./events/barnfield.html"></section>
         </div>
     </div>
 
@@ -152,7 +160,7 @@
             </div>
         </div>
         <div id="libraryListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="library" include-html="./events/library.html"></section>
         </div>
     </div>
 
@@ -164,18 +172,10 @@
             </div>
         </div>
         <div id="rammListings">
-            <section id="performance-listings" include-html="./events/performance.html"></section>
+            <section id="ramm-listings" include-html="./events/ramm.html"></section>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 <div class="programme-page-bottom-info">
     <h1>YOU MAY ALSO LIKE:</h1>

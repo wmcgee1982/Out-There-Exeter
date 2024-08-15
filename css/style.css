@@ -1850,7 +1850,17 @@ button {
     display: grid;
     left: 0;
     position: relative;
-    grid-template-columns: (2fr 1fr);
+    grid-template-columns: repeat(2, 70% auto);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1em;
+}
+.container-listing-header-sidebar {
+    display: grid;
+    left: 0;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2em;
 }
 .event-header {
     display: flex;
@@ -1956,6 +1966,23 @@ button {
     color: var(--lightGrey);
     cursor: pointer;
 }
+.ticket-pass-cat {
+    background-color: var(--yellow);
+    color: var(--secondaryColor);
+    border: solid 1px var(--yellow);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.ticket-pass-cat:hover {
+    background-color: var(--secondaryColor);
+    border: solid 1px var(--lightGrey);
+    color: var(--lightGrey);
+    cursor: pointer;
+}
 .ticket-info {
     margin-bottom: 30px;
 }
@@ -2035,7 +2062,6 @@ button {
 .view-programme-listing a {
     text-decoration: none;
 }
-
 #filter-buttons {
     padding: 0em 2em 3em 2em;
     text-align: center;
@@ -2055,7 +2081,6 @@ button {
 #filter-buttons button:hover {
     background-color: var(--secondaryColor);
     color: var(--lightGrey);
-
 }
 #event-list {
     border: 1px solid var(--primaryColor);
@@ -2068,6 +2093,22 @@ button {
 }
 .hidden {
     display: none; 
+}
+.event-section-text {
+    padding: 1em;
+}
+.event-section-text h1 {
+    font-size: large;
+    color: var(--yellow);
+    line-height: 2em;
+    font-weight: bold;
+}
+.event-section-text p {
+    font-size: medium;
+    color: var(--lightGrey);
+}
+.event-section-text a {
+    color: var(--lightGrey);
 }
 
 
@@ -2128,14 +2169,14 @@ button {
 
 .carousel-info h5 {
     margin: 0 0 0.5em;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     color: var(--primaryColor)
 }
 
 .carousel-info p {
     margin: 5px 0;
-    font-size: medium;
+    font-size: large;
     color: var(--lightGrey);
 }
 

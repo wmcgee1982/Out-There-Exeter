@@ -216,3 +216,69 @@ function toggle() {
       y.style.display = "none";
     }
   }
+
+  function toggle8small() {
+    var x = document.getElementById("freeListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle9small() {
+    var x = document.getElementById("ticketListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle10small() {
+    var x = document.getElementById("phoenixListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle11small() {
+    var x = document.getElementById("barnfieldListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle12small() {
+    var x = document.getElementById("libraryListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function toggle13small() {
+    var x = document.getElementById("rammListings-small");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
