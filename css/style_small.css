@@ -1511,7 +1511,8 @@ textarea {
 }
 .event-image-small img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 8px;
     opacity: 0;
     will-change: opacity;
@@ -1549,8 +1550,10 @@ textarea {
 .event-description-small p {
     color: var(--lightGrey);
     font-size: medium;
-    color: var(--lightGrey);
     line-height: 1.3em;
+}
+.event-description-small a {
+    color: var(--lightGrey);
 }
 .ticket-pass-small {
     background-color: var(--yellow);
