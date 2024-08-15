@@ -11,8 +11,8 @@ function filterEvents(category) {
     });
 }
 // JavaScript function to filter events
-function filterEvents(category) {
-    var events= document.querySelectorAll('.event-cat-small');
+function filterEventsSmall(category) {
+    var events = document.querySelectorAll('.event-cat-small');
     
     events.forEach(function(event) {
         if (category === 'all' || event.getAttribute('data-category') === category) {
