@@ -988,7 +988,7 @@ body:has(.advocacy:hover)
     position: relative;
     align-content: center;
     justify-self: center;
-    padding: 1em 0em;
+    padding: 2em 0em;
 }
 .programme-page-event img {
     border: solid 2px var(--lightGrey);
@@ -999,7 +999,7 @@ body:has(.advocacy:hover)
 }
 .programme-page-image_square {
     position: absolute;
-    margin-top: -60px;
+    margin-top: -40px;
     padding: 0.5em;
     border-bottom: solid 2px var(--lightGrey);
     border-left: solid 2px var(--lightGrey);
@@ -1007,7 +1007,7 @@ body:has(.advocacy:hover)
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width:  280px;
-    height: 60px;
+    height: 80px;
     background-color: var(--yellow);
 }
 .programme-page-image_square h1 {
