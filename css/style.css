@@ -1028,7 +1028,7 @@ body:has(.advocacy:hover)
     height: auto;
     padding: 0em 1em 4em 1em;
 }
-.programme-page-bottom-info h1 {
+.programme-page-bottom-info h3 {
     font-size: xx-large;
     line-height: 1.5em;
     color: var(--lightGrey);
@@ -1355,21 +1355,37 @@ button {
     width:  300px;
     height: 300px;
     object-fit: cover;
+    cursor: pointer;
 }
 .image_square {
     position: absolute;
-    margin-top: -45px;
+    margin-top: -40px;
     padding: 0.5em;
     border: solid 4px var(--lightGrey);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width:  300px;
-    height: 45px;
+    height: 80px;
     background-color: var(--lightGrey);
     color: var(--secondaryColor);
+    cursor: pointer;
 }
+.image_square h1 {
+    color: var(--secondaryColor);
+    font-weight: 600;
+    font-size: medium;
+    line-height: 1.3em;
+    cursor: pointer;
+}
+.image_square h2 {
+    color: var(--secondaryColor);
+    font-size: medium;
+    line-height: 1.3em;
+    cursor: pointer;
+}
+
 .view-programme {
-    padding: 3em;
+    padding: 6em 3em 3em 3em;
     text-align: center;
 }
 .view-programme span {
@@ -2179,15 +2195,22 @@ to {
 }
 .carousel-info h5 {
     margin: 0 0 0.5em;
-    font-size: xxx-large;
+    font-size: xx-large;
     font-weight: bold;
-    color: var(--primaryColor)
+    color: var(--primaryColor);
+    cursor: pointer;
 }
 .carousel-info p {
     margin: 5px 0;
     font-size: x-large;
     color: var(--lightGrey);
+    cursor: pointer;
 }
+.carousel-content a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .carousel-control {
     position: absolute;
     top: 50%;
