@@ -999,7 +999,7 @@ body:has(.advocacy:hover)
 }
 .programme-page-image_square {
     position: absolute;
-    margin-top: -40px;
+    margin-top: -50px;
     padding: 0.5em;
     border-bottom: solid 2px var(--lightGrey);
     border-left: solid 2px var(--lightGrey);
