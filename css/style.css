@@ -1967,9 +1967,18 @@ button {
 .event-description p {
     color: var(--lightGrey);
     font-size: medium;
-    color: var(--lightGrey);
     line-height: 1.5em;
 }
+.event-description a {
+    color: var(--lightGrey);
+    font-size: medium;
+    line-height: 1.5em;
+}
+.event-description ul {
+    list-style-position: outside;
+    padding: 1em 2em;
+}
+
 .ticket-pass {
     position: absolute;
     background-color: var(--yellow);

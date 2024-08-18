@@ -1,12 +1,13 @@
 <div class="upcoming-events-small">
     <h1>Upcoming Events</h1>
     <h2>FILTER BY CATEGORY OR VENUE</h2>
-    <p>Click <u>here</u> to download a programme copy <i>(last updated 12th August)</i></p>
+    <p>More events to be announced soon</p>
+<!--    <p>Click <u>here</u> to download a programme copy <i>(last updated 12th August)</i></p> -->
 </div>
 <!-- Filter Buttons -->
 <div id="filter-buttons-small">
     <!--<button onclick="filterEvents('all')">All</button> -->
-    <button onclick="filterEventsSmall('all')">All</button>
+    <button onclick="filterEventsSmall('allevents-small')">All</button>
     <button onclick="filterEventsSmall('music-small')">Music and Club</button>
     <button onclick="filterEventsSmall('performance-small')">Theatre, Comedy and Performance</button>
     <button onclick="filterEventsSmall('workshop-small')">Q&A, Workshop and Exhibition</button>
@@ -30,25 +31,32 @@
     Ticket Pass</button>
 </div>
 
+
 <div id="event-list">
-    <!-- Music Listings-->
-    <div class="event-cat-small" data-category="music-small">
+    <!-- All Listings-->
+    <div class="event-cat-small" data-category="allevents-small">
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle2small()">
-                <h1><i>&#x2016; Music and Club</i></h1>
-            </div>
+            <h1><i>&#x2016; All</i></h1>
         </div>
-        <div id="musicListing-small">
+        <div id="alleventsListings-small">
+            <section id="allevents-listings-small" include-html="./events/allevents-small.html"></section>
+        </div>
+    </div>
+
+    <!-- Music Listings-->
+    <div class="event-cat-small hidden" data-category="music-small">
+        <div class="programme-page-programme-section-small">
+            <h1><i>&#x2016; Music and Club</i></h1>
+        </div>
+        <div id="musicListings-small">
             <section id="music-listings-small" include-html="./events/music-small.html"></section>
         </div>
     </div>
 
-    <!--  Theatre, Comedy, Cabaret and performance Listings-->
-    <div class="event-cat-small" data-category="performance-small">
+    <!-- Theatre, Comedy, Cabaret and performance Listings-->
+    <div class="event-cat-small hidden" data-category="performance-small">
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle3small()">
-                <h1><i>&#x2016; Theatre, Comedy, and Performance</i></h1>
-            </div>
+            <h1><i>&#x2016; Theatre, Comedy, and Performance</i></h1>
         </div>
         <div id="performanceListings-small">
             <section id="performance-listings-small" include-html="./events/performance-small.html"></section>
@@ -56,23 +64,19 @@
     </div>
 
     <!-- Q&A, Workshop and Exhibition Listings-->
-    <div class="event-cat-small" data-category="workshop-small">
+    <div class="event-cat-small hidden" data-category="workshop-small">
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle4small()">
-                <h1><i>&#x2016; Q&A, Workshop and Exhibition </i></h1>
-            </div>
+            <h1><i>&#x2016; Q&A, Workshop and Exhibition</i></h1>
         </div>
         <div id="workshopListings-small">
             <section id="workshop-listings-small" include-html="./events/workshop-small.html"></section>
         </div>
     </div>
 
-    <!-- Film, TV and Documetry Listings-->
-    <div class="event-cat-small" data-category="film-small">
+    <!-- Film, TV and Documentary Listings-->
+    <div class="event-cat-small hidden" data-category="film-small">
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle5small()">
-                <h1><i>&#x2016; Film and TV</i></h1>
-            </div>
+            <h1><i>&#x2016; Film and TV</i></h1>
         </div>
         <div id="filmListings-small">
             <section id="film-listings-small" include-html="./events/film-small.html"></section>
@@ -80,23 +84,19 @@
     </div>
 
     <!-- Wellbeing Listings-->
-    <div class="event-cat-small" data-category="wellbeing-small">
+    <div class="event-cat-small hidden" data-category="wellbeing-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle6small()">
-                <h1><i>&#x2016; Wellbeing</i></h1>
-            </div>
+            <h1><i>&#x2016; Wellbeing</i></h1>
         </div>
-        <div id="wellbeingListings">
+        <div id="wellbeingListings-small">
             <section id="wellbeing-listings-small" include-html="./events/wellbeing-small.html"></section>
         </div>
     </div>
 
     <!-- Society and Networking Listings-->
-    <div class="event-cat-small" data-category="society-small">    
+    <div class="event-cat-small hidden" data-category="society-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle7small()">
-                <h1><i>&#x2016; Society and Community</i></h1>
-            </div>
+            <h1><i>&#x2016; Society and Community</i></h1>
         </div>
         <div id="societyListings-small">
             <section id="society-listings-small" include-html="./events/society-small.html"></section>
@@ -104,23 +104,19 @@
     </div>
 
     <!-- Free Events -->
-    <div class="event-cat-small" data-category="free-small">    
+    <div class="event-cat-small hidden" data-category="free-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle8small()">
-                <h1><i>&#x2016;  Free Events</i></h1>
-            </div>
+            <h1><i>&#x2016; Free Events</i></h1>
         </div>
         <div id="freeListings-small">
             <section id="free-listings-small" include-html="./events/free-small.html"></section>
         </div>
     </div>
 
-    <!--  -->
-    <div class="event-cat-small" data-category="pass-small">    
+    <!-- Ticket Pass -->
+    <div class="event-cat-small hidden" data-category="pass-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle9small()">
-                <h1><i>&#x2016; Ticket Pass</i></h1>
-            </div>
+            <h1><i>&#x2016; Ticket Pass</i></h1>
         </div>
         <div id="passListings-small">
             <section id="pass-listings-small" include-html="./events/pass-small.html"></section>
@@ -128,47 +124,39 @@
     </div>
 
     <!-- Phoenix -->
-    <div class="event-cat-small" data-category="phoenix-small">    
+    <div class="event-cat-small hidden" data-category="phoenix-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle10small()">
-                <h1><i>&#x2016; Exeter Phoenix</i></h1>
-            </div>
+            <h1><i>&#x2016; Exeter Phoenix</i></h1>
         </div>
         <div id="phoenixListings-small">
             <section id="phoenix-listings-small" include-html="./events/phoenix-small.html"></section>
         </div>
     </div>
 
-    <!--  -->
-    <div class="event-cat-small" data-category="barnfield-small">    
+    <!-- Barnfield Theatre -->
+    <div class="event-cat-small hidden" data-category="barnfield-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle11small()">
-                <h1><i>&#x2016; Barnfield Theatre</i></h1>
-            </div>
+            <h1><i>&#x2016; Barnfield Theatre</i></h1>
         </div>
         <div id="barnfieldListings-small">
             <section id="barnfield-small" include-html="./events/barnfield-small.html"></section>
         </div>
     </div>
 
-    <!--  -->
-    <div class="event-cat-small" data-category="library-small">    
+    <!-- Exeter Library -->
+    <div class="event-cat-small hidden" data-category="library-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle12small()">
-                <h1><i>&#x2016; Exeter Library</i></h1>
-            </div>
+            <h1><i>&#x2016; Exeter Library</i></h1>
         </div>
         <div id="libraryListings-small">
             <section id="library-small" include-html="./events/library-small.html"></section>
         </div>
     </div>
 
-    <!--  -->
-    <div class="event-cat-small" data-category="ramm-small">    
+    <!-- Royal Albert Memorial Museum -->
+    <div class="event-cat-small hidden" data-category="ramm-small">    
         <div class="programme-page-programme-section-small">
-            <div class="" onclick="toggle13small()">
-                <h1><i>&#x2016; Royal Albert Memorial Museum</i></h1>
-            </div>
+            <h1><i>&#x2016; Royal Albert Memorial Museum</i></h1>
         </div>
         <div id="rammListings-small">
             <section id="ramm-listings-small" include-html="./events/ramm-small.html"></section>
@@ -176,6 +164,8 @@
     </div>
 </div>
 
+
+   <!--
 <div class="programme-page-bottom-info-small">
     <h3>YOU MAY ALSO LIKE:</h3>
     <div class="prog-prev-parent-small">
@@ -188,7 +178,7 @@
             </div>
         </a>
     </div> 
-</div>
+</div>  -->
 
 <div class="partners-title-programme-small">
 <h1>Queer Fest is supported by</h1>
