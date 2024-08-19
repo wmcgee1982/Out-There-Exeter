@@ -494,7 +494,7 @@ body:has(.ticket-icon p:hover)
     height: 700px;
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 1s ease-in-out 2s forwards;
+    animation: fadeIn 2s ease-in-out 2s forwards;
 }
 
 @keyframes bg-img-hue {
@@ -1592,10 +1592,10 @@ button {
 #footer-home-big {
     background-color: var(--secondaryColor);
     padding: 0 0 50px 0;
-    animation: fadeinmainsmall 5s linear;
-    -webkit-animation: fadeinmainsmall 5s linear;
-    -moz-animation: fadeinmainsmall 5s linear;
-    -o-animation: fadeinmainsmall 5s linear;
+    animation: fadeinmainsmall 3s linear;
+    -webkit-animation: fadeinmainsmall 3s linear;
+    -moz-animation: fadeinmainsmall 3s linear;
+    -o-animation: fadeinmainsmall 3s linear;
 }
 
 .footer-container {
@@ -2119,9 +2119,6 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--secondaryColor);
     border-radius: 20px;
-    opacity: 0;
-    will-change: opacity;
-    animation: fadeIn 1s ease-in-out 2s forwards;
 }
 .event-cat {
     padding: 0em 2em 2em 2em;
@@ -2157,7 +2154,7 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    animation: fadeIn 1s ease-in-out 1s forwards;
 }
 @keyframes fadeIn {
 to {
