@@ -999,7 +999,7 @@ body:has(.advocacy:hover)
 }
 .programme-page-image_square {
     position: absolute;
-    margin-top: -50px;
+    margin-top: -40px;
     padding: 0.5em;
     border-bottom: solid 2px var(--lightGrey);
     border-left: solid 2px var(--lightGrey);
@@ -1007,7 +1007,7 @@ body:has(.advocacy:hover)
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width:  280px;
-    height: 80px;
+    height: 100px;
     background-color: var(--yellow);
 }
 .programme-page-image_square h1 {
@@ -1365,7 +1365,7 @@ button {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width:  300px;
-    height: 80px;
+    height: 100px;
     background-color: var(--lightGrey);
     color: var(--secondaryColor);
     cursor: pointer;
