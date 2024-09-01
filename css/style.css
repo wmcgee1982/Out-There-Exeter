@@ -1978,6 +1978,10 @@ button {
     list-style-position: outside;
     padding: 1em 2em;
 }
+.event-description ol {
+    list-style-position: outside;
+    padding: 1em 2em;
+}
 
 .ticket-pass {
     position: absolute;
