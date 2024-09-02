@@ -2240,3 +2240,193 @@ to {
     right: 10px;
 }
 
+
+
+/* *** *** TICKETS PASSES *** *** */
+.ticket-passes-title-container {
+    margin: 2em 0em;
+    padding: 2em 4em;
+    box-shadow: 0px 0px 10px 0px var(--secondaryColor);
+    border-radius: 20px;
+    background-color: var(--lightGrey);
+}
+.ticket-passes-title-container h1 {
+    color: var(--secondaryColor);
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 0.05em; 
+}
+.ticket-passes-title-container p {
+    color: var(--secondaryColor);
+    font-size: large;
+    line-height: 1.2em;
+    letter-spacing: 0.05em; 
+}
+.ticket-passes {
+    margin: 2em 0em 0em 0em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 4em;
+    justify-items: center;
+    align-items: center;
+}
+
+.ticket-pass-container {
+    display: grid;
+    border-radius: 20px;
+    padding: 4em 2em;
+    width: 100%;
+    height: 700px;
+    --mask: radial-gradient(50px at 50px 50px,#0000 98%,#000) -50px -50px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+.ticket-pass-container h2 {
+    font-size: x-large;
+    font-weight: bold;
+    transform: rotate(-5deg);
+}
+.ticket-pass-container h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: right;
+}
+.ticket-pass-container h3 {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 2em;
+}
+.ticket-pass-container p {
+    font-weight: 500;
+    text-align: center;
+    color: var(--lightGrey);
+}
+.ticket-pass-container a {
+    text-decoration: none;
+    color: var(--lightGrey);
+}
+.ticket-pass-container a:hover {
+    text-decoration: none;
+    color: var(--pink);
+}
+.ticket-pass-container ul {
+    list-style-position: outside;
+    padding: 0.5em 1.5em;
+    font-size: medium;
+}
+.ticket-pass-container li {
+    padding: 0.2em 0em;
+}
+#late-pass {
+    background-color: var(--secondaryColor);
+}
+#late-pass h2 {
+    color: var(--lightGrey);
+    text-shadow: 0.2em 0.1em var(--primaryColor);
+}
+#late-pass h1 {
+    color: var(--primaryColor);
+    text-shadow: 0.05em 0.05em var(--lightGrey);
+}
+
+#all-in-pass {
+    background-color: var(--primaryColor);
+}
+#all-in-pass h2 {
+    color: var(--lightGrey);
+    text-shadow: 0.2em 0.1em var(--secondaryColor);
+}
+#all-in-pass h1 {
+    color: var(--secondaryColor);
+    text-shadow: 0.05em 0.05em var(--lightGrey);
+}
+#bimini-bundle-gold-pass {
+    background-color: var(--yellow);
+}
+#bimini-bundle-gold-pass h2 {
+    color: var(--secondaryColor);
+    text-shadow: 0.2em 0.1em var(--lightGrey);
+}
+#bimini-bundle-gold-pass h1 {
+    color: var(--secondaryColor);
+    text-shadow: 0.05em 0.05em var(--lightGrey);
+}
+#bimini-bundle-gold-pass p, 
+#bimini-bundle-gold-pass h3, 
+#bimini-bundle-gold-pass li {
+    color: var(--secondaryColor);
+}
+.ticket-pass-buy {
+    display: grid;
+    align-self: end;
+}
+.ticket-pass-details {
+    display: grid;
+    align-self: start;
+}
+
+.pass-details-listed {
+    padding: 3em 0em 1em 0em;
+}
+.pass-details-listed ul {
+    list-style-position: outside;
+    padding: 0.5em 1.5em;
+}
+.pass-details-listed li {
+    color: var(--secondaryColor);
+    font-size: large;
+    padding: 0.2em 0em;
+}
+
+
+.view-programme-passes {
+    padding: 3em;
+    text-align: center;
+}
+.view-programme-passes span {
+    color: var(--lightGrey);
+    background: var(--primaryColor);
+    border: solid 2px var(--lightGrey);
+    padding: 10px 30px;
+    border-radius: 20px;
+    height: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+.view-programme-passes span:hover {
+    color: var(--lightGrey);
+    background: var(--secondaryColor);
+    border: solid 2px var(--lightGrey);
+    padding: 10px 30px;
+    border-radius: 20px;
+    height: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+.view-programme-passes a {
+    text-decoration: none;
+}
+.announced-events-passes {
+    padding: 2em 2em 0em 2em;
+}
+.announced-events-passes h1 {
+    font-size: x-large;
+    text-align: center;
+    font-weight: 100;
+    line-height: 2em;
+    letter-spacing: 0.2em; 
+    padding-bottom: 2em;
+}
+.announced-events-passes h2 {
+    text-align: center;
+    font-size: large;
+    padding: 0em 0em 3em 0em;
+    letter-spacing: 0.5em; 
+}
+.announced-events-passes a {
+    text-decoration: none;
+    color: var(--lightGrey);
+    font-weight: bold;
+}
