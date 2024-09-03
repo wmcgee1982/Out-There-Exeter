@@ -719,6 +719,12 @@ body:has(#inclusivity-title:hover)
     height: auto;
     background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
 }
+#information-section-bigpages-competition {
+    padding: 2em 0em 4em 0em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
+}
 
 .information-container {
     width: auto;
@@ -924,6 +930,20 @@ body:has(.advocacy:hover)
     color: var(--yellow);
     font-size: large;
 }
+.programme-page-info ul {
+    list-style-position: outside;
+    padding: 0.5em 2em;
+}
+.programme-page-info li {
+    padding: 0.2em 0em;
+}
+.programme-page-info a {
+    color: var(--lightGrey);
+}
+.programme-page-info a:hover {
+    color: var(--mediumGrey);
+}
+
 .upcoming-events {
     width: 100%; 
     margin: auto;
@@ -2429,4 +2449,31 @@ to {
     text-decoration: none;
     color: var(--lightGrey);
     font-weight: bold;
+}
+
+/* *** *** COMPETITION *** *** */
+.competition-hero {
+    display: grid;
+    width: 100%;
+    height: auto;
+    box-shadow: 0.1em 0.1em 3em 0.1em var(--darkGrey);
+    margin: 0em 0em 2em 0em;
+}
+.competition-hero img {
+    width: 100%;
+}
+#competition-info-container {
+    padding: 0em 4em;
+}
+.competition-title {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+.competition-title h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--secondaryColor);
+    background-color: var(--lightGrey);
+    padding: 0.1em 0.2em;
 }
