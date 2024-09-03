@@ -656,19 +656,18 @@
 }
 .partners-information-small {
     width: auto;
-    padding: 1em 0em;
     text-align: center;
 }
 .grid-item-partners-small {
     display: inline-block;
-    padding: 1.2em;
+    padding: 0.5em;
     width: auto;
     height: auto;
     vertical-align: middle;
 }
 .grid-item-partners-small img {
     display: inline-block;
-    width: 24vw; 
+    width: 20vw; 
     height: auto;
 }
 .library-small {
@@ -1096,11 +1095,10 @@
     padding: 1.5em 1em;
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
     margin-bottom: -1px;
     opacity: 0;
     will-change: opacity;
-    animation: fadeInProg 0.2s ease-in-out 1s forwards;
+    animation: fadeInProg 0s ease-in-out 1s forwards;
 }
 @keyframes fadeInProg {
     to {
@@ -1275,11 +1273,19 @@
     justify-items: center;
 }
 .partners-title-programme-small {
-    padding: 6em 0em 0em 0em;
+    padding: 4em 1em 0em 1em; 
     display: grid;
-    justify-items: center;
+}
+.partners-title-programme-small-homepage {
+    padding: 2em 1em 0em 1em; 
+    display: grid;
 }
 .partners-title-programme-small h1 {  
+    font-size: x-large;
+    color: var(--lightGrey);
+    font-weight: bold;
+}
+.partners-title-programme-small-homepage h1 {  
     font-size: x-large;
     color: var(--lightGrey);
     font-weight: bold;
@@ -1783,7 +1789,7 @@ textarea {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation: fadeIn 2s ease-in-out 1s forwards;
 }
 @keyframes fadeIn {
 to {

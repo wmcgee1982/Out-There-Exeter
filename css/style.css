@@ -1304,11 +1304,11 @@ button {
     text-shadow: 2px 2px var(--secondaryColor);
 }
 .partners-information {
-    padding: 2em 0em;
+    padding: 1em 0em;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1em;
     justify-items: center;
     align-items: center;
@@ -1317,23 +1317,22 @@ button {
     padding: 2em 0em;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1em;
     justify-items: center;
     align-items: center;
 }
 .grid-item-partners {
-    gap: 2em;
+    gap: 1em;
 }
 .grid-item-partners img {
-    width: 100px; 
+    width: 175px; 
     height: auto;
 }
 .library {
     filter: invert(100%);
     display: inline-block;
-    width: 20vw; 
     height: auto;
 }
 
