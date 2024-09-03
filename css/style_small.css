@@ -429,7 +429,8 @@
     border-bottom: solid 0.2em var(--backgroundColor);
 }
 #information-section-bigpages-competition-small {
-    padding: 0em 0em 4em 0em;
+    padding: 0em 0em 2em 0em;
+    margin-bottom: -0.1em;
     width: 100%;
     height: auto;
     background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
@@ -439,7 +440,6 @@
 }
 .information-container-small h3 {
     color: var(--secondaryColor);
-
     font-weight: 600;
 }
 .information-container-small p {
@@ -1095,6 +1095,16 @@
     font-size: large;
     line-height: 1.5em;
     color: var(--lightGrey);
+}
+.programme-page-info-small h3 {
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.5em;
+    color: var(--lightGrey);
+    padding: 1em 0em 0em 0em;
+}
+.programme-page-info-small p {
+    padding: 0em 0em 0.5em 0em;
 }
 .programme-page-info-small ul {
     list-style-position: outside;
@@ -1819,12 +1829,10 @@ to {
     right: 10px;
 }
 
-
-
 /* *** *** TICKETS PASSES *** *** */
 .ticket-passes-title-container-small {
-    margin: 2em 0em;
-    padding: 2em 4em;
+    margin: 1em 0em;
+    padding: 1em 2em;
     box-shadow: 0px 0px 10px 0px var(--secondaryColor);
     border-radius: 20px;
     background-color: var(--lightGrey);
@@ -1843,13 +1851,13 @@ to {
     letter-spacing: 0.05em; 
 }
 .ticket-passes-small {
-    margin: 2em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
     display: grid;
     width: 100%;
     display: grid;
     position: relative;
     justify-content: center;
-    gap: 4em;
+    gap: 2em;
 }
 
 .ticket-pass-container-small {
@@ -1857,7 +1865,7 @@ to {
     border-radius: 20px;
     padding: 4em 2em;
     width: 100%;
-    height: 600px;
+    height: 700px;
     --mask: radial-gradient(50px at 50px 50px,#0000 98%,#000) -50px -50px;
     -webkit-mask: var(--mask);
             mask: var(--mask);
@@ -1947,11 +1955,11 @@ to {
 }
 
 .pass-details-listed-small {
-    padding: 3em 0em 1em 0em;
+    padding: 2em 0em 1em 0em;
 }
 .pass-details-listed-small ul {
     list-style-position: outside;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1.5em 0em 1.5em;
 }
 .pass-details-listed-small li {
     color: var(--secondaryColor);
@@ -1988,20 +1996,19 @@ to {
     text-decoration: none;
 }
 .announced-events-passes-small {
-    padding: 2em 2em 0em 2em;
+    padding: 1em;
 }
 .announced-events-passes-small h1 {
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     font-weight: 100;
     line-height: 2em;
     letter-spacing: 0.2em; 
-    padding-bottom: 2em;
 }
 .announced-events-passes-small h2 {
     text-align: center;
     font-size: large;
-    padding: 0em 0em 3em 0em;
+    padding: 0em 0em 2em 0em;
     letter-spacing: 0.5em; 
 }
 .announced-events-passes-small a {
@@ -2030,7 +2037,7 @@ to {
     align-self: center;
 }
 .competition-title-small h1 {
-    font-size: xx-large;
+    font-size: large;
     font-weight: bolder;
     color: var(--secondaryColor);
     background-color: var(--lightGrey);
