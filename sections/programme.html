@@ -2,7 +2,7 @@
 <div class="upcoming-events">
     <h1>Upcoming Events</h1>
     <h2>FILTER BY CATEGORY OR VENUE</h2>
-    <p>More events to be announced soon</p>
+    <p>Click <a href="media/Programme.pdf" target="_blank">here</a> to download the complete programme list</p>
 <!--    <p>Click <u>here</u> to download a programme copy <i>(last updated 12th August)</i></p> -->
 </div>
 
@@ -22,24 +22,25 @@
     <button onclick="filterEvents('ramm')">Royal Albert Memorial Musuem</button>
 </br>
     <button onclick="filterEvents('free')" 
-    style="background-color: var(--red); color: var(--yellow);" 
+    style="background-color: var(--softNavy); color: var(--yellow);" 
     onmouseover="this.style.backgroundColor='var(--secondaryColor)'; this.style.color='var(--lightGrey)';"
-    onmouseout="this.style.backgroundColor='var(--red)'; this.style.color='var(--yellow)';">
+    onmouseout="this.style.backgroundColor='var(--softNavy)'; this.style.color='var(--yellow)';">
     Free Events</button>
 <button onclick="filterEvents('pass')" 
-    style="background-color: var(--red); color: var(--yellow);" 
+    style="background-color: var(--softNavy); color: var(--yellow);" 
     onmouseover="this.style.backgroundColor='var(--secondaryColor)'; this.style.color='var(--lightGrey)';"
-    onmouseout="this.style.backgroundColor='var(--red)'; this.style.color='var(--yellow)';">
-    Ticket Pass</button>
+    onmouseout="this.style.backgroundColor='var(--softNavy)'; this.style.color='var(--yellow)';">
+    Ticket Pass Events</button>
 </div>
-
-
 <div id="event-list">
     <!-- All Listings-->
     <div class="event-cat" data-category="allevents">
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; All</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="alleventsListings">
             <section id="allevents-listings" include-html="./events/allevents.html"></section>
         </div>
@@ -50,6 +51,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Music and Club</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="musicListings">
             <section id="music-listings" include-html="./events/music.html"></section>
         </div>
@@ -60,6 +64,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Theatre, Comedy, and Performance</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="performanceListings">
             <section id="performance-listings" include-html="./events/performance.html"></section>
         </div>
@@ -70,6 +77,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Q&A, Workshop and Exhibition </i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="workshopListings">
             <section id="workshop-listings" include-html="./events/workshop.html"></section>
         </div>
@@ -80,6 +90,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Film and TV</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="filmListings">
             <section id="film-listings" include-html="./events/film.html"></section>
         </div>
@@ -90,6 +103,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Wellbeing</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="wellbeingListings">
             <section id="wellbeing-listings" include-html="./events/wellbeing.html"></section>
         </div>
@@ -100,6 +116,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Society and Community</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="societyListings">
             <section id="society-listings" include-html="./events/society.html"></section>
         </div>
@@ -110,6 +129,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Free Events</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="freeListings">
             <section id="free-listings" include-html="./events/free.html"></section>
         </div>
@@ -118,8 +140,11 @@
     <!-- Ticket Pass -->
     <div class="event-cat hidden" data-category="pass">    
         <div class="programme-page-programme-section">
-            <h1><i>&#x2016; Ticket Pass</i></h1>
+            <h1><i>&#x2016; Ticket Pass Events</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="passListings">
             <section id="pass-listings" include-html="./events/pass.html"></section>
         </div>
@@ -130,6 +155,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Exeter Phoenix</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="phoenixListings">
             <section id="phoenix-listings" include-html="./events/phoenix.html"></section>
         </div>
@@ -140,6 +168,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Barnfield Theatre</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="barnfieldListings">
             <section id="barnfield" include-html="./events/barnfield.html"></section>
         </div>
@@ -150,6 +181,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Exeter Library</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="libraryListings">
             <section id="library" include-html="./events/library.html"></section>
         </div>
@@ -160,6 +194,9 @@
         <div class="programme-page-programme-section">
             <h1><i>&#x2016; Royal Albert Memorial Museum</i></h1>
         </div>
+        <div class="event-details" style="padding: 1em 1em 0em 1em;">
+            <section include-html="sections/eventpage-passes.html"></section>
+            </div>
         <div id="rammListings">
             <section id="ramm-listings" include-html="./events/ramm.html"></section>
         </div>

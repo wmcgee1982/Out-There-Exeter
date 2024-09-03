@@ -964,6 +964,9 @@ body:has(.advocacy:hover)
     font-size: large;
     text-align: center;
 }
+.upcoming-events a {
+    color: var(--lightGrey);
+}
 .programme-page-programme-section {
     padding: 1em;
 }
@@ -1006,7 +1009,7 @@ body:has(.advocacy:hover)
     position: relative;
     align-content: center;
     justify-self: center;
-    padding: 2em 0em;
+    padding: 0em 0em 5em 0em;
 }
 .programme-page-event img {
     border: solid 2px var(--lightGrey);
@@ -1403,7 +1406,7 @@ button {
 }
 
 .view-programme {
-    padding: 6em 3em 3em 3em;
+    padding: 3em;
     text-align: center;
 }
 .view-programme span {
@@ -1972,6 +1975,10 @@ button {
 }
 .event-details a {
     color: var(--lightGrey);
+}
+.event-details img {
+    width: 100%;
+    height: auto;
 }
 .event-description {
     margin: 30px 0px;

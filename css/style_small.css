@@ -1142,6 +1142,9 @@
     font-size: large;
     text-align: center;
 }
+.upcoming-events-small a {
+    color: var(--lightGrey);
+}
 .programme-page-programme-section-small {
     padding: 1em 0em;
 }

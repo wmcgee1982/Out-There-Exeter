@@ -1,6 +1,6 @@
 
 // The data/time we want to countdown to
-var countDownDate = new Date("Sep 23, 2024 19:00:00").getTime();
+var countDownDate = new Date("Sep 20, 2024 21:00:00").getTime();
 
 // Run myfunc every second
 var myfunc = setInterval(function() {
@@ -50,7 +50,7 @@ document.getElementById("days1").innerHTML = days
 document.getElementById("hours1").innerHTML = hours
 document.getElementById("mins1").innerHTML = minutes
 document.getElementById("secs1").innerHTML = seconds
-document.getElementById("message1").innerHTML = "23 SEPT - 06 OCT";
+document.getElementById("message1").innerHTML = "20 SEPT - 06 OCT";
     
 // Display the message when countdown is over
 if (timeleft < 0) {
@@ -59,6 +59,6 @@ if (timeleft < 0) {
     document.getElementById("hours1").innerHTML = "0" 
     document.getElementById("mins1").innerHTML = "0"
     document.getElementById("secs1").innerHTML = "0"
-    document.getElementById("message1").innerHTML = "23rd Sept - 6th Oct";
+    document.getElementById("message1").innerHTML = "20th Sept - 6th Oct";
 }
 }, 1000);
