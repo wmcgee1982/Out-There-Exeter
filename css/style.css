@@ -723,6 +723,12 @@ body:has(#inclusivity-title:hover)
     height: auto;
     background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
 }
+#information-section-bigpages-volunteer {
+    padding: 3em 0em 4em 0em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
+}
 
 .information-container {
     width: auto;
@@ -1478,6 +1484,27 @@ button {
 .volunteers a {
     color: var(--secondaryColor);
 }
+.volunteers-page {
+    margin: 0em 2em;
+    padding: 2em;
+    border-radius: 20px;
+}
+.volunteers-page h1 {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 1.5em;
+}
+.volunteers-page p {
+    color: var(--lightGrey);
+    padding-top: 10px;
+    font-size: large;
+    line-height: 1.5em;
+}
+.volunteers-page a {
+    color: var(--lightGrey);
+}
+
 
 /* *** *** News Section *** *** */
 #news-section {
@@ -2476,6 +2503,34 @@ to {
     align-self: center;
 }
 .competition-title h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--secondaryColor);
+    background-color: var(--lightGrey);
+    padding: 0.1em 0.2em;
+}
+
+
+/* *** *** Volunteer *** *** */
+.volunteer-hero {
+    display: grid;
+    width: 100%;
+    height: auto;
+    box-shadow: 0em 0em 20em 0em var(--darkGrey);
+    margin: 0em 0em 2em 0em;
+}
+.volunteer-hero img {
+    width: 100%;
+}
+#volunteer-info-container {
+    padding: 3em 4em;
+}
+.volunteer-title {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+.volunteer-title h1 {
     font-size: xx-large;
     font-weight: bolder;
     color: var(--secondaryColor);

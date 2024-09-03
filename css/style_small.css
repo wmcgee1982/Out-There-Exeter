@@ -418,6 +418,27 @@
 .volunteers-small a {
     color: var(--secondaryColor);
 }
+.volunteers-page-small {
+    padding: 1em 0em 2em 0em;
+    border-radius: 20px;
+}
+.volunteers-page-small h3 {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 1.5em;
+    text-align: left;
+}
+.volunteers-page-small p {
+    color: var(--lightGrey);
+    padding-top: 10px;
+    font-size: large;
+    line-height: 1.5em;
+}
+.volunteers-page-small a {
+    color: var(--lightGrey);
+}
+
 /* *** *** information Section - small *** *** */
 #information-section-small {
     position: relative;
@@ -430,6 +451,14 @@
 }
 #information-section-bigpages-competition-small {
     padding: 0em 0em 2em 0em;
+    display: grid;
+    margin-bottom: -0.1em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #EB028A 0%, #692A92 100%);
+}
+#information-section-bigpages-volunteer-small {
+    padding: 0.3em 0em 2em 0em;
     display: grid;
     margin-bottom: -0.1em;
     width: 100%;
@@ -1103,6 +1132,12 @@
     line-height: 1.5em;
     color: var(--lightGrey);
     padding: 1em 0em 0em 0em;
+}
+.programme-page-info-small h4 {
+    font-size: large;
+    font-weight: bold;
+    color: var(--yellow);
+    padding: 0.5em 0em;
 }
 .programme-page-info-small p {
     padding: 0em 0em 0.5em 0em;
@@ -2040,6 +2075,32 @@ to {
 }
 .competition-title-small h1 {
     font-size: large;
+    font-weight: bolder;
+    color: var(--secondaryColor);
+    background-color: var(--lightGrey);
+    padding: 0.1em 0.2em;
+}
+/* *** *** Volunteer *** *** */
+.volunteer-hero-small {
+    display: grid;
+    width: 100%;
+    height: auto;
+    box-shadow: 0em 0em 20em 0em var(--darkGrey);
+    margin: 0em 0em 2em 0em;
+}
+.volunteer-hero-small  img {
+    width: 100%;
+}
+#volunteer-info-container-small  {
+    padding: 0em 2em;
+}
+.volunteer-title-small  {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+.volunteer-title-small  h1 {
+    font-size: xx-large;
     font-weight: bolder;
     color: var(--secondaryColor);
     background-color: var(--lightGrey);
