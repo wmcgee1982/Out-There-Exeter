@@ -53,7 +53,6 @@ body {
 #nav-bar {
     position: fixed;
     width: 100%;
-    background: var(--primaryColor);
     box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
 }
@@ -61,23 +60,26 @@ body {
     position: fixed;
     width: 100%;
     background: var(--primaryColor);
-    box-shadow: 0em 0em 1em 0em var(--darkGrey);
     z-index: 999;
     animation: MoveDown 3s linear;
     -webkit-animation: MoveDown 3s linear;
     -moz-animation: MoveDown 3s linear;
     -o-animation: MoveDown 3s linear;
 }
-#nav-bar-home-big-bimini {
+#nav-bar-home-big-home {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInLogo 4.5s; 
+    z-index: 999;
+}
+#nav-bar-home-big-sitewide {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    animation: MoveDown 4s linear;
-    -webkit-animation: MoveDown 4s linear;
-    -moz-animation: MoveDown 4s linear;
-    -o-animation: MoveDown 4s linear;
 }
+
 
 .navbar-wrapper {
     display: grid;
@@ -92,8 +94,7 @@ body {
 }
 .navbar-wrapper-bimini {
     display: grid;
-    padding: 1em 2em 0em 2em;
-    width: 100%;
+    padding: 1em 1.5em 0.7em 1.5em;
     gap: 1em;
     align-items: center;
     overflow: hidden;
@@ -104,10 +105,9 @@ body {
     background: linear-gradient(360deg, #EB028A 0%, #692A92 100%);
     box-shadow: 0px 0px 10px 0px var(--secondaryColor);
     opacity: 0.95;
-    font-weight: bold;
 }
 .sticky #navbar-title-bimini img {
-    width: 75px;
+    width: 200px;
     height: auto;
     overflow: hidden;
 }
@@ -152,9 +152,15 @@ body:has(.ticket-icon p:hover)
     justify-self: start;
 }
 #navbar-title-bimini img {
-    width: 125px;
+    width: 200px;
     height: auto;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 2px #eeeeee);
+}
+@keyframes fadeInLogo {
+    0% { opacity: 0;}
+    75% {opacity: 0;}
+    100% { opacity: 1;}
 }
 #navbar-title h1 {
     color: var(--primaryColor);
@@ -249,7 +255,7 @@ body:has(.ticket-icon p:hover)
     font-weight: bold;
 }
 .nav-menu-container-bimini li a {
-    color: var(--lightGrey);
+    color: var(--secondaryColor);
     text-decoration: none;
     cursor: pointer;
     padding: 0.5em;
@@ -262,43 +268,74 @@ body:has(.ticket-icon p:hover)
 }
 
 /* *** ***  Toggle Menu *** *** */
-.toggle-menu {
+
+.iconMain {
     position: absolute;
-    z-index: 99;
-    top: -0.5em;
-    right: 0;
+    right: 2em;
+    top: 3em;
+    -webkit-tap-highlight-color: transparent; 
+}
+#fa-main-bars-main {
+    padding: 0.6em 0.5em 0.5em 0.5em;
+    color: var(--backgroundColor);
+    font-size: large;
+    font-weight: 600;
+    background-color: var(--primaryColor);
+    border-radius: 2em;
+    width: 200px;
+    box-shadow: -2px 2px 0.5px 1px var(--lightGrey);
+    cursor: pointer;
+} 
+#fa-main-bars-main:hover {
+    background-color: var(--secondaryColor);
+    transform: scale(0.95);
+    box-shadow: -2px 2px 0px 0.5px var(--lightGrey);
+    cursor: pointer;
+} 
+#closeToggle {
+    display: none;
+    margin-top: -15px;
+    padding-right: 0.1em;
+    color: var(--backgroundColor);
+    font-size: xx-large;
+    font-weight: 100;
+    cursor: pointer;
 }
 
+.toggle-menu {
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    -webkit-tap-highlight-color: transparent; 
+}
 .toggle-menu #myLinks {
+    font-size: x-large;
     display: none;
-    text-align: right;
-    min-height: auto;
-    min-width: 18vw;
-    margin: 4.5em 1.5em;
-    background: var(--primaryColor);
-    border: var(--lightGrey) solid 0.15em;
-    box-shadow: 5px 5px 20px 0px var(--darkGrey);
-    border-radius: 1.5em;
+    min-height: 100vh;
+    min-width: 25vw;
+    text-align: left;
+    background: linear-gradient(360deg, #EB028A 0%, #692A92 100%);
+    padding-top: 4em;
+    -webkit-tap-highlight-color: transparent; 
+    border-left: double 10px var(--lightGrey);
+}
+.toggle-menu li {
+    list-style-type: none;
 }
 .toggle-menu a {
-    padding: 0.5em 1em;
-    display: block;
-    text-align: right;
-    font-size: 20px;
-    font-weight: 100;
-    text-decoration: none;
     color: var(--lightGrey);
-}
-.toggle-menu a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.toggle-menu a:hover {
-    color: var(--secondaryColor);
-    cursor: pointer;
+    text-decoration: none;
     font-weight: 500;
+    line-height: 1.8em;
+    padding: 0em 1.5em;
+    -webkit-tap-highlight-color: transparent; 
 }
+
+.toggle-menu a:hover {
+    color: var(--primaryColor);
+}
+
 .fa-main-bars:before {
     content: url("../media/toggleIcon_white.svg");
     cursor: pointer;
@@ -311,23 +348,38 @@ body:has(.ticket-icon p:hover)
 
  /* *** *** Header Section *** *** */
 #header-section {
-    padding: 3.7em 0em 0em 0em;
-}    
+    padding: 0em;
+} 
+.stars {
+    margin-top: -20px;
+} 
+
+.stars p {
+    padding-left: 0.5em;
+    margin-top: -40px;
+    font-style: italic;
+} 
+.stars img {
+    width: 100px;
+    height: auto; 
+}
+
 .grid-container-header {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 4fr 4fr 2fr;
+    grid-template-columns: 3fr 4fr 3fr 3fr;
     gap: 1.5em;
+    height: 150px;
     background: var(--secondaryColor);
-    margin-top: -0.5em;
-    padding-top: 0.5em;
+    padding: 1em;
+    position: relative;
 }
 .grid-container-header-bimini {
     top: 100px;
     position: absolute;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 4fr 4fr 2fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     gap: 1.5em;
     margin-top: -0.5em;
     padding-top: 0.5em;
@@ -336,7 +388,6 @@ body:has(.ticket-icon p:hover)
 /* *** *** LOGO *** *** */
 .logo-header {
     justify-self: start;
-
 }
 .logo-header img {
     padding: 1em;
@@ -345,8 +396,7 @@ body:has(.ticket-icon p:hover)
 }
 /* *** *** DATES FESTIVAL *** *** */
 .festival-date {
-    justify-self: center;
-    padding: 0.5em 0em 0em 0em;
+   padding-top: 1.5em;
 }
 .festival-date h2 {
     color: var(--secondaryColor);
@@ -368,15 +418,13 @@ body:has(.ticket-icon p:hover)
 }
 /* *** *** SUBTITLES *** *** */
 .header-subtitles {
-    justify-self: center;
-    width: 70%
+    padding-top: 1em;
 }
 .header-subtitles p {
-    margin: 0.3em 0em 0.2em 0em;
-    padding: 0.3em;
-    background-color: var(--secondaryColor);
+    margin: 0.1em 0em 0.2em 0em;
+    padding: 0.3em 0.3em 0.3em 0em;
     text-decoration: none;
-    filter: drop-shadow(0px 1px var(--primaryColor));
+    font-weight: bold;
 }
 .header-subtitles span {
     position: absolute;
@@ -384,19 +432,18 @@ body:has(.ticket-icon p:hover)
 
 } 
 .header-subtitles p:hover {
-    margin: 0.3em 0em 0.2em 0em;
-    padding: 0.3em;
-    background: var(--primaryColor);
+    margin: 0.1em 0em 0.2em 0em;
+    padding: 0.3em 0.3em 0.3em 0em;
     color: var(--secondaryColor);
     text-decoration: none;
-    border-radius: 1em;
     filter: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .header-subtitles-bigmain {
     justify-self: center;
-    width: 70%
+    width: 70%;
 }
 .header-subtitles-bigmain p {
     margin: 0.3em 0em 0.2em 0em;
@@ -483,13 +530,10 @@ body:has(.ticket-icon p:hover)
     height: 500px;
 }
 .background-bimini {
-    background-image: url(../media/BIMINI_Main.jpg);
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size: cover;
-    background-position: center;
-    animation: bg-img-hue 3s infinite;
-    height: 700px;
+    margin-bottom: -5px;
+}
+.background-bimini img {
+    width: 100vw;
     opacity: 0;
     will-change: opacity;
     animation: fadeIn 2s ease-in-out 2s forwards;
@@ -512,10 +556,10 @@ body:has(.ticket-icon p:hover)
 .first-section-container {
     position: relative;
     display: grid;
-    height: 600px;
+    height: 900px;
     grid-auto-flow: column;
     gap: 1em;
-    margin-top: -600px;
+    margin-top: -900px;
 }
 /* *** *** WEEKEND ACTS ANNOUNCEMENT *** *** */
 .headliner-act {
@@ -534,14 +578,14 @@ body:has(.ticket-icon p:hover)
     right: 0;
     margin: 25em 0em 0em 0em;
 }
-.headliner-act-prog h3 {
+.headliner-act-prog h1 {
     color: var(--lightGrey);
     background: var(--primaryColor);
-    border-left: double 10px var(--lightGrey);
+    border-left: double 20px var(--lightGrey);
     padding: 1em 1em;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-size: x-large;
+    font-size: xx-large;
     cursor: pointer;
     font-weight: bold;
     transform: skewY(5deg);
@@ -576,26 +620,27 @@ body:has(.ticket-icon p:hover)
 
 /* *** *** HIDDEN header subtitles *** *** */
 #subtitlesCards {
-    margin-top: 2em;
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    height: 100px;
+    box-sizing: border-box; 
 }
 .header-subtitles-cards {
     display: none;
     position: absolute;
-    right: 0;
-    text-align: right;
-    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 1em;
+    text-align: center;
 }
 .header-subtitles-cards h1 {
-    font-size: x-large;
+    font-size: medium;
     color: var(--secondaryColor);
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.5em;
 }
 .padding-subtitles {
-    color: var(--lightGrey);
-    background: var(--secondaryColor);
-    border-radius: 1em;
-    padding: 5px 10px;
+    color: var(--primaryColor);
 }
 .networks {
     display: block;
@@ -765,7 +810,6 @@ body:has(#inclusivity-title:hover)
     height: auto;
     border-top: solid 0.1em var(--backgroundColor);
     border-bottom: solid 0.1em var(--backgroundColor);
-    filter: hue-rotate(300deg);
 }
 
 /* *** *** About Page *** *** */
@@ -775,6 +819,7 @@ body:has(#inclusivity-title:hover)
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 1em;
+    padding-bottom: 4em;
 }
 .about-out-there-exeter h3 {
     font-size: x-large;
@@ -787,6 +832,38 @@ body:has(#inclusivity-title:hover)
     color: var(--lightGrey);
     line-height: 1.5em;
 }
+
+.aboutImage {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.aboutImage img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    filter: none;
+    border: solid 4px var(--lightGrey);
+    box-shadow: 1px 1px 10px -5px var(--darkGrey);
+    border-radius: 1rem;
+    filter: drop-shadow(-0.5em 0.5em var(--primaryColor));
+    cursor: pointer;
+    display: block;
+}
+
+.canvaFrame {
+    position: relative; 
+    width: 100%; 
+    height: 0; 
+    margin: 2em 0em;
+    padding-top: 56.2500%;
+    padding-bottom: 0; 
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+    will-change: transform;
+}
+
 
 /* *** *** Information Section Info Cards *** *** */
 .info-cards-container {
@@ -814,25 +891,25 @@ body:has(#inclusivity-title:hover)
     animation: fadeIn 0.5s ease-in-out 0.5s forwards;
 }
 .arts { 
-    background-image: url(../media/istockphoto-1502556789-612x612.jpg);
+    background-image: url(../media/shakesqueer1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .culture {
-    background-image: url(../media/istockphoto-1323377064-612x612.jpg);
+    background-image: url(../media/bimini85.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .community {
-    background-image: url(../media/community.jpg);
+    background-image: url(../media/exeterpridelibrary.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .advocacy {
-    background-image: url(../media/istockphoto-1498993169-612x612.jpg);
+    background-image: url(../media/advocacy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1342,7 +1419,7 @@ button {
     width: 100%;
     height: auto;
     background-image: linear-gradient(transparent 0%, #EB028A 50%, #692A92 100%);
-    border-top: solid 0.2em var(--primaryColor);
+    margin-top: -5px;
 }
 .home-page-programme-section h1 {
     font-size: x-large;
@@ -1357,7 +1434,7 @@ button {
     border-bottom: 3px solid var(--secondaryColor);
 }
 .home-page-programme-section p {
-    padding: 1.5em 0em 3em 0em;
+    padding: 1.5em 0em 0em 0em;
     font-size: large;
     line-height: 1.5em;
 }
@@ -1415,9 +1492,10 @@ button {
     text-align: center;
 }
 .view-programme span {
-    color: var(--lightGrey);
-    background: var(--primaryColor);
-    border: solid 2px var(--lightGrey);
+    color: var(--secondaryColor);
+    font-weight: 600;
+    background: var(--lightGrey);
+    border: solid 2px var(--primaryColor);
     padding: 10px 30px;
     border-radius: 20px;
     height: 10px;
@@ -1435,6 +1513,31 @@ button {
     cursor: pointer;
 }
 .view-programme a {
+    text-decoration: none;
+}
+.view-programme-aboutpage {
+    padding: 1em 0em 3em 0em;
+    text-align: center;
+}
+.view-programme-aboutpage p {
+    display: inline-block;
+    text-align: center;
+    color: var(--secondaryColor);
+    font-weight: 600;
+    background: var(--lightGrey);
+    border: solid 2px var(--primaryColor);
+    padding: 10px 30px;
+    border-radius: 2em;
+    font-size: large;
+    cursor: pointer;
+}
+.view-programme-aboutpage p:hover {
+    color: var(--lightGrey);
+    background: var(--secondaryColor);
+    border: solid 2px var(--lightGrey);
+    cursor: pointer;
+}
+.view-programme-aboutpage a {
     text-decoration: none;
 }
 .announced-events {
@@ -1652,8 +1755,7 @@ button {
     border-bottom: solid 0.1rem var(--lightGrey);
     padding: 0em 0em 0.2em 0em;
     width: 70vw;
-    color: var(--secondaryColor);
-    text-shadow: 0.1em 0.1em var(--lightGrey);
+    color: var(--lightGrey);
 }
 .footer-info-container {
     display: flex;
@@ -1756,9 +1858,11 @@ button {
 .contact-form-big-page-container {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 200px;
+    position: relative;
+    grid-template-columns: repeat(2, 20% 80%);
     gap: 0em;
 }
+
 .contact-form-title-big h1 {
     font-size: xx-large;
     font-weight: 900;
@@ -2274,6 +2378,7 @@ to {
 
 .carousel-control {
     position: absolute;
+    width: 30px;
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--primaryColor);
@@ -2536,3 +2641,138 @@ to {
     background-color: var(--lightGrey);
     padding: 0.1em 0.2em;
 }
+
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5em;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.gallery-item img {
+    width: 100%; /* Makes sure the image fills the container width */
+    height: 100%; /* Makes sure the image fills the container height */
+    object-fit: cover; /* Ensures the image fills the container without distorting */
+    object-position: top; /* Keeps the top of the image visible while cropping the bottom */
+    image-rendering: smooth; /* Improves scaling of images */
+    border-radius: 20px;
+    transition: transform 1s ease;
+    border: solid 4px var(--primaryColor);
+    backface-visibility: hidden;
+    image-rendering: smooth; 
+}
+
+/* Grid Layout */
+.gallery-titles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    padding: 1em;
+}
+
+/* Image Container */
+.gallery-titles-container {
+    position: relative;
+    overflow: hidden; /* Ensures overlay is clipped to the container */
+    border-radius: 5%; /* Rounds the edges */
+    width: 100%; /* Ensure container matches grid size */
+    border: solid 4px var(--primaryColor);
+}
+
+/* Images */
+.gallery-titles-container img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Matches container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Text Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding: 1em;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Ensures text appears above the image */
+}
+
+/* Hover Effect */
+.gallery-titles-container:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.gallery-titles-container:hover .overlay {
+    opacity: 1; /* Show overlay and text on hover */
+}
+
+
+/* Button Gallery Row */
+.button-gallery-row {
+    display: flex;
+    justify-content: space-between; /* Evenly space buttons */
+    align-items: center; /* Center buttons vertically */
+    gap: 0.8em; /* Space between buttons */
+    padding: 1em 0em;
+}
+
+/* Buttons */
+.btn-gallery {
+    text-align: center;
+    width: 24vw;
+    padding: 1em 0.5em; /* Adjust padding for a good size */
+    font-size: medium;
+    color: var(--lightGrey);
+    background-color: var(--secondaryColor);
+    border: solid 2px var(--lightGrey);
+    border-radius: 2em; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Button Hover Effect */
+.btn-gallery:hover {
+    background-color: var(--lightGrey);
+    background-color: var(--primaryColor);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button Focus Effect */
+.btn-gallery:focus {
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-gallery-row {
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center; /* Center buttons */
+    }
+
+    .btn-gallery {
+        width: 100%; /* Buttons take full width in small viewports */
+        text-align: center;
+    }
+}
+

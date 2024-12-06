@@ -1,11 +1,18 @@
 function toggle() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  var links = document.getElementById("myLinks");
+  var mainBars = document.getElementById("fa-main-bars-main");
+  var closeToggle = document.getElementById("closeToggle");
+  
+  if (links.style.display === "block") {
+    links.style.display = "none";
+    mainBars.style.display = "block";
+    closeToggle.style.display = "none";
+  } else {
+    links.style.display = "block";
+    mainBars.style.display = "none";
+    closeToggle.style.display = "block";
   }
+}
 
   function toggle1() {
     var x = document.getElementById("myLinks-small");
