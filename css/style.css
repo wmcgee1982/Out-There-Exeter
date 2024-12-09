@@ -536,7 +536,7 @@ body:has(.ticket-icon p:hover)
     width: 100vw;
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 0.5s ease-in;
 }
 
 @keyframes bg-img-hue {
@@ -850,6 +850,7 @@ body:has(#inclusivity-title:hover)
     filter: drop-shadow(-0.5em 0.5em var(--primaryColor));
     cursor: pointer;
     display: block;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .canvaFrame {
