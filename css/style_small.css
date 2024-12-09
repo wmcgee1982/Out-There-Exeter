@@ -1012,6 +1012,11 @@
     font-size: x-large;
     font-weight: bold;
 }
+.information-container-about-small h2 {
+    color: var(--yellow);
+    font-size: x-large;
+    font-weight: bold;
+}
 .information-container-about-small p {
     padding: 0.5em 0em;
     font-size: medium;
@@ -2139,3 +2144,137 @@ to {
     background-color: var(--lightGrey);
     padding: 0.1em 0.2em;
 }
+
+
+.gallery-container-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.5em;
+    width: 100%;
+    margin: 1em 0em;
+}
+
+.gallery-item-small img {
+    width: 100%; /* Makes sure the image fills the container width */
+    height: 100%; /* Makes sure the image fills the container height */
+    object-fit: cover; /* Ensures the image fills the container without distorting */
+    object-position: top; /* Keeps the top of the image visible while cropping the bottom */
+    image-rendering: smooth; /* Improves scaling of images */
+    border-radius: 20px;
+    transition: transform 1s ease;
+    border: solid 4px var(--primaryColor);
+    backface-visibility: hidden;
+    image-rendering: smooth; 
+}
+
+/* Grid Layout */
+.gallery-titles-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+/* Image Container */
+.gallery-titles-container-small {
+    position: relative;
+    overflow: hidden; /* Ensures overlay is clipped to the container */
+    border-radius: 5%; /* Rounds the edges */
+    width: 100%; /* Ensure container matches grid size */
+    border: solid 4px var(--primaryColor);
+}
+
+/* Images */
+.gallery-titles-container-small img {
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Matches container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Text Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding: 1em;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Ensures text appears above the image */
+}
+
+/* Hover Effect */
+.gallery-titles-container-small:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.gallery-titles-container-small:hover .overlay {
+    opacity: 1; /* Show overlay and text on hover */
+}
+
+
+/* Button Gallery Row */
+.button-gallery-row-small {
+    display: flex;
+    justify-content: space-between; /* Evenly space buttons */
+    align-items: center; /* Center buttons vertically */
+    gap: 0.8em; /* Space between buttons */
+    padding: 1em 0em;
+}
+
+/* Buttons */
+.btn-gallery-small {
+    text-align: center;
+    width: 24vw;
+    padding: 1em 0.5em; /* Adjust padding for a good size */
+    font-size: medium;
+    color: var(--lightGrey);
+    background-color: var(--secondaryColor);
+    border: solid 2px var(--lightGrey);
+    border-radius: 2em; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Button Hover Effect */
+.btn-gallery-small:hover {
+    background-color: var(--lightGrey);
+    background-color: var(--primaryColor);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button Focus Effect */
+.btn-gallery-small:focus {
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-gallery-row-small {
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center; /* Center buttons */
+    }
+
+    .btn-gallery-small {
+        width: 50%; /* Buttons take full width in small viewports */
+        text-align: center;
+    }
+}
+
