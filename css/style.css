@@ -2708,7 +2708,7 @@ to {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     color: var(--primaryColor);
     font-weight: bold;
     font-size: x-large;
