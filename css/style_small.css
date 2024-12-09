@@ -131,6 +131,8 @@
     top: 0;
     right: 0;
     -webkit-tap-highlight-color: transparent; 
+    z-index: 3;   
+    overflow: visible; 
 }
 .toggle-menu-small #myLinks-small {
     font-size: x-large;
@@ -138,7 +140,7 @@
     min-height: 100vh;
     min-width: 100vw;
     text-align: right;
-    background: linear-gradient(360deg, #EB028A 0%, #EB028A 20%, #692A92 100%);
+    background: linear-gradient(360deg, #EB028A 0%, #EB028A 30%, #692A92 100%);
     padding: 4em 1.5em 0em 0em;
     -webkit-tap-highlight-color: transparent; 
 }
@@ -1849,7 +1851,7 @@ textarea {
     position: absolute; /* Ensures it stays as the background */
     top: 0;
     left: 0;
-    width: 100%; /* Makes the image span the container */
+    width: 110%; /* Makes the image span the container */
     height: 100%;
     object-fit: cover; /* Ensures the image fits without distortion */
     z-index: 0; /* Places the image behind the text */
@@ -2256,6 +2258,7 @@ to {
 .gallery-item-small img:hover {
     border: none;
     transform: scale(1.05); /* Slight zoom effect on hover */
+    border-radius: none;
 }
 
 .gallery-item-small:hover { 
