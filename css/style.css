@@ -2665,7 +2665,7 @@ to {
     object-position: top; /* Keeps the top of the image visible while cropping the bottom */
     image-rendering: smooth; /* Improves scaling of images */
     border-radius: 20px;
-    transition: transform 1s ease;
+    transition: transform 0.3s ease;
     border: solid 4px var(--primaryColor);
     backface-visibility: hidden;
     image-rendering: smooth; 
