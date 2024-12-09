@@ -534,9 +534,6 @@ body:has(.ticket-icon p:hover)
 }
 .background-bimini img {
     width: 100vw;
-    opacity: 0;
-    will-change: opacity;
-    animation: fadeIn 2s ease-in-out 2s forwards;
 }
 
 @keyframes bg-img-hue {

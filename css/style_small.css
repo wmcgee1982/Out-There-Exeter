@@ -120,8 +120,12 @@
     margin: 1em;
 }
 #navbar-title-small {
-    justify-self: start;
-    z-index: 99;
+    left: 1em; /* Adjust placement as needed */
+    top: 0.5em;
+    z-index: 200; /* Higher than the dropdown menu */
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 #navbar-title-small h1 {
     color: var(--primaryColor);
@@ -134,11 +138,10 @@
     top: 0;
     right: 0;
     -webkit-tap-highlight-color: transparent; 
-    z-index: 3;   
+    z-index: 99;   
     overflow: visible; 
 }
 .toggle-menu-small #myLinks-small {
-    position: fixed; /* Fixes the menu to the viewport */
     top: 0;
     right: 0;
     font-size: x-large;
@@ -165,14 +168,17 @@
     color: var(--primaryColor);
 }
 .iconSmall {
-    position: absolute;
+    position: fixed; /* Fixes the icon to the viewport */
     right: 1em;
     top: 0.5em;
-    -webkit-tap-highlight-color: transparent; 
+    z-index: 200; /* Higher than the dropdown menu */
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer; /* Ensures the icon is clickable */
 }
 .fa-main-bars-small {
     content: url("../media/toggleIcon_pink.svg");
     -webkit-tap-highlight-color: transparent; 
+    z-index: 999;
 } 
 
 .menu-title-small {
@@ -975,7 +981,7 @@
     -o-animation: cssAnimation 0s ease-in 3s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    z-index: 999;
+    z-index: 9999;
 }
 .loading-page-container-small {
     display: grid;
