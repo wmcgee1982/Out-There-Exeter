@@ -18,6 +18,12 @@
     }
 }
 
+main {
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+}
+
 .background-bimini-small {
     background-image: url(../media/BIMINI_Main.jpg);
     background-repeat:no-repeat;

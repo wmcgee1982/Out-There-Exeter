@@ -519,6 +519,12 @@ body:has(.ticket-icon p:hover)
     color: var(--primaryColor);
 }
 
+main {
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+}
+
 /* *** *** General Background *** *** */ 
 .background {
     background-image: url(./media/BIMINI_Main.jpg);
