@@ -850,10 +850,7 @@
 #footer-home-small {
     background: var(--secondaryColor);
     bottom: 0;
-    animation: fadeinmainsmall 3s linear;
-    -webkit-animation: fadeinmainsmall 3s linear;
-    -moz-animation: fadeinmainsmall 3s linear;
-    -o-animation: fadeinmainsmall 3s linear;
+    animation: fadeIn 2s ease-in-out 2s forwards;
 }
 .footer-container-small {
     padding: 1em 1em 7em 1em;
@@ -986,10 +983,10 @@
     height: 100%;
     background: #fff; /* Adjust to your background color */
     display: block;
-    animation: cssAnimationupdated 3s ease-in forwards;
-    -moz-animation: cssAnimationupdated 3s ease-in forwards;
-    -webkit-animation: cssAnimationupdated 3s ease-in forwards;
-    -o-animation: cssAnimationupdated 3s ease-in forwards;
+    animation: cssAnimationupdated 4s ease-in forwards;
+    -moz-animation: cssAnimationupdated 4s ease-in forwards;
+    -webkit-animation: cssAnimationupdated 4s ease-in forwards;
+    -o-animation: cssAnimationupdated 4s ease-in forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     z-index: 9999;
