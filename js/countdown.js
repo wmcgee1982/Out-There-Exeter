@@ -1,5 +1,6 @@
 
-// The data/time we want to countdown to
+/*
+// The data/time we want to countdown to 
 var countDownDate = new Date("Sep 20, 2024 21:00:00").getTime();
 
 // Run myfunc every second
@@ -62,3 +63,5 @@ if (timeleft < 0) {
     document.getElementById("message1").innerHTML = "20th Sept - 6th Oct";
 }
 }, 1000);
+
+*/
