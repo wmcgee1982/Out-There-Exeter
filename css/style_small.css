@@ -980,14 +980,34 @@
 /* *** *** Front page loading element *** *** */
 #loading-page-small {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Adjust to your background color */
     display: block;
-    animation: cssAnimation 0s ease-in 3s forwards;
-    -moz-animation: cssAnimation 0s ease-in 3s forwards;
-    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
-    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    animation: cssAnimationupdated 3s ease-in forwards;
+    -moz-animation: cssAnimationupdated 3s ease-in forwards;
+    -webkit-animation: cssAnimationupdated 3s ease-in forwards;
+    -o-animation: cssAnimationupdated 3s ease-in forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     z-index: 9999;
+}
+/* Keyframes for the fade-out effect */
+@keyframes cssAnimationupdated {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    75% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 .loading-page-container-small {
     display: grid;
