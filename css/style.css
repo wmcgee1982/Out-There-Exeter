@@ -522,7 +522,7 @@ body:has(.ticket-icon p:hover)
 #main {
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 2s ease-in-out 2s forwards;
+    animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
 /* *** *** General Background *** *** */ 
