@@ -18,10 +18,10 @@
     }
 }
 
-main {
+#main-small {
     opacity: 0;
     will-change: opacity;
-    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
 
 .background-bimini-small {
