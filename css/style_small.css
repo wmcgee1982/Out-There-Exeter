@@ -2468,8 +2468,8 @@ to {
 .about-out-there-exeter h3 {
     font-size: x-large;
     font-weight: bold;
-    color: var(--secondaryColor);
-    padding: 0.5em 0em;
+    color: var(--backgroundColor);
+    padding: 0.5em 0em 1em;
 }
 
 .event-card-small img {
