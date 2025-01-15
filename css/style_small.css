@@ -2440,13 +2440,16 @@ to {
     font-weight: 600;
 }
 
+.event-descriptions-small {
+    padding: 0.5em 0em;
+}
+
 
 .events-container-small {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
-    padding: 3em 0em;
 }
 
 .event-card-small {
@@ -2462,6 +2465,13 @@ to {
     justify-content: space-between;
 }
 
+.about-out-there-exeter h3 {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--secondaryColor);
+    padding: 0.5em 0em;
+}
+
 .event-card-small img {
     width: 100%;
     height: 200px;
@@ -2472,8 +2482,20 @@ to {
     border-bottom: none;
 }
 
-.event-card-small h2 {
+.about-out-there-exeter h1 {
     margin-top: 0;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--yellow);
+    padding: 2em 0em 1em;
+}
+
+.about-out-there-exeter h2 {
+    margin-top: 0;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--yellow);
+    padding: 0.5em 0em;
 }
 
 .btn-register-small {
