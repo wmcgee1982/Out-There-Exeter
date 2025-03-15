@@ -867,17 +867,24 @@ body:has(#inclusivity-title:hover)
 
 .canvaFrame {
     position: relative; 
-    width: 80%; 
-    height: 0; 
-    margin: 2em auto; /* Centering horizontally */
-    padding-top: 56.25%; /* Maintain aspect ratio */
-    padding-bottom: 0; 
+    width: 70%; 
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto;
+    aspect-ratio: 16 / 9; /* Maintains aspect ratio */
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2); 
     overflow: hidden;
-    will-change: transform;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.canvaFrame iframe {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Ensures it fills the screen height */
+    max-height: 100%;
+    border: none;
 }
 
 /* *** *** Information Section Info Cards *** *** */
