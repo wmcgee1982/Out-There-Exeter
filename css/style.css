@@ -818,11 +818,11 @@ body:has(#inclusivity-title:hover)
 /* *** *** About Page *** *** */
 .top-section-about {
     display: grid;
-    position: relative;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    align-items: start;
     gap: 1em;
     padding-bottom: 4em;
+    position: relative;
 }
 .about-out-there-exeter h3 {
     font-size: x-large;
@@ -844,15 +844,14 @@ body:has(#inclusivity-title:hover)
 
 .aboutImage {
     width: 100%;
-    display: inline-block;
+    display: block;
     position: relative;
 }
 
 .aboutImage img {
-    position: absolute;
     width: 100%;
     height: auto;
-    filter: none;
+    max-width: 100%;
     border: solid 4px var(--lightGrey);
     box-shadow: 1px 1px 10px -5px var(--darkGrey);
     border-radius: 1rem;
@@ -862,18 +861,24 @@ body:has(#inclusivity-title:hover)
     animation: fadeIn 0.5s ease-in;
 }
 
+.AboutMain {
+    clear: both;
+}
+
 .canvaFrame {
     position: relative; 
-    width: 100%; 
+    width: 80%; 
     height: 0; 
-    margin: 2em 0em;
-    padding-top: 56.2500%;
+    margin: 2em auto; /* Centering horizontally */
+    padding-top: 56.25%; /* Maintain aspect ratio */
     padding-bottom: 0; 
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2); 
     overflow: hidden;
     will-change: transform;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
 }
-
 
 /* *** *** Information Section Info Cards *** *** */
 .info-cards-container {
