@@ -107,7 +107,7 @@ body {
     opacity: 1;
 }
 .sticky #navbar-title-bimini img {
-    width: 200px;
+    width: 150px;
     height: auto;
     overflow: hidden;
 }
@@ -305,7 +305,7 @@ body:has(.ticket-icon p:hover)
 .toggle-menu {
     display: block;
     position: absolute;
-    top: -3px;
+    top: -15px;
     right: 0;
     -webkit-tap-highlight-color: transparent; 
 }
