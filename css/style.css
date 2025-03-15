@@ -110,6 +110,7 @@ body {
     width: 150px;
     height: auto;
     overflow: hidden;
+    transition: width 0.2s ease-in-out;
 }
 .sticky .ticket-icon img {
     width: 75px;
@@ -156,6 +157,7 @@ body:has(.ticket-icon p:hover)
     height: auto;
     overflow: hidden;
     filter: drop-shadow(0px 0px 2px #eeeeee);
+    transition: width 0.1s ease-in-out;
 }
 @keyframes fadeInLogo {
     0% { opacity: 0;}
@@ -351,7 +353,7 @@ body:has(.ticket-icon p:hover)
     padding: 0em;
 } 
 .stars {
-    margin-top: -20px;
+    margin-top: -29px;
 } 
 
 .stars p {
@@ -369,7 +371,7 @@ body:has(.ticket-icon p:hover)
     grid-auto-flow: column;
     grid-template-columns: 3fr 4fr 3fr 3fr;
     gap: 1.5em;
-    height: 150px;
+    height: 140px;
     background: var(--secondaryColor);
     padding: 1em;
     position: relative;
@@ -396,7 +398,7 @@ body:has(.ticket-icon p:hover)
 }
 /* *** *** DATES FESTIVAL *** *** */
 .festival-date {
-   padding-top: 1.5em;
+   padding-top: 1em;
 }
 .festival-date h2 {
     color: var(--secondaryColor);
