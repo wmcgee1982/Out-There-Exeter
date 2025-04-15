@@ -2943,26 +2943,95 @@ to {
 }
 
 .reachout-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: text and image */
+    align-items: center;
     background: var(--secondaryColor);
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
     width: 100%;
-    height: auto;
-    overflow: hidden;
-    gap: 1rem; /* Adds space between image and content */
+    gap: 2rem;
+}
+
+.reachout-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .reachout-card img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 600px;
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid var(--backgroundColor);
-    margin: 0.5em 0em;
 }
 
 .reachout-info {
     padding: 0em 1em;
 }
+
+.reachout-programme ul {
+    padding: 1rem 2rem 0.5rem 2rem; /* Indents the whole list */
+    margin-top: 1rem;
+    background: var(--secondaryColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.reachout-programme li {
+    margin-bottom: 1rem; /* Adds space between items */
+    color: var(--backgroundColor);
+}
+
+.reachout-programme li b {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--accentColor); /* Optional: emphasize titles */
+    color: var(--yellow);
+}
+
+.reachout-programme li::marker {
+    color: var(--yellow);
+}
+
+.reachout-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border-radius: 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.reachout-schedule th,
+.reachout-schedule td {
+    padding: 1em;
+    border: none;
+    text-align: left;
+    vertical-align: top;
+    background-color: var(--secondaryColor);
+    color: var(--backgroundColor);
+    font-weight: 300;
+}
+
+.reachout-schedule td:first-child {
+    white-space: nowrap; /* Prevents time from breaking into two lines */
+    width: 1%;            /* Shrinks to fit content */
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.reachout-schedule td:nth-child(2) {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
