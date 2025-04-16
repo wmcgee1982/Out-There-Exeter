@@ -2914,7 +2914,7 @@ to {
 .reachout-card {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns: text and image */
-    align-items: center;
+    align-items: start;
     background: var(--secondaryColor);
     padding: 1em;
     border-radius: 8px;
@@ -2943,8 +2943,19 @@ to {
     padding: 0em 1em;
 }
 
-.reachout-programme ul {
-    padding: 1rem 2rem 0.5rem 2rem; /* Indents the whole list */
+.reachout-programme b {
+    display: block;
+    color: var(--yellow);
+}
+
+.reachout-programme p {
+    display: block;
+    color: var(--backgroundColor);
+    font-size: medium;
+}
+
+.reachout-programme {
+    padding: 1rem 1.5rem 0.5rem; 
     margin-top: 1rem;
     background: var(--secondaryColor);
     border-radius: 8px;
@@ -2969,6 +2980,13 @@ to {
     color: var(--yellow);
 }
 
+.reachout-programme .fa {
+    padding: 0.5em 0.1em 1em 0.1em;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
 .reachout-schedule {
     width: 100%;
     border-collapse: collapse;
@@ -2983,7 +3001,7 @@ to {
 
 .reachout-schedule th,
 .reachout-schedule td {
-    padding: 1em;
+    padding: 1.5rem; 
     border: none;
     text-align: left;
     vertical-align: top;

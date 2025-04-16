@@ -2545,9 +2545,34 @@ to {
     padding: 1em 0em;
 }
 
-.reachout-programme-small {
-    padding-bottom: 1em;
+
+.reachout-programme-small b {
+    color: var(--yellow);
 }
+
+.reachout-programme-small p {
+    color: var(--backgroundColor);
+    font-size: medium;
+    padding: 0em;
+}
+
+.reachout-programme-small .fa {
+    padding: 0.5em 0.1em 1em 0.1em;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.reachout-programme-small {
+    padding: 1rem 1rem 0.5rem; 
+    margin-top: 0.5rem;
+    background: var(--secondaryColor);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 100%;
+}
+
 
 .reachout-programme-small ul {
     padding: 1rem 2rem 0.5rem 2rem; /* General padding */
@@ -2603,7 +2628,7 @@ to {
 .reachout-schedule-small {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin-top: 0.3rem;
     border-radius: 0px;
     overflow: hidden;
     border-radius: 8px;
@@ -2671,7 +2696,7 @@ to {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation-small 1.5s ease-in-out infinite;
+    animation: rainbow_animation 1.5s ease-in-out infinite;
     background-size: 400% 100%;
 }
 
