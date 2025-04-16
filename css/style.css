@@ -3028,6 +3028,12 @@ to {
     background-size: 400% 100%;
 }
 
+.contact-form-title-big h2 {
+    line-height: 2;
+    font-weight: bold;
+    font-size: medium;
+}
+
 #envelope-big {
     width: 80%;
     display: flex;

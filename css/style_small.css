@@ -2677,7 +2677,7 @@ to {
 
 #envelope-big-small {
     width: 30%;
-    justify-self: center;
+    margin: 0 auto;
     animation: float-small 2s ease-in-out infinite;
 }
 
