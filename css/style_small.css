@@ -1547,74 +1547,6 @@
     font-weight: 600;
 }
 
-/* *** *** Contact PAGE *** *** */
-#contact-small {
-    padding: 1em 0em 0em 0em;
-}
-#information-section-contact-small {
-    display: grid;
-    position: relative;
-    width: 100vw;
-    height: auto;
-    background: linear-gradient(90deg, #EB028A 0%, #692A92 100%);
-    border-bottom: solid 0.2em var(--primaryColor);
-    overflow: hidden;
-}
-#envelope {
-    padding: 3em 0em 1em 0em;
-    width: 30%;
-    height: auto;
-    justify-self: center;
-    animation: float 2s ease-in-out infinite;
-}
-#contactformpaperforms {
-    padding: 0em 2em;
-    width: 100%;
-    height: 950px;
-}
-form {
-    padding: 0em 0em 3em 0em;
-    text-align: center;
-}
-.contact-form-title h1 {
-    font-size: xx-large;
-    text-align: center;
-    font-weight: 400;
-    background: linear-gradient(to right,#EB028A, #692A92, #f2f6f8);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-.form-control {
-    padding: 0.75em;
-    margin: 0.5em 0em;
-    width: 80vw;
-    height: auto;
-    background-color: var(--backgroundColor);
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.11);
-}
-input,
-textarea {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.footer-buttons-small-contact-form {
-    padding: 0.75em;
-    margin: 0.5em 0em;
-    width: 80vw;
-    height: auto;
-    border-radius: 2em;
-    color: var(--lightGrey);
-    background: var(--primaryColor);
-    border: none;
-    font-weight: 900;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
 
 /* *** *** Keyframes *** *** */
 @keyframes fadeinmainsmall {
@@ -2727,4 +2659,98 @@ to {
         font-size: 1em;
     }
 }
-  
+
+/* *** *** Contact Form *** *** */
+/* Contact Form Container Layout */
+
+/* Animated Gradient Title (if used elsewhere) */
+.contact-form-title-big-small h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    background: linear-gradient(to right, #692A92, #f2f6f8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation-small 1.5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+#envelope-big-small {
+    width: 30%;
+    justify-self: center;
+    animation: float-small 2s ease-in-out infinite;
+}
+
+#envelope-big-small img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Form */
+.contact-form-small {
+    background-color: var(--secondaryColor);
+    color: var(--backgroundColor);
+    width: 100%; /* takes full width of the column */
+    max-width: 650px; /* optional: limits how wide it gets */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: large;
+    margin: 1rem 0rem; /* removes the auto-centering */
+    text-align: left; /* ensures internal text aligns left */
+    justify-self: start; /* aligns the form to the left of its grid column */
+}
+
+.form-group-small label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.form-group-small input,
+.form-group-small textarea {
+    width: 100%;
+    margin: 0.1rem 0rem 1.5rem 0rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--backgroundColor);
+    color: var(--secondaryColor);
+    font-size: large;
+    font-weight: 300;
+}
+.form-group-small textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Center the submit button */
+.form-group-small button {
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+.form-group-small button:hover {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+}
+
+@keyframes float-small {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Optional rainbow animation */
+@keyframes rainbow_animation-small {
+    0% { background-position: 0% 50%;
