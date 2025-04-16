@@ -2986,6 +2986,12 @@ to {
     text-decoration: none;
     border-radius: 50%;
 }
+.reachout-schedule .fa {
+    padding: 0.5em 0em 0em;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
 
 .reachout-schedule {
     width: 100%;
