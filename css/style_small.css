@@ -2522,6 +2522,21 @@ to {
     margin: 0;
   }
 
+  @keyframes wipeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.reachout-card-small {
+    animation: wipeIn 1s ease-out forwards;
+}
+
   .reachout-card-small {
     align-items: center;
     background: var(--secondaryColor);
@@ -2539,6 +2554,9 @@ to {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid var(--backgroundColor);
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation-delay: 1.5s; /* 1 second delay before it fades in */
 }
 
 .reachout-info-small {

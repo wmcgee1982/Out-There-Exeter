@@ -2815,6 +2815,25 @@ to {
     padding: 0.5em 0em;
 }
 
+.image-wrapper-event {
+    position: relative;
+}
+
+.cancel-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    background: rgba(105, 42, 146, 0.8); 
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: none; /* so it doesn’t block clicks on the image */
+}
+
 
 .events-container {
     display: flex;
@@ -2911,6 +2930,29 @@ to {
   color: #666;
 }
 
+@keyframes wipeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes wipeInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); /* Start fully right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at normal position */
+    }
+}
+
+
 .reachout-card {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns: text and image */
@@ -2922,6 +2964,7 @@ to {
     transition: transform 0.2s;
     width: 100%;
     gap: 2rem;
+    animation: wipeIn 1.5s ease-out forwards;
 }
 
 .reachout-text {
@@ -2937,6 +2980,9 @@ to {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid var(--backgroundColor);
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation-delay: 1.5s; /* 1 second delay before it fades in */
 }
 
 .reachout-info {
