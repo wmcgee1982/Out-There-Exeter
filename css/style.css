@@ -303,7 +303,6 @@ body:has(.ticket-icon p:hover)
 } 
 #closeToggle {
     display: none;
-    margin-top: -15px;
     padding-right: 0.1em;
     color: var(--backgroundColor);
     font-size: xx-large;
