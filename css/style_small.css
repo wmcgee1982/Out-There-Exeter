@@ -38,6 +38,37 @@
     animation: fadeIn 2s ease-in-out 2s forwards;
 }
 
+.overlay-text-small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(235, 2, 138, 0.9);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 5s forwards;
+  }
+  
+.overlay-text-small h2 {
+      font-size: 1.2rem;
+      padding: 0.5em;
+    }
+  
+.overlay-text-small p {
+      font-size: 0.8rem;
+      color: var(--secondaryColor);
+      text-shadow: none;
+      font-weight: bold;
+    }
+  
+  
+
 .background-small {
     display: block;
     height: 750px;

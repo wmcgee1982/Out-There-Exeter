@@ -107,7 +107,7 @@ body {
     opacity: 1;
 }
 .sticky #navbar-title-bimini img {
-    width: 150px;
+    width: 75px;
     height: auto;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
@@ -276,6 +276,13 @@ body:has(.ticket-icon p:hover)
     right: 2em;
     top: 3em;
     -webkit-tap-highlight-color: transparent; 
+}
+.sticky .iconMain {
+    position: absolute;
+    right: 2em;
+    top: 1.7em;
+    -webkit-tap-highlight-color: transparent; 
+    transition: 0.2s ease-in-out;
 }
 #fa-main-bars-main {
     padding: 0.6em 0.5em 0.5em 0.5em;
@@ -599,7 +606,7 @@ body:has(.ticket-icon p:hover)
 
   .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
