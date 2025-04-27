@@ -2905,6 +2905,7 @@ to {
     height: auto;
     overflow: hidden;
     gap: 1rem; /* Adds space between image and content */
+    cursor: pointer;
 }
 
 .project-card img {
@@ -2920,14 +2921,9 @@ to {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-title {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.project-description {
-  font-size: 0.95rem;
-  color: #666;
+.project-card h2,
+.project-card p {
+    cursor: pointer;
 }
 
 @keyframes wipeIn {
