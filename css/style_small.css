@@ -1079,7 +1079,10 @@
     max-height: 100%;
     border: none;
 }
-
+#information-section-home-small {
+    position: relative;
+    padding-top: 7em;
+}
 #information-section-about-small {
     position: relative;
     padding: 2em 1.5em 0em;
@@ -1849,9 +1852,28 @@
     height: 100px;
     position: relative;
     overflow: hidden; /* Ensures text doesn't overflow */
+    margin-top: 0;
 }
 
 .stripebackground img {
+    position: absolute; /* Ensures it stays as the background */
+    top: 0;
+    left: 0;
+    width: 110%; /* Makes the image span the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    z-index: 0; /* Places the image behind the text */
+}
+
+.stripebackground-small {
+    width: auto;
+    height: 100px;
+    position: relative;
+    overflow: hidden; /* Ensures text doesn't overflow */
+    margin-top: -30px;
+}
+
+.stripebackground-small img {
     position: absolute; /* Ensures it stays as the background */
     top: 0;
     left: 0;
