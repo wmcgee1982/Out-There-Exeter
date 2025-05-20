@@ -2486,7 +2486,7 @@ to {
     justify-content: space-between;
 }
 
-.about-out-there-exeter h3 {
+.about-out-there-exeter-small h3 {
     font-size: x-large;
     font-weight: bold;
     color: var(--backgroundColor);
@@ -2503,7 +2503,7 @@ to {
     border-bottom: none;
 }
 
-.about-out-there-exeter h1 {
+.about-out-there-exeter-small h1 {
     margin-top: 0;
     font-size: x-large;
     font-weight: bold;
@@ -2511,7 +2511,7 @@ to {
     padding: 2em 0em 1em;
 }
 
-.about-out-there-exeter h2 {
+.about-out-there-exeter-small h2 {
     margin-top: 0;
     font-size: x-large;
     font-weight: bold;

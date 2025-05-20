@@ -942,7 +942,7 @@ body:has(#inclusivity-title:hover)
 .about-out-there-exeter h3 {
     font-size: x-large;
     font-weight: bold;
-    color: var(--secondaryColor);
+    color: var(--backgroundColor);
     padding: 0.5em 0em;
 }
 .about-out-there-exeter h2 {
@@ -2748,8 +2748,8 @@ to {
 
 .gallery-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -2782,24 +2782,36 @@ to {
     padding: 1em;
 }
 
-/* Image Container */
-.gallery-titles-container {
-    position: relative;
-    overflow: hidden; /* Ensures overlay is clipped to the container */
-    border-radius: 5%; /* Rounds the edges */
-    width: 100%; /* Ensure container matches grid size */
-    border: solid 4px var(--primaryColor);
+.gallery-flex-wrapper {
+    display: flex;
+    gap: 1em; /* spacing between images */
+    align-items: stretch; /* ensures equal height containers */
+    flex-wrap: wrap; /* allows wrap on smaller screens */
+    padding: 1em;
 }
 
-/* Images */
+/* Updated container */
+.gallery-titles-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+    flex: 1 1 300px; /* responsive, min 300px width */
+    border: solid 4px var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Updated image rules */
 .gallery-titles-container img {
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Matches container height */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 2; /* maintain ratio and equal height */
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
+
 
 /* Text Overlay */
 .overlay {
@@ -2829,6 +2841,28 @@ to {
 .gallery-titles-container:hover .overlay {
     opacity: 1; /* Show overlay and text on hover */
 }
+
+.video-wrapper iframe {
+    position: relative;
+    overflow: hidden; /* Ensures overlay is clipped to the container */
+    border-radius: 2%; /* Rounds the edges */
+    border: solid 4px var(--primaryColor);
+}
+
+.video-wrapper-container {
+    display: flex;
+    flex-wrap: wrap;       /* allow wrapping to next line */
+    gap: 1em;              /* space between items */
+    justify-content: flex-start; /* align videos to the left */
+    padding: 1em;
+  }
+  
+  .video-wrapper {
+    flex: 1 1 320px;       /* grow, shrink, base width */
+    max-width: 320px;      /* keep max width consistent */
+    box-sizing: border-box; /* include padding/borders in width */
+  }
+  
 
 
 /* Button Gallery Row */
