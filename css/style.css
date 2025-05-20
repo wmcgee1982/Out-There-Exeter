@@ -2926,15 +2926,18 @@ to {
 
 .cancel-banner {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-10deg);
-    background: rgba(105, 42, 146, 0.8); 
+    top: 10%;
+    left: 24%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background: #ff0000; 
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1.5em;
     font-weight: bold;
-    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     z-index: 2;
     pointer-events: none; /* so it doesn’t block clicks on the image */
 }
