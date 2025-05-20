@@ -3080,6 +3080,42 @@ to {
     cursor: pointer;
 }
 
+.newsletter-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Aligns image and content vertically */
+  background: var(--secondaryColor);
+  padding: 1em;
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  position: relative;
+  width: 100%;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.newsletter-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid var(--backgroundColor); /* Added a 2px solid border, color #333 */
+}
+
+.newsletter-card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.newsletter-card h2,
+.newsletter-card p {
+    cursor: pointer;
+}
+
 @keyframes wipeIn {
     0% {
         opacity: 0;
