@@ -2842,24 +2842,12 @@ to {
     opacity: 1; /* Show overlay and text on hover */
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 2%;
-  border: solid 4px var(--primaryColor);
-  box-sizing: border-box;
-}
-
 .video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
+    position: relative;
+    overflow: hidden; /* Ensures overlay is clipped to the container */
+    border-radius: 2%; /* Rounds the edges */
+    border: solid 4px var(--primaryColor);
 }
-
 
 .video-wrapper-container {
     display: flex;
@@ -2869,8 +2857,12 @@ to {
     padding: 1em;
   }
   
+  .video-wrapper {
+    flex: 1 1 320px;       /* grow, shrink, base width */
+    max-width: 320px;      /* keep max width consistent */
+    box-sizing: border-box; /* include padding/borders in width */
+  }
   
-
 
 /* Button Gallery Row */
 .button-gallery-row {
