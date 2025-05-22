@@ -2866,6 +2866,8 @@ to {
 .video-wrapper p {
     color: var(--yellow);
     padding: 0.5em;
+    border-radius: 2%; /* Rounds the edges */
+    background-color: var(--primaryColor);
 }
 
 /* Button Gallery Row */
