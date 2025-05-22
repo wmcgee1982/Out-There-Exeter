@@ -2853,7 +2853,6 @@ to {
     display: flex;
     flex-wrap: wrap;       /* allow wrapping to next line */
     gap: 1em; 
-    margin-top: -10px;
     justify-content: flex-start; /* align videos to the left */
     padding: 1em;
   }
@@ -2869,6 +2868,7 @@ to {
     padding: 0.5em;
     border-radius: 2%; /* Rounds the edges */
     background-color: var(--primaryColor);
+    margin-top: -10px;
 }
 
 /* Button Gallery Row */
