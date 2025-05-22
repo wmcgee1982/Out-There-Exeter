@@ -2847,6 +2847,7 @@ to {
     overflow: hidden; /* Ensures overlay is clipped to the container */
     border-radius: 2%; /* Rounds the edges */
     border: solid 4px var(--primaryColor);
+    min-width: 321px
 }
 
 .video-wrapper-container {
