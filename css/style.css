@@ -2842,13 +2842,6 @@ to {
     opacity: 1; /* Show overlay and text on hover */
 }
 
-.video-wrapper iframe {
-    position: relative;
-    overflow: hidden; /* Ensures overlay is clipped to the container */
-    border-radius: 2%; /* Rounds the edges */
-    border: solid 4px var(--primaryColor);
-}
-
 .video-wrapper-container {
     display: flex;
     flex-wrap: wrap;       /* allow wrapping to next line */
@@ -2856,12 +2849,16 @@ to {
     justify-content: flex-start; /* align videos to the left */
     padding: 1em;
   }
-  
   .video-wrapper {
     flex: 1 1;       /* grow, shrink, base width */
     box-sizing: border-box; /* include padding/borders in width */
+    border: solid 4px var(--primaryColor);
+    border-radius: 2%; /* Rounds the edges */
   }
-
+.video-wrapper iframe {
+    position: relative;
+    overflow: hidden; /* Ensures overlay is clipped to the container */
+}
 .video-wrapper p {
     font-size: small;
     padding: 0.5em;
