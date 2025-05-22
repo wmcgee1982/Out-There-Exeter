@@ -2847,7 +2847,6 @@ to {
     overflow: hidden; /* Ensures overlay is clipped to the container */
     border-radius: 2%; /* Rounds the edges */
     border: solid 4px var(--primaryColor);
-    min-width: 321px
 }
 
 .video-wrapper-container {
@@ -2859,18 +2858,14 @@ to {
   }
   
   .video-wrapper {
-    flex: 1 1 320px;       /* grow, shrink, base width */
-    max-width: 320px;      /* keep max width consistent */
+    flex: 1 1;       /* grow, shrink, base width */
     box-sizing: border-box; /* include padding/borders in width */
   }
 
 .video-wrapper p {
     font-size: small;
     padding: 0.5em;
-    border-radius: 2%; /* Rounds the edges */
     background-color: var(--primaryColor);
-    margin-top: -10px;
-    border: solid 4px var(--primaryColor);
 }
 
 /* Button Gallery Row */
