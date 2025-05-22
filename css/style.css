@@ -2842,26 +2842,43 @@ to {
     opacity: 1; /* Show overlay and text on hover */
 }
 
+
 .video-wrapper-container {
     display: flex;
-    flex-wrap: wrap;       /* allow wrapping to next line */
-    gap: 1em; 
-    justify-content: centre; /* align videos to the left */
-  }
-  .video-wrapper {
-    flex: 1 1;       /* grow, shrink, base width */
-    box-sizing: border-box; /* include padding/borders in width */
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+.video-wrapper {
+    flex: 1 1 300px;
+    box-sizing: border-box;
     border: solid 4px var(--primaryColor);
-    border-radius: 2%; /* Rounds the edges */
+    border-radius: 2%;
     background-color: var(--primaryColor);
-  }
+    overflow: hidden; /* better placed here */
+    position: relative; /* if needed for overlay */
+}
 .video-wrapper iframe {
-    position: relative;
-    overflow: hidden; /* Ensures overlay is clipped to the container */
+    width: 100%;
+    height: auto;
+    border: none;
 }
 .video-wrapper p {
     font-size: small;
     padding: 0.5em;
+}
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Button Gallery Row */
