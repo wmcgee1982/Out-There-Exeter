@@ -2862,7 +2862,11 @@ to {
     max-width: 320px;      /* keep max width consistent */
     box-sizing: border-box; /* include padding/borders in width */
   }
-  
+
+.video-wrapper p {
+    color: var(--yellow);
+    padding: 1em;
+}
 
 /* Button Gallery Row */
 .button-gallery-row {
