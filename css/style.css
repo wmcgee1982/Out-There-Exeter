@@ -2853,6 +2853,7 @@ to {
     box-sizing: border-box; /* include padding/borders in width */
     border: solid 4px var(--primaryColor);
     border-radius: 2%; /* Rounds the edges */
+    background-color: var(--primaryColor);
   }
 .video-wrapper iframe {
     position: relative;
@@ -2861,7 +2862,6 @@ to {
 .video-wrapper p {
     font-size: small;
     padding: 0.5em;
-    background-color: var(--primaryColor);
 }
 
 /* Button Gallery Row */
