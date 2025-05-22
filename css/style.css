@@ -2846,8 +2846,7 @@ to {
     display: flex;
     flex-wrap: wrap;       /* allow wrapping to next line */
     gap: 1em; 
-    justify-content: flex-start; /* align videos to the left */
-    padding: 1em;
+    justify-content: centre; /* align videos to the left */
   }
   .video-wrapper {
     flex: 1 1;       /* grow, shrink, base width */
