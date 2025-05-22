@@ -2870,6 +2870,7 @@ to {
     border-radius: 2%; /* Rounds the edges */
     background-color: var(--primaryColor);
     margin-top: -10px;
+    border: solid 4px var(--primaryColor);
 }
 
 /* Button Gallery Row */
