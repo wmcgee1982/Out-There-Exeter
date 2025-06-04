@@ -949,8 +949,15 @@ body:has(#inclusivity-title:hover)
     font-size: x-large;
     font-weight: bold;
     color: var(--yellow);
-    padding: 2em 0em 1.5em;
 }
+.about-out-there-exeter h1 {
+    margin-top: 0;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--yellow);
+    padding: 1em 0em;
+}
+
 .about-out-there-exeter p {
     font-size: large;
     color: var(--lightGrey);
