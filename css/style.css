@@ -3977,6 +3977,85 @@ td {
 	}
 }
 
+.comp img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #fff;
+}
+
+/* *** *** Footer Buttons *** *** */
+.comp-buttons {
+	display: flex;
+	width: 20vw;
+	height: 3em;
+	margin-top: 20px;
+	padding: 0.6em;
+	border-radius: 2em;
+	color: var(--lightGrey);
+	background-color: var(--secondaryColor);
+	border: solid 0.1em var(--lightGrey);
+	font-size: 1em;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.comp-buttons:hover {
+	color: var(--secondaryColor);
+	background-color: var(--lightGrey);
+	border-color: var(--primaryColor);
+	cursor: pointer;
+}
+
+  .terms-list {
+    margin-left: 20px;   /* indent main numbers */
+    padding-left: 20px;
+  }
+
+  .terms-list > li {
+    margin-bottom: 15px; /* space between sections */
+	color: var(--yellow);
+	font-weight: bold;
+  }
+
+  .terms-list ul {
+    margin-top: 8px;
+    margin-left: 20px;   /* indent bullets more */
+    padding-left: 20px;
+    list-style-type: disc; /* bullet style */
+  }
+
+  .terms-list ul li {
+    margin-bottom: 6px; /* space between bullet points */
+  }
+
+  .terms-list strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+    .terms-list-small {
+	margin-top: 20px;
+  }
+
+  .terms-list-small > li {
+	color: var(--yellow);
+	font-weight: bold;
+  }
+
+  .terms-list-small ul {
+    list-style-type: disc; /* bullet style */
+  }
+
+  .terms-list-small ul li {
+    margin-bottom: 10px; /* space between bullet points */
+  }
+
+  .terms-list-small strong {
+    display: block;
+  }
+
 
 /* *** ***  Body and background - small screen *** *** */
 @media only screen and (min-width:1000px) {
@@ -7075,10 +7154,9 @@ td {
 	width: 100%;
 }
 
-
+/*
 .reachout-programme-small ul {
 	padding: 1rem 2rem 0.5rem 2rem;
-	/* General padding */
 	margin-top: 1rem;
 	background: var(--secondaryColor);
 	border-radius: 8px;
@@ -7086,30 +7164,23 @@ td {
 	transition: transform 0.2s;
 	width: 100%;
 	list-style-position: outside;
-	/* Bullets should be outside the padding */
 	padding-left: 2rem;
-	/* Adjusted padding for larger screens */
 }
 
 .reachout-programme-small li {
 	margin-bottom: 1rem;
 	color: var(--backgroundColor);
 	font-size: 1em;
-	/* Ensure consistency in font size */
 	display: list-item;
-	/* Make sure the li behaves as a list item */
 }
 
-/* Ensure bullets stay yellow */
 .reachout-programme-small li b {
 	color: var(--yellow);
-	/* Restores the yellow color for bold text */
 }
 
 .reachout-programme-small li::marker {
 	color: var(--yellow);
-	/* Keep bullets yellow */
-}
+} */
 
 /* Fix bullet point and text alignment for small screens */
 @media (max-width: 768px) {
