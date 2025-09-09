@@ -644,7 +644,7 @@ body:has(.ticket-icon p:hover) .ticket-icon a {
 	grid-template-rows: repeat(3, 1fr);
 	/* 3 rows */
 	gap: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 0px;
 	/* Top, left, right padding, but no bottom padding */
 	margin-top: -10px;
 }
@@ -753,6 +753,7 @@ body:has(.ticket-icon p:hover) .ticket-icon a {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	background: var(--primaryColor);
 	/* Ensures content doesn’t overflow */
 }
 
@@ -2045,19 +2046,29 @@ button {
 }
 
 /* *** *** News Scroll Panel *** *** */
+
+.panel-scroll-container {
+	background: var(--primaryColor);
+	margin-top: -2em;
+	padding-top: 1em;
+}
 .panel-scroll {
 	white-space: nowrap;
-	margin: 1em 3.5em;
+	margin: 2em 2em 0em;
 	padding: 0.5em;
 	overflow: hidden;
-	border-right: solid var(--secondaryColor) 5em;
-	border-left: double var(--secondaryColor) 1em;
-	border-top-right-radius: 0.5em;
-	border-bottom-right-radius: 0.5em;
+	border-right: solid var(--secondaryColor) 10em;
+	border-left: solid var(--secondaryColor) 10em;
+	border-top-right-radius: 10em;
+	border-bottom-right-radius: 10em;
+	border-top-left-radius: 10em;
+	border-bottom-left-radius: 10em;
 }
 
 .panel-scroll h3 {
-	color: var(--darkGrey);
+	color: var(--lightGrey);
+	font-size: xxx-large;
+	font-weight: bolder;
 	transform: translateX(100%);
 	animation: scroll-small 15s linear infinite;
 	-webkit-animation: scroll-left 15s linear infinite;
@@ -2071,7 +2082,7 @@ button {
 	}
 
 	100% {
-		transform: translateX(-350%);
+		transform: translateX(-250%);
 	}
 }
 
@@ -3976,6 +3987,86 @@ td {
 		padding-bottom: 2rem;
 	}
 }
+
+/* Flex container */
+.index-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 3em 2em;
+}
+
+/* Image column */
+.comp-index {
+  flex: 0 0 50%;   /* lock to half the width */
+  max-width: 50%;
+}
+
+.comp-index img {
+  width: 100%;     /* fill its half */
+  height: auto;    /* keep proportions */
+  padding: 0;      /* no padding */
+  border: none;    /* no border */
+  border-radius: 2em;
+  border: solid 0.2em var(--lightGrey);
+}
+
+/* Text column */
+.information-container-index {
+  flex: 0 0 50%;   /* lock to the other half */
+  max-width: 50%;
+}
+.information-container-index h4 {
+  font-size: x-large;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+.information-container-index p {
+  font-size: large;
+  line-height: 1.5em;
+}
+
+
+/* Keep your button styles */
+.comp-index-buttons {
+  display: flex;
+  width: 20vw;
+  height: 3em;
+  margin-top: 20px;
+  padding: 0.6em;
+  border-radius: 2em;
+  color: var(--lightGrey);
+  background-color: var(--secondaryColor);
+  border: solid 0.1em var(--lightGrey);
+  font-size: 1em;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-index-buttons:hover {
+  color: var(--secondaryColor);
+  background-color: var(--lightGrey);
+  border-color: var(--primaryColor);
+  cursor: pointer;
+}
+
+/* Stack neatly on mobile */
+@media (max-width: 768px) {
+  .index-container {
+    flex-direction: column;
+  }
+  .comp-index,
+  .information-container-index {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .comp-index-buttons {
+    width: 60%; /* wider button on mobile */
+  }
+}
+
+
 
 .comp img {
   width: 100%;
